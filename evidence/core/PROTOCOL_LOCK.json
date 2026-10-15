@@ -1,0 +1,229 @@
+{
+  "config": {
+    "protocol_id": "homecredit_temporal_v1",
+    "run_id": "homecredit_temporal_v1_20261014",
+    "data_dir": "data/homecredit-default",
+    "output_dir": "runs",
+    "download": true,
+    "cpu_threads": 4,
+    "seed_search": 42,
+    "replication_seeds": [
+      0,
+      1
+    ],
+    "features": {
+      "missing_indicators": false,
+      "numeric_impute": "train_median",
+      "numeric_scale": "train_standard",
+      "delete_train_constant": true,
+      "unknown_category": 0,
+      "missing_category": 1
+    },
+    "selection": {
+      "primary": "B_roc_auc_max",
+      "ties": [
+        "B_log_loss_min",
+        "config_id"
+      ]
+    },
+    "lightgbm": {
+      "total_seconds": 7200,
+      "fit_seconds": 1200,
+      "max_rounds": 5000,
+      "patience": 100,
+      "common": {
+        "objective": "binary",
+        "learning_rate": 0.05,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8,
+        "bagging_freq": 1,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      },
+      "candidates": [
+        {
+          "id": "L1",
+          "num_leaves": 31,
+          "min_data_in_leaf": 100,
+          "lambda_l2": 1
+        },
+        {
+          "id": "L2",
+          "num_leaves": 63,
+          "min_data_in_leaf": 100,
+          "lambda_l2": 1
+        },
+        {
+          "id": "L3",
+          "num_leaves": 31,
+          "min_data_in_leaf": 300,
+          "lambda_l2": 5
+        }
+      ]
+    },
+    "tabm": {
+      "total_seconds": 14400,
+      "fit_seconds": 2700,
+      "max_epochs": 100,
+      "patience": 10,
+      "batch_size": 256,
+      "effective_batch_size": 256,
+      "k": 32,
+      "n_blocks": 3,
+      "d_block": 256,
+      "n_bins": 32,
+      "d_embedding": 16,
+      "weight_decay": 0.0003,
+      "gradient_clip": 1.0,
+      "compile": false,
+      "mixed_precision": false,
+      "candidates": [
+        {
+          "id": "T1",
+          "learning_rate": 0.002,
+          "dropout": 0.1
+        },
+        {
+          "id": "T2",
+          "learning_rate": 0.001,
+          "dropout": 0.1
+        },
+        {
+          "id": "T3",
+          "learning_rate": 0.001,
+          "dropout": 0.2
+        }
+      ]
+    },
+    "calibration": {
+      "clip": 1e-07,
+      "theta_bounds": [
+        -5.0,
+        5.0
+      ],
+      "intercept_bounds": [
+        -20.0,
+        20.0
+      ],
+      "maxiter": 1000,
+      "rare_class_warning": 30
+    },
+    "evaluation": {
+      "reliability_bins": 10,
+      "reliability_source": "C_prediction_quantiles",
+      "small_week_n": 100,
+      "bootstrap_replicates": 200,
+      "bootstrap_block_weeks": 2,
+      "bootstrap_min_weeks": 8,
+      "bootstrap_seed": 20261014,
+      "metrics": [
+        "roc_auc",
+        "average_precision",
+        "log_loss",
+        "brier",
+        "mean_probability",
+        "observed_event_rate",
+        "probability_bias"
+      ],
+      "figures": [
+        "probability_scores",
+        "reliability",
+        "weekly_performance",
+        "retention_risk",
+        "stress_loss"
+      ]
+    },
+    "portfolio": {
+      "q": [
+        0.5,
+        0.7,
+        0.9,
+        1.0
+      ],
+      "main_q": 0.7,
+      "ead": 1.0,
+      "tie_break": "stable_row_id",
+      "random_seeds": [
+        1000,
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009,
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015,
+        1016,
+        1017,
+        1018,
+        1019
+      ],
+      "scenarios": {
+        "Base": {
+          "odds_multiplier": 1.0,
+          "lgd": 0.4
+        },
+        "Adverse": {
+          "odds_multiplier": 1.5,
+          "lgd": 0.6
+        },
+        "Severe": {
+          "odds_multiplier": 2.0,
+          "lgd": 0.8
+        }
+      }
+    },
+    "absbox": {
+      "enabled": true,
+      "synthetic_only": true,
+      "allow_remote": false,
+      "engine_url": "http://127.0.0.1:8081",
+      "time_limit_seconds": 1800,
+      "scenarios": {
+        "Base": {
+          "annual_cdr": 0.02,
+          "annual_cpr": 0.05,
+          "recovery": 0.6,
+          "recovery_lag_months": 3
+        },
+        "Adverse": {
+          "annual_cdr": 0.05,
+          "annual_cpr": 0.1,
+          "recovery": 0.4,
+          "recovery_lag_months": 6
+        },
+        "Severe": {
+          "annual_cdr": 0.1,
+          "annual_cpr": 0.15,
+          "recovery": 0.2,
+          "recovery_lag_months": 9
+        }
+      }
+    }
+  },
+  "code": {
+    "src/credit_mvp/__init__.py": "c2c7227df67514ab5c6ffb914bac17ea658d18d586599d57d827bb4aa822fd2d",
+    "src/credit_mvp/__main__.py": "ba032e77423bcccdc014b850cb838d601ea43a80b8183cbf6d9e874e9fb54d43",
+    "src/credit_mvp/absbox_demo.py": "116692a91018ff95c88794e44ee7202f12b1e76523afbae7e7c12f0644f9b48c",
+    "src/credit_mvp/calibration.py": "916b5a28cd28454f9663d1f4359926cab9e1239d1cc142b47f0812fbbe63e90d",
+    "src/credit_mvp/common.py": "0bdc15808999babc55d485dd2eefa3de5aa3311701d19920ac65c4d41faa3e36",
+    "src/credit_mvp/data.py": "49e517c16bd1b1595a71db71a70a1b846de9e1df4f5d9c259ccbf4f6efce9aa7",
+    "src/credit_mvp/evaluation.py": "95a89e256ed19a06c5d9d35e6d99babce6692097a36c71b6bc3bffef45fda8c3",
+    "src/credit_mvp/models.py": "65af538f288814ccbadc9e9512cdf39b6f8542fe167b6846bc79fa9ecb60cae5",
+    "src/credit_mvp/pipeline.py": "3f43ead7aed6d28ba2b066a26bb4e38aa38e4088a8e557e4ae07b2c373c05080",
+    "src/credit_mvp/portfolio.py": "aca86f1ed993d84a6693e47e53bf1bc4c8553af4133b3fc993837b1744f93a34",
+    "src/credit_mvp/reporting.py": "c6f04c59cf2c2690d935e36d2a5d7cafe2ececc2dc2c751339faddb0dd246b1b",
+    "pyproject.toml": "5bb1b379c27345c4d0e70bbb9f3d0a16ba33f8636ec0535df9d6fe560a81ffc7",
+    "SOURCE_MANIFEST.json": "c82efe0d620e744f3125be55c9273d26eef11491c545668765a760edbcaa56c3",
+    "requirements.lock": "f3d9fa64eec93cf15a0cd6edb9fffe79dc6beab476832f86c25fa91f78edc5ff"
+  },
+  "split_hash": "4e982aac9f9f612016fe199b73454538f127673a520c1bb9118e7429d89fa2d3"
+}

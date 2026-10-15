@@ -1,0 +1,50 @@
+{
+  "status": "BLOCKED_DEPENDENCY",
+  "scope": "Exact full 2024 Home Credit champion reproduction",
+  "checked_utc": "2026-10-14T21:38:04.995771+00:00",
+  "source_artifacts": [
+    "LightGBM inference v16",
+    "CatBoost inference v12",
+    "DenseLight/LightAutoML inference v12",
+    "author first-place writeup and model/weight diagram"
+  ],
+  "known_recipe": {
+    "models": [
+      "LightGBM",
+      "DenseLight",
+      "CatBoost"
+    ],
+    "weights": [
+      0.4,
+      0.24,
+      0.36
+    ],
+    "final_early_week_subtract": 0.03
+  },
+  "missing": [
+    "Original fitted model files referenced by the inference notebooks",
+    "Exact final 644/661 feature masks stored inside those artifacts",
+    "Full training configuration and final ensemble training notebook"
+  ],
+  "access_checks": {
+    "hclgb-models": {
+      "status": "UNAVAILABLE",
+      "error": "HTTPError",
+      "message": "403 Client Error: Forbidden for url: https://api.kaggle.com/v1/datasets.DatasetApiService/ListDatasetFiles"
+    },
+    "hc-catboost-models": {
+      "status": "UNAVAILABLE",
+      "error": "HTTPError",
+      "message": "403 Client Error: Forbidden for url: https://api.kaggle.com/v1/datasets.DatasetApiService/ListDatasetFiles"
+    },
+    "hc-lama-models": {
+      "status": "UNAVAILABLE",
+      "error": "HTTPError",
+      "message": "403 Client Error: Forbidden for url: https://api.kaggle.com/v1/datasets.DatasetApiService/ListDatasetFiles",
+      "note": "Inferred owner/slug from notebook mount path; metadata does not expose actual dataset reference."
+    }
+  },
+  "interpretation": "Guessed author/slug dataset references derived from mount names return 403; public notebook API exposes blank data-source identifiers. This does not prove that the actual datasets are private, nor identify their true owner. No bypass or unverified mirror used.",
+  "local_fallback": "Separately labeled three-family reconstruction using author feature expressions, five A-only grouped folds, documented fixed training parameters, fixed published weights and score heuristic; not exact original competition reproduction.",
+  "private_test_score": "Not reproducible locally: official private labels are not available; no Kaggle submission authorized or made."
+}

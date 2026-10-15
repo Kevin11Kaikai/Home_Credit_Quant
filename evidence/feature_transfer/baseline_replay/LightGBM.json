@@ -1,0 +1,21 @@
+{
+  "variant": "original",
+  "family": "LightGBM",
+  "seed": 42,
+  "status": "REUSED_CHECKPOINT_B_REPLAY",
+  "metrics": {
+    "roc_auc": 0.8432093648384401,
+    "average_precision": 0.23438158602603587,
+    "log_loss": 0.1444084048461155,
+    "brier": 0.03768185942456508,
+    "mean_probability": 0.037025912045647626,
+    "observed_event_rate": 0.04416691299635432,
+    "n": 40596
+  },
+  "checkpoint_sha256": "f6ce8bd32435b72502fcf3b7f6d1dc7465670beb74fefa425b050f166836ebfe",
+  "prediction_sha256": "0693e494418ed4830178926ca0ae168552232ed3646b9f095765028092bb812f",
+  "new_training_seconds": 0,
+  "checkpoint_selected_on_B": true,
+  "original_input_numeric": 595,
+  "original_input_categorical": 82
+}

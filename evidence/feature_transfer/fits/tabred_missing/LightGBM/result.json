@@ -1,0 +1,47 @@
+{
+  "family": "LightGBM",
+  "seed": 42,
+  "config": {
+    "id": "L3",
+    "num_leaves": 31,
+    "min_data_in_leaf": 300,
+    "lambda_l2": 5
+  },
+  "B": {
+    "roc_auc": 0.8441479224522215,
+    "log_loss": 0.14514803961593192
+  },
+  "status": "EARLY_STOPPED",
+  "eligible": true,
+  "converged": true,
+  "seconds": 60.42100000008941,
+  "best_iteration": 549,
+  "iterations_completed": 649,
+  "checkpoint": "${SOURCE_WORKSPACE}\\experiments\\champion_features_20261014\\fits\\tabred_missing\\LightGBM\\model.txt",
+  "checkpoint_sha256": "d0b222e531e4defd22c54cc4507a81d39a9f63d5d5c273cdd0eefacd82d08999",
+  "peak_rss_bytes": 4163878912,
+  "gpu_peak_bytes": 0,
+  "params": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "verbosity": -1,
+    "deterministic": true,
+    "force_col_wise": true,
+    "num_leaves": 31,
+    "min_data_in_leaf": 300,
+    "lambda_l2": 5,
+    "seed": 42,
+    "bagging_seed": 42,
+    "feature_fraction_seed": 42,
+    "data_random_seed": 42,
+    "num_threads": 4,
+    "metric": [
+      "auc",
+      "binary_logloss"
+    ]
+  },
+  "optimizer": "LightGBM native gradient boosting; optimizer checkpoint not applicable"
+}

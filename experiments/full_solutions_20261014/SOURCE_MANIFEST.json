@@ -1,0 +1,415 @@
+{
+  "created_utc": "2026-10-14T21:38:04.975221+00:00",
+  "champion_public_notebooks": [
+    {
+      "author": "yuuniekiri",
+      "kernel": "yuuniekiri/fork-of-home-credit-risk-lightgbm",
+      "kernel_id": 53337166,
+      "version": 16,
+      "url": "https://www.kaggle.com/code/yuuniekiri/fork-of-home-credit-risk-lightgbm",
+      "file": "upstream\\lgb\\fork-of-home-credit-risk-lightgbm.py",
+      "sha256": "b88bdd538ed83f24dc5ec0e183b19662925d4c5abf2df172874e2399c8e8fb20",
+      "upstream_docker_image": "gcr.io/kaggle-images/python@sha256:fd7fc0a352fc3bf80e4dd2232feb5fafe4183c2b46fb22f1ecb54c934b293875",
+      "license": "Not returned by official kernel API; retain locally with attribution, no redistribution assumed",
+      "usage": "Audited feature classes/functions only; no top-level inference, weights or submission"
+    },
+    {
+      "author": "yuuniekiri",
+      "kernel": "yuuniekiri/fork-of-home-credit-catboost-inference",
+      "kernel_id": 56277134,
+      "version": 12,
+      "url": "https://www.kaggle.com/code/yuuniekiri/fork-of-home-credit-catboost-inference",
+      "file": "upstream\\cat\\fork-of-home-credit-catboost-inference.py",
+      "sha256": "28e1902c10df5f2bb3550beafe44d6bc42d7cb2ddd0f443babd314a1f683d214",
+      "upstream_docker_image": "gcr.io/kaggle-private-byod/python@sha256:54edb36433adec1db1cadce7bc9d87bf55b6b0cd1c15244a1a75e5e1d282db6c",
+      "license": "Not returned by official kernel API; retain locally with attribution, no redistribution assumed",
+      "usage": "Audited feature classes/functions only; no top-level inference, weights or submission"
+    },
+    {
+      "url": "https://www.kaggle.com/code/yuuniekiri/fork-of-home-credit-lightautoml-inference",
+      "version": 12,
+      "kernel_id": 55312659,
+      "sha256": "c1a01e65ae577576d00ea7fd2de805edbb555a0fc86abbd704402c83fe287d41"
+    }
+  ],
+  "champion_writeup": "https://www.kaggle.com/competitions/home-credit-credit-risk-model-stability/writeups/yuuniee-1st-place-solution-my-betting-strategy",
+  "fraud": {
+    "repository": "https://api.github.com/repos/Kevin11Kaikai/Fraud_Detection_Tabular_Transformer",
+    "commit": "d10eb6315319b20d0be7a94e63a4f89c6381d1be",
+    "files": [
+      {
+        "path": "README.md",
+        "sha256": "012939e9f29a67df28987d7ceaf7487248db22bf821fc9aeced694bfdaf5f43d",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_convergence_20261012/__init__.py",
+        "sha256": "7e9ca8c7e516f5c174aa2d465a09bac220d3374ce55390d498fe7d8a0408a233",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_convergence_20261012/campaign.py",
+        "sha256": "bf2bd19dee7bb479692c0f771b286ea031716f5c39f4eac8e27a6cb402272449",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_convergence_20261012/common.py",
+        "sha256": "9eca282cc4d5850777899ab7362ebad9fb97c5fe432e11d70dfc77cb50693245",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_convergence_20261012/prepare.py",
+        "sha256": "c9d29fdca768acfec5430b5708a669b4e9fbb2afe2496f8f084aaebc70c0ac02",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_convergence_20261012/report.py",
+        "sha256": "a35c3f6558ba1a72289d92d8d7324df40c506ee58614ae38007b9876a75b8cc9",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_convergence_20261012/tests.py",
+        "sha256": "08e1d4c8ff18f34d1f219eca3e49ddf1ae9c45c84765ab6478db37e9873bda69",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_convergence_20261012/train.py",
+        "sha256": "90ab1cd5fd57e4257125bf6b663b3e40295768ec60fabcc0fd691955190595ac",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_distillation_20261012/__init__.py",
+        "sha256": "03e715e2c70a65612716a973e1cb6b90813fe0fc73a9be4f09f135a2b00f3ae3",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_distillation_20261012/campaign.py",
+        "sha256": "c7c584897e1fdbf37a4cfb412a0a758b6fd1517aabe175c54177f6f971890ad3",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_distillation_20261012/common.py",
+        "sha256": "79a4c4b0856e073ba513f9717438e908dc7f175f29b2fb13f52d705d8958ef48",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_distillation_20261012/contracts.py",
+        "sha256": "13275bdadf5934bacc7131559db87b984ffdad6103a2bc6dd0f2fcc6878a5006",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_distillation_20261012/loss.py",
+        "sha256": "d5bfb3c662b664d9398705f88ed9105ccf85d8b6acbf6d08cfc35cd7b67e2a74",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_distillation_20261012/report.py",
+        "sha256": "f5250c6169b1ad8b177c86472c604a34fcc78c893c8114c97887b2ba89f96f78",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_distillation_20261012/teacher.py",
+        "sha256": "aebd64630b0395c2fb1b62e787e6195b52768ef8a0a540894ab220d3ea2cd016",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_distillation_20261012/teacher_diagnostics.py",
+        "sha256": "cf6befcbaf92d5aec31ddc607f4f38cab5bbfb6121914606a44d972b8e3d4e3d",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_distillation_20261012/training.py",
+        "sha256": "e20e4a6f88c6dc65022e9f6d46dd368b1ed1f66ed640c0aaa3c9b81649c639d4",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/excel_xgb_distillation_20261012/verify.py",
+        "sha256": "bc74a52f2fcd4ea6d57068a63e11d0c5d6ce448b4116937ed1a751a171c9e81b",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/ft_upgrade_20261010/__init__.py",
+        "sha256": "5ad0ad0005c398de47f839cd4d868aa939ea09637c2e06004f6266f6639f67ae",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/ft_upgrade_20261010/train.py",
+        "sha256": "e828144dc816046b6806f24b92018292f6518a5a955390cf876742793a25927c",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/ft_upgrade_20261010/utils.py",
+        "sha256": "6579694f4a98ec4e59fca83f63dde95642b31c2a83a50c835bda46314d82309b",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_ablation_20261011/__init__.py",
+        "sha256": "99c7a692735fe0ed06cf7c0b2df3332def9496da8b85fdd28dd3326212933179",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_ablation_20261011/analyze.py",
+        "sha256": "f20eea42467c3c80dd795e15b868f5e4b422c5548df6b33749ae10c7607195f0",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_ablation_20261011/common.py",
+        "sha256": "ffa82ed9fbb54ecd9bd8e70e985dee17b279b66101b3cc173912470454f361ac",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_ablation_20261011/preflight.py",
+        "sha256": "f1ae6ff11f7469c17c32551b4759f199386def6a820059ca55b8ed36940f20fc",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_ablation_20261011/train.py",
+        "sha256": "f4e1ed01cbeb3423affccb1b2d0609514392ce865ac7e1a4eda77bbc8641e3ce",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_transformer_transfer_20261011/__init__.py",
+        "sha256": "b01a645cc1cbd56339025d14e1c78b2763581e42a9c3f319b1238cfc23d39953",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_transformer_transfer_20261011/analyze.py",
+        "sha256": "b031d9c6d4b529b05ec1395086bf0636f9b48dfa722eda89deea5c35800ef38f",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_transformer_transfer_20261011/campaign.py",
+        "sha256": "4b88768f5c0349ca16dbceb72744e457f6cae7727e8cbcfe4df5097c8113a4ab",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_transformer_transfer_20261011/common.py",
+        "sha256": "063e27f92e101fba0ed35eadefb9cfa2a0eead0c525b9415b0e882dc1ef8cfd5",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_transformer_transfer_20261011/freeze.py",
+        "sha256": "16078b95bf3668b26084a4374b6181f7226558b82e9991b3673ac2d2e7d913f4",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_transformer_transfer_20261011/models.py",
+        "sha256": "8eb7e59f6e97cb52978e95bce590544ff262a0a913d59126e916c65c86817641",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_transformer_transfer_20261011/prepare.py",
+        "sha256": "0092b24ed7fc33162d845c462ab4e944b668d85d42caf442cbba8dd162e8e837",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_transformer_transfer_20261011/resource.py",
+        "sha256": "4ee995e12bff3dee518a41fdde0dc03b6b967bfda17d49750e4cf65732c4411d",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_transformer_transfer_20261011/smoke.py",
+        "sha256": "5f6de72985e9a7ec30c27305ee9dcf6762f36b4eb4cf0db83ee60212ae2dfbce",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_transformer_transfer_20261011/train.py",
+        "sha256": "1e680843b1e3fd9fe1d573a89b1071aea1b0ef431c88c774921ad32436c5713d",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/identity_uid_transformer_transfer_20261011/train_lightgbm.py",
+        "sha256": "1571402a8eb5fd6792e28b914456399fc6db1c9fb3fdab30a678157d882d8e0f",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/kaggle_fraudsquad_reproduction_20261011/__init__.py",
+        "sha256": "fe3d5dc818c949476c7a0b0a8466c4e0942e319acc3713eb70293ddb519f04a7",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/kaggle_fraudsquad_reproduction_20261011/common.py",
+        "sha256": "7fd0ce3e548009faef55d27cb7c78b6c8aa62cc237556d2541d00406209b12c2",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/kaggle_fraudsquad_reproduction_20261011/features.py",
+        "sha256": "e4ab4b7f231a66debd0baef61fb56630b26e8e19c68e88d4ac9e3e38528be4ce",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/kaggle_fraudsquad_reproduction_20261011/fetch_sources.py",
+        "sha256": "fb815a196529c88227504c9bdf7dc44ed3a352a4877333a0d96fbd39a1298949",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/kaggle_fraudsquad_reproduction_20261011/prepare.py",
+        "sha256": "6dc5416e3e6ce67a8c1806f189c4bff9a793f65d633ebc70eb81675cab19f12a",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/resource_coordination/__init__.py",
+        "sha256": "53eda03c7ea1cab12536d2711858071f8840e5ae23223561f76206710d4517e7",
+        "origin": "official_github"
+      },
+      {
+        "path": "experiments/resource_coordination/scheduler.py",
+        "sha256": "38e653b32fc330fbd33d7f76efa24eea3b93fbca5a91e21d46ba33e6790555a9",
+        "origin": "official_github"
+      },
+      {
+        "path": "reports/training_complete_20261012/README.md",
+        "sha256": "2af37627a7c45eb8ee4c60c3476d4cb082486b3f4927b986fb41000d1da605a9",
+        "origin": "official_github"
+      },
+      {
+        "path": "reports/training_complete_20261012/render_complete.py",
+        "sha256": "14c6faf8530388f7f048e3e21ab76d5e077e598dd1e7679f041d4caf7f265278",
+        "origin": "official_github"
+      },
+      {
+        "path": "reports/training_complete_20261012/render_complete_original.py",
+        "sha256": "6b114521f2db022a9d3b75c22eaade56a160c1296cf0578771aea1b3671144d9",
+        "origin": "official_github"
+      },
+      {
+        "path": "requirements.txt",
+        "sha256": "0674e4af1e81f21da36de9b9e3513c075d25c28305d0c24a3b11cbd4c7e15bfb",
+        "origin": "official_github"
+      },
+      {
+        "path": "src/__init__.py",
+        "sha256": "f42aabd84d1de8972f8eed883ed3e0e1b45d27624a773e0dae591d3e79899a6c",
+        "origin": "official_github"
+      },
+      {
+        "path": "src/check_environment.py",
+        "sha256": "1022f769749b8b9c7db8c1d42aba79dca1de1ba22db2265019e4d6ef93c6ad2e",
+        "origin": "official_github"
+      },
+      {
+        "path": "src/common.py",
+        "sha256": "9809fc69af379bd72191dda64494aaf6a78e0ff30074aaa684f750ddcf999349",
+        "origin": "official_github"
+      },
+      {
+        "path": "src/data.py",
+        "sha256": "6b9fa4753809e16992bf574145a50e1ed1a568d424e2655715238fa3a6588ec7",
+        "origin": "official_github"
+      },
+      {
+        "path": "src/download_data.py",
+        "sha256": "ef4b55ffa7cae1435e8600e1ea6d35fd43620a5f2dd256b0d3bd5c074a9531b2",
+        "origin": "official_github"
+      },
+      {
+        "path": "src/evaluate.py",
+        "sha256": "f856bfd2963e85b25b38d247417e4cde0750f59a68d56dbcbfbdd72c0885180e",
+        "origin": "official_github"
+      },
+      {
+        "path": "src/run.py",
+        "sha256": "b39d94c55d9771cea28386537de022ba30712b8468cfe8ad34020dfa24f69c30",
+        "origin": "official_github"
+      },
+      {
+        "path": "src/train_ft_transformer.py",
+        "sha256": "1c724034e23472c7f332da0bd75c7e6e107911de3e979c19bc4217b7a9b04225",
+        "origin": "official_github"
+      },
+      {
+        "path": "src/train_lightgbm.py",
+        "sha256": "8d8f38a6b3883c74a7d127ab1e725127b3f99428413aa89108cbb31346b969c5",
+        "origin": "official_github"
+      },
+      {
+        "path": "tests/__init__.py",
+        "sha256": "a23a4f57feb17475d319b889744bec016a57b3fc0f5d1aa1a36579b6f104b8fa",
+        "origin": "official_github"
+      },
+      {
+        "path": "tests/test_contracts.py",
+        "sha256": "ba71cdced517c7437fd5281cb02a86ba6dda1f88da5599170c66090db4991922",
+        "origin": "official_github"
+      },
+      {
+        "path": "tests/test_pipeline_integration.py",
+        "sha256": "709f3cf570d2beae8bad7db3b09697064abcc5ca3c534ffdb6e25fba6f8c9d02",
+        "origin": "official_github"
+      }
+    ],
+    "license": "No repository license returned; user explicitly requested reuse; upstream notices preserved"
+  },
+  "s6e7": {
+    "url": "https://www.kaggle.com/code/masayakawamata/s6e7-ft-transformer-v2-cv-0-95063",
+    "version": 1,
+    "sha256": "2cec30422c7bda7aa2f9794a2da5e9bbae69b579f0032ef72e939aac929545b9",
+    "retrieved_utc": "2026-10-14T21:14:55.464862+00:00",
+    "source": "s6e7-ft-transformer-v2-cv-0-95063.ipynb",
+    "license": "Not returned by API; local use and attribution; no redistribution"
+  },
+  "excel_official": [
+    {
+      "architecture": "excel",
+      "repository": "WhatAShot/ExcelFormer",
+      "revision": "17f70526390e70390bb8c8ec3850697eb730f9cd",
+      "file": "bin/excel_former.py",
+      "url": "https://raw.githubusercontent.com/WhatAShot/ExcelFormer/17f70526390e70390bb8c8ec3850697eb730f9cd/bin/excel_former.py",
+      "sha256": "f3b0e8fb7ba5968f956bc042adfb8293784bee06b70cc51e88cb288b01ce470c"
+    },
+    {
+      "architecture": "excel",
+      "repository": "WhatAShot/ExcelFormer",
+      "revision": "17f70526390e70390bb8c8ec3850697eb730f9cd",
+      "file": "lib/deep.py",
+      "url": "https://raw.githubusercontent.com/WhatAShot/ExcelFormer/17f70526390e70390bb8c8ec3850697eb730f9cd/lib/deep.py",
+      "sha256": "587f5c097a2d70689ac326ec34ca205a3056d80c912b64e230cc639ad1544640"
+    },
+    {
+      "architecture": "excel",
+      "repository": "WhatAShot/ExcelFormer",
+      "revision": "17f70526390e70390bb8c8ec3850697eb730f9cd",
+      "file": "lib/aug_utils.py",
+      "url": "https://raw.githubusercontent.com/WhatAShot/ExcelFormer/17f70526390e70390bb8c8ec3850697eb730f9cd/lib/aug_utils.py",
+      "sha256": "9c316df7095ac4ec56462a587af3c2df381b6161ea7eedf975e2ecaedf124671"
+    },
+    {
+      "architecture": "excel",
+      "file": "LICENSE",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "packages": {
+    "catboost": {
+      "version": "1.2.8",
+      "license": "Apache License, Version 2.0",
+      "home_page": "https://catboost.ai"
+    },
+    "lightautoml": {
+      "version": "0.3.8",
+      "license": "Apache-2.0",
+      "home_page": "https://lightautoml.readthedocs.io/en/latest/"
+    },
+    "masamlp": {
+      "version": "0.3.0",
+      "license": "MIT",
+      "home_page": null
+    },
+    "catstat": {
+      "version": "0.4.0",
+      "license": "MIT",
+      "home_page": null
+    },
+    "lightgbm": {
+      "version": "4.6.0",
+      "license": "The MIT License (MIT)\n\nCopyright (c) Microsoft Corporation\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+      "home_page": "https://github.com/microsoft/LightGBM"
+    }
+  },
+  "data_policy": "Existing official 2024 competition training cache only; no new dataset, uploads or submissions; previous A/B mappings unchanged."
+}

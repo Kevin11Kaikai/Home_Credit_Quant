@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "..........                                                               [100%]\n10 passed in 2.71s\n",
+  "stderr": "",
+  "files": {
+    "test_transfer.py": "be18817b8854fd20370ab8d05738d57670183b531ee350612a4fca27c69c21b0",
+    "common.py": "a1ae06872b72d8d893a01f8d7be495834c4ccbae0f61a6914ea65fcdcf45cb5d",
+    "data.py": "983ff0259a417c48f8b0aeb965770b1f85884804e5ea9d11c9e1e4b1705971cf",
+    "models.py": "ac7af0a8ad02e9c97316e6a41f92aa8f08828368e08db33428542c5657118256",
+    "campaign.py": "4df239ed686c745d3207eeb9ac0937d5aaf3b870a2a5330aebf4b18959bf19e3"
+  },
+  "executed_utc": "2026-10-14T22:08:51.341248+00:00",
+  "protocol_revision": 2
+}

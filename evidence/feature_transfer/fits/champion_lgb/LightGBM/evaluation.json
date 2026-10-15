@@ -1,0 +1,26 @@
+{
+  "variant": "champion_lgb",
+  "family": "LightGBM",
+  "seed": 42,
+  "status": "EARLY_STOPPED",
+  "metrics": {
+    "roc_auc": 0.8448861028520528,
+    "average_precision": 0.2460254093821018,
+    "log_loss": 0.14392307511133265,
+    "brier": 0.037463854351902054,
+    "mean_probability": 0.03536802846508674,
+    "observed_event_rate": 0.04416691299635432,
+    "n": 40596
+  },
+  "prediction_sha256": "65a547eb053d772b784d62b23baa8161de0f3d1396ca95748cac5c24d7e2a437",
+  "checkpoint_sha256": "425c77c9daf0b69e33ba6d7bd931fb659e87360305b609a9f832d1300d3c7a6b",
+  "new_training_seconds": 44.561999999918044,
+  "numeric_inputs": 1038,
+  "categorical_inputs": 74,
+  "peak_rss_bytes": 3892989952,
+  "gpu_peak_bytes": 0,
+  "completed_epochs": null,
+  "best_epoch": null,
+  "best_iteration": 407,
+  "checkpoint_selected_on_B": true
+}

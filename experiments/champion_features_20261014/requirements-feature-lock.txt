@@ -1,0 +1,9 @@
+colorama==0.4.6
+iniconfig==2.3.1
+numpy==1.26.4
+packaging==26.3
+pluggy==1.6.0
+polars==0.20.31
+psutil==7.0.0
+pyarrow==16.1.0
+pytest==8.3.5

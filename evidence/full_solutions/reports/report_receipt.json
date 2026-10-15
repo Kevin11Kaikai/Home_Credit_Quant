@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-10-14T22:19:15.073813+00:00",
+  "source_prediction_hashes": {
+    "${SOURCE_WORKSPACE}\\experiments\\champion_features_20261014\\baseline_replay\\LightGBM.npy": "0693e494418ed4830178926ca0ae168552232ed3646b9f095765028092bb812f",
+    "${SOURCE_WORKSPACE}\\experiments\\champion_features_20261014\\baseline_replay\\TabM.npy": "c72cda142671bccae1402850585f61fa47128529463dd15d518b8c260339942f",
+    "${SOURCE_WORKSPACE}\\experiments\\champion_features_20261014\\fits\\champion_cat\\LightGBM\\predictions_B.npy": "c79fb83ccbeae4d9237214d7d572dff2988535a6c23665b1d343e1952fe0dea4",
+    "${SOURCE_WORKSPACE}\\experiments\\champion_features_20261014\\fits\\champion_cat\\TabM\\predictions_B.npy": "350e10849c25950f04e2b316934eee2c060608691b6eb182ebe7c1a53233ff65",
+    "${SOURCE_WORKSPACE}\\experiments\\champion_features_20261014\\fits\\champion_lgb\\LightGBM\\predictions_B.npy": "65a547eb053d772b784d62b23baa8161de0f3d1396ca95748cac5c24d7e2a437",
+    "${SOURCE_WORKSPACE}\\experiments\\champion_features_20261014\\fits\\champion_lgb\\TabM\\predictions_B.npy": "92c6f58bb06f22633ef4997526d83e85bb7551e3cfe563f9c5e6d1af85e58ac4",
+    "${SOURCE_WORKSPACE}\\experiments\\champion_features_20261014\\fits\\tabred_missing\\LightGBM\\predictions_B.npy": "eeb4f0aecdee9a32fedf125867d59ea4ee0e8373f61e594d29bf47119220e80d",
+    "${SOURCE_WORKSPACE}\\experiments\\champion_features_20261014\\fits\\tabred_missing\\TabM\\predictions_B.npy": "ae89e5b53060b107a15177014f23f3f9f26a76f0035e679863e3226d8b817764",
+    "${SOURCE_WORKSPACE}\\experiments\\full_solutions_20261014\\results\\champion\\lgb_B.npy": "54b11d70f4b60824007d6482b3eead51f752e86147e5911978d60020834a02af",
+    "${SOURCE_WORKSPACE}\\experiments\\full_solutions_20261014\\results\\champion\\dense_B.npy": "e99b178667b261c84013a3602f1c09f682c4054d17a81a30b9c13623ff8632e9",
+    "${SOURCE_WORKSPACE}\\experiments\\full_solutions_20261014\\results\\champion\\cat_B.npy": "826556b232fbde7d6af81be3fb51cb47bfef246be06c08631337b6b2c62da3ac",
+    "${SOURCE_WORKSPACE}\\experiments\\full_solutions_20261014\\results\\champion\\ensemble_B.npy": "d04781dfd9c930013093380009fb82a66c86649a2f9a24efa301a982f3a1b836",
+    "${SOURCE_WORKSPACE}\\experiments\\full_solutions_20261014\\results\\champion\\score_hack_B.npy": "00bb3d340983b74a99b7e1ee46965b059092f476cb3ed4197e99558d3bc25f4e"
+  },
+  "cache_only": true,
+  "all_reported_metrics_recomputed": true,
+  "independent_recalculation": false,
+  "rows": 13,
+  "files": {
+    "comparison_B.csv": "bfbf5a9e12d92f889af1d8b266c4ac6714295fddebf81d756761388edb2326c2",
+    "recomputed_B.csv": "14b8db938aff01db9085574abcb61ddb392b59647486b48a31497d9a977b3c0d",
+    "weekly_B.csv": "ba66e92a3f7517a30330d939245e4ce35551b44fc1b1100d69a5fb0d554772a5",
+    "comparison_B.png": "1004514485d3739689768dfc2cbc23147254f087e94594b3c657c238f9acfabb",
+    "comparison_B.svg": "11a5acaa48308a6e1738c123ba57de026af18b1100d98de5b366843cb9096db7",
+    "weekly_B.png": "e06f5436ad27b7ded2665de952bf0bbe2d81df621bfd29579fe00a8f35c6f08e",
+    "FULL_SOLUTIONS_REPORT_ZH.md": "95d4f7c6a78233beb5248bc8a9fedbfb4d984114de49c9f149f22ee7180fb48a"
+  },
+  "pause_status_banner_added_utc": "2026-10-14T22:25:05.975795+00:00",
+  "training_or_metric_recomputation_during_pause": false
+}

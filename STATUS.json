@@ -1,0 +1,28 @@
+{
+  "publication_date": "2026-10-15",
+  "experiment_date": "2026-10-14",
+  "core": "CORE_COMPLETE",
+  "absbox": "EXTENSION_COMPLETE",
+  "feature_transfer": "MATCHED_TRANSFER_COMPLETE",
+  "champion_reconstruction": "THREE_FAMILY_RECONSTRUCTION_COMPLETE",
+  "exact_champion": "BLOCKED_DEPENDENCY",
+  "followup": "PAUSED_BY_USER",
+  "excel_former": "PAUSED_INCOMPLETE",
+  "excel_completed_epochs": 3,
+  "excel_resume_epoch": 4,
+  "excel_resume_offset": 147456,
+  "s6e7_completed_members": 0,
+  "s6e7_planned_members": 28,
+  "automatic_resume_allowed": false,
+  "core_final_seeds": [
+    42,
+    0,
+    1
+  ],
+  "followup_evaluation": "Reused development B only",
+  "new_training_for_publication": false,
+  "new_inference_for_publication": false,
+  "raw_data_distributed": false,
+  "row_predictions_distributed": false,
+  "model_weights_distributed": false
+}

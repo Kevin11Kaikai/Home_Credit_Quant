@@ -1,0 +1,12 @@
+{
+  "status": "PAUSED_BY_USER",
+  "epoch": 4,
+  "epochs": 41,
+  "processed": 110336,
+  "total": 267645,
+  "completed_epochs": 3,
+  "active_seconds": 1142.3975694992114,
+  "updated_utc": "2026-10-14T22:24:32.359832+00:00",
+  "resume_epoch": 4,
+  "resume_offset": 147456
+}

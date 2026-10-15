@@ -1,0 +1,32 @@
+{
+  "status": "MATCHED_TRANSFER_COMPLETE",
+  "feature_extraction": "AUTHOR_AGGREGATIONS_REPRODUCED_WITH_DOCUMENTED_AB_ADAPTATION",
+  "full_champion_model": "NOT_REPRODUCED_PUBLIC_RELEASE_DEPENDS_ON_ADDITIONAL_FITTED_MODELS_AND_FINAL_FEATURE_MASKS",
+  "completed_metric_rows": 8,
+  "expected_metric_rows": 8,
+  "seed_count": 1,
+  "partial_training": [],
+  "original_artifacts_unchanged": true,
+  "new_D_evaluations": 0,
+  "C_used": false,
+  "interpretation": "Posthoc development comparison. B selects checkpoints; no independent generalization or causal attribution to a single feature.",
+  "completed_utc": "2026-10-14T20:31:27.774624+00:00",
+  "files": {
+    "fits\\champion_cat\\LightGBM\\result.json": "ffe1d5c996c5cf9fb473a6e06d0169075b3188ca59ddd1499603ecc745f47cca",
+    "fits\\champion_cat\\TabM\\result.json": "76edadf0e41c66a2cb5adabc6fad7123dbd439e750c93354c5bbcb7122f440a9",
+    "fits\\champion_lgb\\LightGBM\\result.json": "d35f89e340b6f4d1b61a83c5b9b07367be228878e433c9f78442f021ad1c1019",
+    "fits\\champion_lgb\\TabM\\result.json": "3558a8dee578c2378819e24a2b51a7eb265c9208c1e3be95c57887eff6b99243",
+    "fits\\tabred_missing\\LightGBM\\result.json": "be2de0cc0ac08921f4664a509d3c010b4b8117bdc07a5a6f284c81ddd09ac053",
+    "fits\\tabred_missing\\TabM\\result.json": "4ce09d9503348fc96b896cd0ca04ec917e62ebc61458b4a924c7d87363ac47e2",
+    "fits\\champion_cat\\LightGBM\\predictions_B.npy": "c79fb83ccbeae4d9237214d7d572dff2988535a6c23665b1d343e1952fe0dea4",
+    "fits\\champion_cat\\TabM\\predictions_B.npy": "350e10849c25950f04e2b316934eee2c060608691b6eb182ebe7c1a53233ff65",
+    "fits\\champion_lgb\\LightGBM\\predictions_B.npy": "65a547eb053d772b784d62b23baa8161de0f3d1396ca95748cac5c24d7e2a437",
+    "fits\\champion_lgb\\TabM\\predictions_B.npy": "92c6f58bb06f22633ef4997526d83e85bb7551e3cfe563f9c5e6d1af85e58ac4",
+    "fits\\tabred_missing\\LightGBM\\predictions_B.npy": "eeb4f0aecdee9a32fedf125867d59ea4ee0e8373f61e594d29bf47119220e80d",
+    "fits\\tabred_missing\\TabM\\predictions_B.npy": "ae89e5b53060b107a15177014f23f3f9f26a76f0035e679863e3226d8b817764",
+    "development_metrics_B.csv": "89ce6328dd416ae3b7fc15e1bd273e8d14848b174f7e94fdc196db0a97eae4f8",
+    "feature_effects_B.csv": "c5e113e013d0a4b9f218b43c2a3d7e3e7c1a8a5bb23a308458fc361336e02288",
+    "weekly_metrics_B.csv": "8b544e63da5b2a246a55cf81e9cae6f2f93ddb54c0b12507b546567f5e48797e",
+    "PROTOCOL_LOCK.json": "1b2b0dbfc3c7bd6883a746330125bc090b50ea75ebca3940e54540a196c75965"
+  }
+}

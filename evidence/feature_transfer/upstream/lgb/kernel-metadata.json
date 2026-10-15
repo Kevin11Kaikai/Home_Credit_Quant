@@ -1,0 +1,25 @@
+{
+  "id": "yuuniekiri/fork-of-home-credit-risk-lightgbm",
+  "id_no": 53337166,
+  "title": "Fork of Home Credit Risk (LightGBM)",
+  "code_file": "fork-of-home-credit-risk-lightgbm.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "utility script"
+  ],
+  "dataset_sources": [
+    ""
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "home-credit-credit-risk-model-stability"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:fd7fc0a352fc3bf80e4dd2232feb5fafe4183c2b46fb22f1ecb54c934b293875",
+  "machine_shape": "None"
+}

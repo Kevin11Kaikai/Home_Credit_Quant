@@ -1,0 +1,20 @@
+{
+  "used": {
+    "LightGBM": 143.87847256660461,
+    "TabM": 1666.3553159597795
+  },
+  "trials": {
+    "LightGBM_L1_seed42": 27.04349684715271,
+    "TabM_T1_seed42": 326.3812029361725,
+    "LightGBM_L2_seed42": 24.827921628952026,
+    "TabM_T2_seed42": 322.6635401248932,
+    "LightGBM_L3_seed42": 26.883118391036987,
+    "TabM_T3_seed42": 341.19919753074646,
+    "LightGBM_L3_seed0": 33.06163501739502,
+    "TabM_T2_seed0": 324.3103611469269,
+    "LightGBM_L3_seed1": 32.06230068206787,
+    "TabM_T2_seed1": 341.1130142211914
+  },
+  "active": null,
+  "smoke_charged": true
+}

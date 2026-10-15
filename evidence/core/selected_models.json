@@ -1,0 +1,228 @@
+{
+  "LightGBM": [
+    {
+      "family": "LightGBM",
+      "seed": 42,
+      "config": {
+        "id": "L3",
+        "num_leaves": 31,
+        "min_data_in_leaf": 300,
+        "lambda_l2": 5
+      },
+      "B": {
+        "roc_auc": 0.8432093648384401,
+        "log_loss": 0.1444084048461155
+      },
+      "status": "EARLY_STOPPED",
+      "eligible": true,
+      "converged": true,
+      "seconds": 26.82799999997951,
+      "best_iteration": 286,
+      "iterations_completed": 386,
+      "checkpoint": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\LightGBM_L3_seed42\\model.txt",
+      "checkpoint_sha256": "f6ce8bd32435b72502fcf3b7f6d1dc7465670beb74fefa425b050f166836ebfe",
+      "peak_rss_bytes": 4364718080,
+      "gpu_peak_bytes": 0,
+      "params": {
+        "objective": "binary",
+        "learning_rate": 0.05,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8,
+        "bagging_freq": 1,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true,
+        "num_leaves": 31,
+        "min_data_in_leaf": 300,
+        "lambda_l2": 5,
+        "seed": 42,
+        "bagging_seed": 42,
+        "feature_fraction_seed": 42,
+        "data_random_seed": 42,
+        "num_threads": 4,
+        "metric": [
+          "auc",
+          "binary_logloss"
+        ]
+      },
+      "optimizer": "LightGBM native gradient boosting; optimizer checkpoint not applicable"
+    },
+    {
+      "family": "LightGBM",
+      "seed": 0,
+      "config": {
+        "id": "L3",
+        "num_leaves": 31,
+        "min_data_in_leaf": 300,
+        "lambda_l2": 5
+      },
+      "B": {
+        "roc_auc": 0.8446265941655979,
+        "log_loss": 0.14505780286557882
+      },
+      "status": "EARLY_STOPPED",
+      "eligible": true,
+      "converged": true,
+      "seconds": 33.0,
+      "best_iteration": 440,
+      "iterations_completed": 540,
+      "checkpoint": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\LightGBM_L3_seed0\\model.txt",
+      "checkpoint_sha256": "22908def08ca47d25b724eb0ebba2023c11183ef57fd253e6f9af80702efe781",
+      "peak_rss_bytes": 4356820992,
+      "gpu_peak_bytes": 0,
+      "params": {
+        "objective": "binary",
+        "learning_rate": 0.05,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8,
+        "bagging_freq": 1,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true,
+        "num_leaves": 31,
+        "min_data_in_leaf": 300,
+        "lambda_l2": 5,
+        "seed": 0,
+        "bagging_seed": 0,
+        "feature_fraction_seed": 0,
+        "data_random_seed": 0,
+        "num_threads": 4,
+        "metric": [
+          "auc",
+          "binary_logloss"
+        ]
+      },
+      "optimizer": "LightGBM native gradient boosting; optimizer checkpoint not applicable"
+    },
+    {
+      "family": "LightGBM",
+      "seed": 1,
+      "config": {
+        "id": "L3",
+        "num_leaves": 31,
+        "min_data_in_leaf": 300,
+        "lambda_l2": 5
+      },
+      "B": {
+        "roc_auc": 0.8436975085110727,
+        "log_loss": 0.14474689371479488
+      },
+      "status": "EARLY_STOPPED",
+      "eligible": true,
+      "converged": true,
+      "seconds": 31.983999999938533,
+      "best_iteration": 419,
+      "iterations_completed": 519,
+      "checkpoint": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\LightGBM_L3_seed1\\model.txt",
+      "checkpoint_sha256": "568c150ad6024d2c2eac4111cd6782ca7f58d41b63bfe2f37c0307e012522f66",
+      "peak_rss_bytes": 4367966208,
+      "gpu_peak_bytes": 0,
+      "params": {
+        "objective": "binary",
+        "learning_rate": 0.05,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8,
+        "bagging_freq": 1,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true,
+        "num_leaves": 31,
+        "min_data_in_leaf": 300,
+        "lambda_l2": 5,
+        "seed": 1,
+        "bagging_seed": 1,
+        "feature_fraction_seed": 1,
+        "data_random_seed": 1,
+        "num_threads": 4,
+        "metric": [
+          "auc",
+          "binary_logloss"
+        ]
+      },
+      "optimizer": "LightGBM native gradient boosting; optimizer checkpoint not applicable"
+    }
+  ],
+  "TabM": [
+    {
+      "family": "TabM",
+      "seed": 42,
+      "config": {
+        "id": "T2",
+        "learning_rate": 0.001,
+        "dropout": 0.1
+      },
+      "B": {
+        "roc_auc": 0.8467691398508049,
+        "log_loss": 0.14301632297228867
+      },
+      "status": "EARLY_STOPPED",
+      "eligible": true,
+      "converged": true,
+      "seconds": 322.56199999991804,
+      "best_epoch": 8,
+      "epochs_completed": 19,
+      "checkpoint": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\TabM_T2_seed42\\best.pt",
+      "checkpoint_sha256": "4f51286f5a1a91de3698b34273cda7d5c22c9ae9f849e11fa7ac10562aa40e18",
+      "physical_batch": 256,
+      "effective_batch": 256,
+      "resumed": false,
+      "peak_rss_bytes": 3231477760,
+      "gpu_peak_bytes": 1093088256,
+      "device": "cuda"
+    },
+    {
+      "family": "TabM",
+      "seed": 0,
+      "config": {
+        "id": "T2",
+        "learning_rate": 0.001,
+        "dropout": 0.1
+      },
+      "B": {
+        "roc_auc": 0.8462446678367148,
+        "log_loss": 0.14561684135499053
+      },
+      "status": "EARLY_STOPPED",
+      "eligible": true,
+      "converged": true,
+      "seconds": 324.219000000041,
+      "best_epoch": 8,
+      "epochs_completed": 19,
+      "checkpoint": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\TabM_T2_seed0\\best.pt",
+      "checkpoint_sha256": "2fadc83c56b3b3ee7593ac006993c882d24bf917cb97d6baab7dadb2a6beae61",
+      "physical_batch": 256,
+      "effective_batch": 256,
+      "resumed": false,
+      "peak_rss_bytes": 3233931264,
+      "gpu_peak_bytes": 1093088256,
+      "device": "cuda"
+    },
+    {
+      "family": "TabM",
+      "seed": 1,
+      "config": {
+        "id": "T2",
+        "learning_rate": 0.001,
+        "dropout": 0.1
+      },
+      "B": {
+        "roc_auc": 0.8457700278146456,
+        "log_loss": 0.14632806912445656
+      },
+      "status": "EARLY_STOPPED",
+      "eligible": true,
+      "converged": true,
+      "seconds": 341.03100000019185,
+      "best_epoch": 9,
+      "epochs_completed": 20,
+      "checkpoint": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\TabM_T2_seed1\\best.pt",
+      "checkpoint_sha256": "09c9433bc612f8a208bb3e4d537bab6704f2fc9031acf81c63b0208a70991755",
+      "physical_batch": 256,
+      "effective_batch": 256,
+      "resumed": false,
+      "peak_rss_bytes": 3235295232,
+      "gpu_peak_bytes": 1093088256,
+      "device": "cuda"
+    }
+  ]
+}

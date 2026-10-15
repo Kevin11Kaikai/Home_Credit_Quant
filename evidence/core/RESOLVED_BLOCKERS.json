@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-14T17:47:32.024485+00:00",
+  "current_blockers": [],
+  "resolved": "Kaggle OAuth and competition access were verified before acquisition. Initial blocked diagnostics are preserved as history, not current status.",
+  "preserved_diagnostic_hashes": {
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\failure.json": "4c1eafa7b2c9c1d256a8e77c0841ba994c3a7a6f5eb700ee5ca9cc4cc7271156",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\data_acquisition_status.json": "2d6026be530a5935f53e41035455224d87f81f2edac3d4aeaa79c0315c22adfa"
+  },
+  "current_acceptance_sha256": "3d76a8539dfe8755e9f9b9bb9d3c474ad25d4caa69e0006589ec01914d6645ea"
+}

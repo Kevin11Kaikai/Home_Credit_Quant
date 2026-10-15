@@ -1,0 +1,13 @@
+{
+  "reason": "Full-validation same-batch replay; preserve tolerance, parameters and selected epoch. Finalization-only recovery avoids an extra fit. Empty-history budget boundary and persistent original wall deadline also corrected.",
+  "new_protocol_sha256": "b79e62216964b5df9c3dec96fa6fefa816f99db965ba1a3486c5deb8dad0605f",
+  "new_code": {
+    "common.py": "a1ae06872b72d8d893a01f8d7be495834c4ccbae0f61a6914ea65fcdcf45cb5d",
+    "data.py": "983ff0259a417c48f8b0aeb965770b1f85884804e5ea9d11c9e1e4b1705971cf",
+    "models.py": "ac7af0a8ad02e9c97316e6a41f92aa8f08828368e08db33428542c5657118256",
+    "campaign.py": "4df239ed686c745d3207eeb9ac0937d5aaf3b870a2a5330aebf4b18959bf19e3"
+  },
+  "unchanged_config_sha256": "c5c871cd36b224a1f9d6585c7692108e06a1ea711dc98926b6adb9f47c4a74fd",
+  "affected": "Dense fold0 verification failed; no test-set results affected; original MVP unchanged",
+  "created_utc": "2026-10-14T22:00:21.518795+00:00"
+}

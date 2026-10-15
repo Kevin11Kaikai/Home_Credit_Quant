@@ -1,0 +1,28 @@
+{
+  "core_status": "CORE_COMPLETE",
+  "extension_status": "EXTENSION_COMPLETE",
+  "missing": [],
+  "run_dir": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014",
+  "started_utc": "2026-10-14T17:07:25.433283+00:00",
+  "test_accessed": true,
+  "seconds_this_invocation": 1877.7029999999795,
+  "extension_reason": null,
+  "requirements": {
+    "real_data_audit": true,
+    "lightgbm_seed42": true,
+    "tabm_seed42": true,
+    "independent_calibration": true,
+    "frozen_final_test": true,
+    "real_portfolio_analysis": true,
+    "report": true,
+    "current_code_tests": true
+  },
+  "missing_requirements": [],
+  "formal_fit_counts": {
+    "LightGBM": 5,
+    "TabM": 5
+  },
+  "formal_evaluated_seed_count": 3,
+  "tests_receipt": "${SOURCE_WORKSPACE}\\logs\\tests_receipt.json",
+  "observed_data_dates_and_sizes_available": true
+}

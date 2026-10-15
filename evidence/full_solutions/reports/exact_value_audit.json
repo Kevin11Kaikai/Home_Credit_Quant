@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE_COVARIATE_ONLY",
+  "columns": 682,
+  "numeric_columns": 580,
+  "numeric_median_seen_B_fraction": 0.9969002760691625,
+  "no_labels_read": true,
+  "no_feature_selection": true,
+  "source_hash": "044a5b2954633a8ad4e61a5abee904690a5975261beff041ed8a7a176061a3ef",
+  "file_sha256": "88267545e85550e13149dd26982ed52eb9541defe890f80ed798e635b00751f8",
+  "finished_utc": "2026-10-14T21:48:21.191064+00:00"
+}

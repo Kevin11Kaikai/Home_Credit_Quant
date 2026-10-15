@@ -1,0 +1,21 @@
+{
+  "variant": "original",
+  "family": "TabM",
+  "seed": 42,
+  "status": "REUSED_CHECKPOINT_B_REPLAY",
+  "metrics": {
+    "roc_auc": 0.8467691398508049,
+    "average_precision": 0.24214128608975563,
+    "log_loss": 0.14301632297228867,
+    "brier": 0.03750300737669475,
+    "mean_probability": 0.04020699096519858,
+    "observed_event_rate": 0.04416691299635432,
+    "n": 40596
+  },
+  "checkpoint_sha256": "4f51286f5a1a91de3698b34273cda7d5c22c9ae9f849e11fa7ac10562aa40e18",
+  "prediction_sha256": "c72cda142671bccae1402850585f61fa47128529463dd15d518b8c260339942f",
+  "new_training_seconds": 0,
+  "checkpoint_selected_on_B": true,
+  "original_input_numeric": 595,
+  "original_input_categorical": 82
+}

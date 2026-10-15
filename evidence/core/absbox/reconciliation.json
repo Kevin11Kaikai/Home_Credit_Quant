@@ -1,0 +1,58 @@
+{
+  "ZeroPressure": {
+    "initial_assets": 2200.0,
+    "initial_bonds": 2000.0,
+    "initial_overcollateralization": 200.0,
+    "initial_cash": 0.0,
+    "pool_collections": 2357.13,
+    "bond_cash": 2357.13,
+    "ending_account_cash": 0.0,
+    "cash_conservation_residual": 0.0,
+    "account_ledger_residual": -1.1368683772161603e-13,
+    "tolerance": 0.05,
+    "source": "REAL_ABSBOX_ENGINE_RESPONSE",
+    "passed": true
+  },
+  "Base": {
+    "initial_assets": 2200.0,
+    "initial_bonds": 2000.0,
+    "initial_overcollateralization": 200.0,
+    "initial_cash": 0.0,
+    "pool_collections": 2335.22,
+    "bond_cash": 2335.22,
+    "ending_account_cash": 0.0,
+    "cash_conservation_residual": 0.0,
+    "account_ledger_residual": -5.684341886080802e-14,
+    "tolerance": 0.05,
+    "source": "REAL_ABSBOX_ENGINE_RESPONSE",
+    "passed": true
+  },
+  "Adverse": {
+    "initial_assets": 2200.0,
+    "initial_bonds": 2000.0,
+    "initial_overcollateralization": 200.0,
+    "initial_cash": 0.0,
+    "pool_collections": 2287.64,
+    "bond_cash": 2287.6400000000003,
+    "ending_account_cash": 0.0,
+    "cash_conservation_residual": -4.547473508864641e-13,
+    "account_ledger_residual": 4.263256414560601e-14,
+    "tolerance": 0.05,
+    "source": "REAL_ABSBOX_ENGINE_RESPONSE",
+    "passed": true
+  },
+  "Severe": {
+    "initial_assets": 2200.0,
+    "initial_bonds": 2000.0,
+    "initial_overcollateralization": 200.0,
+    "initial_cash": 0.0,
+    "pool_collections": 2190.95,
+    "bond_cash": 2190.95,
+    "ending_account_cash": 0.0,
+    "cash_conservation_residual": 0.0,
+    "account_ledger_residual": 1.1368683772161603e-13,
+    "tolerance": 0.05,
+    "source": "REAL_ABSBOX_ENGINE_RESPONSE",
+    "passed": true
+  }
+}

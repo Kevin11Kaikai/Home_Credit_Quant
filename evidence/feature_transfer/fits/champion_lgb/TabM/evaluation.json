@@ -1,0 +1,26 @@
+{
+  "variant": "champion_lgb",
+  "family": "TabM",
+  "seed": 42,
+  "status": "EARLY_STOPPED",
+  "metrics": {
+    "roc_auc": 0.8485470797841814,
+    "average_precision": 0.24495908073736816,
+    "log_loss": 0.1430044094203202,
+    "brier": 0.03752488316502268,
+    "mean_probability": 0.03707109378562387,
+    "observed_event_rate": 0.04416691299635432,
+    "n": 40596
+  },
+  "prediction_sha256": "92c6f58bb06f22633ef4997526d83e85bb7551e3cfe563f9c5e6d1af85e58ac4",
+  "checkpoint_sha256": "cb1603a1c25fe4c8ef580077a7b229e3097c6a1cb8921fe9878eab80eb4710a8",
+  "new_training_seconds": 373.969000000041,
+  "numeric_inputs": 1038,
+  "categorical_inputs": 74,
+  "peak_rss_bytes": 2550312960,
+  "gpu_peak_bytes": 1868859904,
+  "completed_epochs": 16,
+  "best_epoch": 5,
+  "best_iteration": null,
+  "checkpoint_selected_on_B": true
+}

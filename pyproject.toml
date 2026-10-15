@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "credit-mvp"
+version = "0.1.0"
+description = "TabReD-derived temporal credit-event benchmark with inherited preprocessing limitations"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy==1.26.4", "pandas==2.2.2", "scipy==1.13.1",
+  "scikit-learn==1.5.1", "lightgbm==4.6.0", "torch==2.5.1",
+  "tabm==0.0.3", "rtdl-num-embeddings==0.0.12", "tabred==0.1.2",
+  "pyarrow==16.1.0", "matplotlib==3.9.2", "psutil==7.0.0",
+  "PyYAML==6.0.3", "joblib==1.6.0"
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.0.0"]
+extension = ["absbox==0.52.8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--basetemp=.pytest_tmp"
+markers = ["integration: real AbsBox engine integration, never a mock"]

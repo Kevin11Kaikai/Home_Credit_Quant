@@ -1,0 +1,13 @@
+{
+  "observed_date": "2026-10-14",
+  "source": "https://www.kaggle.com/code/yuuniekiri/fork-of-home-credit-lightautoml-inference",
+  "method": "Read-only official Kaggle browser UI, Notebook and Input tabs",
+  "visible_model_dependency": "[Private Dataset]",
+  "notebook_origin_label": "Copied from private notebook",
+  "displayed_successful_version": 11,
+  "current_version": 12,
+  "visible_current_version_status": "Current version has an error; UI shows last successful version",
+  "visible_notebook_license": "Apache 2.0",
+  "interpretation": "This confirms an actual private input dependency for the published DenseLight notebook, independently of the guessed dataset-owner API references. Competition terms acceptance does not grant access to the author's private model dataset. The downloaded source remains pinned at version 12; no source or training protocol was silently replaced.",
+  "changes_to_frozen_training": "None. This is an evidence/attribution addendum only."
+}

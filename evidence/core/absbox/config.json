@@ -1,0 +1,29 @@
+{
+  "synthetic_only": true,
+  "engine_url": "http://127.0.0.1:8081",
+  "image": "yellowbean/hastructure@sha256:aae12df53bb54f281dc93359297d617dd78c203ccd36c1f2c90e33b47f25438c",
+  "scenarios": {
+    "Base": {
+      "annual_cdr": 0.02,
+      "annual_cpr": 0.05,
+      "recovery": 0.6,
+      "recovery_lag_months": 3
+    },
+    "Adverse": {
+      "annual_cdr": 0.05,
+      "annual_cpr": 0.1,
+      "recovery": 0.4,
+      "recovery_lag_months": 6
+    },
+    "Severe": {
+      "annual_cdr": 0.1,
+      "annual_cpr": 0.15,
+      "recovery": 0.2,
+      "recovery_lag_months": 9
+    }
+  },
+  "official_deal": "absbox.examples.baseCase.test01",
+  "real_credit_data_transmitted": false,
+  "annual_rates_passed_directly": true,
+  "recovery_lag_unit": "months (Monthly asset periods)"
+}

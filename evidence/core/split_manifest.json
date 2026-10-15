@@ -1,0 +1,30 @@
+{
+  "A": {
+    "n": 267645,
+    "start": "2019-01-01",
+    "end": "2019-12-31",
+    "unique_dates": 365,
+    "index_sha256": "70cf7e66dcfff5022918b034313d8dc26a76d81f12256cca7c8d5fb64b0f3705"
+  },
+  "B": {
+    "n": 40596,
+    "start": "2020-01-01",
+    "end": "2020-02-29",
+    "unique_dates": 60,
+    "index_sha256": "d7506ddbc244fc9fa4ae75a5cefffbf71e84c3b93feb8392e249413de8ba4b62"
+  },
+  "C": {
+    "n": 17422,
+    "start": "2020-03-01",
+    "end": "2020-04-30",
+    "unique_dates": 61,
+    "index_sha256": "cc0334a68b42d776ba7c6c6173294a321865767d91fda8a4eadefc288b66218b"
+  },
+  "D": {
+    "n": 56001,
+    "start": "2020-05-01",
+    "end": "2020-10-05",
+    "unique_dates": 157,
+    "index_sha256": "90d8290b81937bc519cb0108da5b183deadbee7eaff31ae4a06f498d627c4ff5"
+  }
+}

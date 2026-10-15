@@ -1,0 +1,190 @@
+{
+  "retrieved_at_utc": "2026-10-14T15:02:00.798670+00:00",
+  "sources": {
+    "tabred": {
+      "repository": "https://github.com/yandex-research/tabred",
+      "commit": "b5ef15b3749f30da7a1eb8fba21a5b54d706bf32",
+      "files": {
+        "readme.md": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabred/b5ef15b3749f30da7a1eb8fba21a5b54d706bf32/readme.md",
+          "sha256": "1f3a44a9f01c201061d9c7ba2811dba3c3ea0f672fa6e4b34300830ceb509ae9"
+        },
+        "LICENSE": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabred/b5ef15b3749f30da7a1eb8fba21a5b54d706bf32/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        "pyproject.toml": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabred/b5ef15b3749f30da7a1eb8fba21a5b54d706bf32/pyproject.toml",
+          "sha256": "2882eb364e26ac830655b1f8a2566d8af75a7048845cdd5d5c3c1e2c4c24d85d"
+        },
+        "datasheet.md": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabred/b5ef15b3749f30da7a1eb8fba21a5b54d706bf32/datasheet.md",
+          "sha256": "19ce2fecbae8f581a69fd9b71285b9605388ae3f5ea5325b7565977d459eb032"
+        },
+        "preprocessing/homecredit.py": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabred/b5ef15b3749f30da7a1eb8fba21a5b54d706bf32/preprocessing/homecredit.py",
+          "sha256": "1f3fec5e41c8821bdb126385ab5b67d4e21b00a59228789f3e83856eac8b9715"
+        },
+        "src/tabred/__init__.py": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabred/b5ef15b3749f30da7a1eb8fba21a5b54d706bf32/src/tabred/__init__.py",
+          "sha256": "ba2a8ec74b7ad7160df9b7ed59576b20492c2b37dd3864a73eb3307682c611b8"
+        },
+        "src/tabred/cli.py": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabred/b5ef15b3749f30da7a1eb8fba21a5b54d706bf32/src/tabred/cli.py",
+          "sha256": "ea86a595281ee83a107e767e5c6d5c3bdf26e81efe10e1396ae9a1a531cc5121"
+        },
+        "src/tabred/kaggle_utils.py": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabred/b5ef15b3749f30da7a1eb8fba21a5b54d706bf32/src/tabred/kaggle_utils.py",
+          "sha256": "be0eae4b4561d6f2241f0532ae7c58f3195cc1929a0f5bdc33eac9db952bca82"
+        },
+        "src/tabred/registry.py": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabred/b5ef15b3749f30da7a1eb8fba21a5b54d706bf32/src/tabred/registry.py",
+          "sha256": "4bc58897d3024cea0e4e637bab1a36dae96058d26f389c93669a0e55b99b23b9"
+        },
+        "preprocessing/util.py": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabred/b5ef15b3749f30da7a1eb8fba21a5b54d706bf32/preprocessing/util.py",
+          "sha256": "ce8c71eae00db6a2fb45d4c37123f3f9de7fd27c08f9b77aec85a6c14057722d"
+        }
+      },
+      "errors": {
+        "src/tabred/__main__.py": "HTTP Error 404: Not Found",
+        "src/tabred/download.py": "HTTP Error 404: Not Found"
+      },
+      "license": "Apache-2.0"
+    },
+    "tabm": {
+      "repository": "https://github.com/yandex-research/tabm",
+      "commit": "28e47ae301c92ec37787dde1ce923a0793f405b4",
+      "files": {
+        "README.md": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabm/28e47ae301c92ec37787dde1ce923a0793f405b4/README.md",
+          "sha256": "302b2d36c3bf226cc98121923ea1881617287a161e25cf9a765b82b26b9d4969"
+        },
+        "LICENSE": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabm/28e47ae301c92ec37787dde1ce923a0793f405b4/LICENSE",
+          "sha256": "24330ebf083bc17c1db833b0109ef6ffc9019449330e9e4ec9797c061185c7a6"
+        },
+        "pyproject.toml": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabm/28e47ae301c92ec37787dde1ce923a0793f405b4/pyproject.toml",
+          "sha256": "943277cecbdb2cbf87e685316170432afc0520e3e0b5d3f717b42b353fb808bb"
+        },
+        "example.ipynb": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabm/28e47ae301c92ec37787dde1ce923a0793f405b4/example.ipynb",
+          "sha256": "be6dcd68bb8b21fed858d0e57d3a4bf3e54c875b522776e06d7796b0c5b28d67"
+        },
+        "tabm.py": {
+          "url": "https://raw.githubusercontent.com/yandex-research/tabm/28e47ae301c92ec37787dde1ce923a0793f405b4/tabm.py",
+          "sha256": "fc654af6a16bac53d893a8265c79d7af4ebddcb95ad0d600cc6b6bc6b7317ade"
+        }
+      },
+      "errors": {},
+      "license": "Apache-2.0"
+    },
+    "absbox": {
+      "repository": "https://github.com/yellowbean/AbsBox",
+      "commit": "1a08f8a220bf68f53677271dc2d961c53916d2e8",
+      "files": {
+        "README.md": {
+          "url": "https://raw.githubusercontent.com/yellowbean/AbsBox/1a08f8a220bf68f53677271dc2d961c53916d2e8/README.md",
+          "sha256": "be5f783968572128d9967af90a63146eb0be222a02327f290999c0147720c0b7"
+        },
+        "LICENSE": {
+          "url": "https://raw.githubusercontent.com/yellowbean/AbsBox/1a08f8a220bf68f53677271dc2d961c53916d2e8/LICENSE",
+          "sha256": "d90316bd2cfc0d9799f4f8530ba61dc89c3dfb76d8d6624b92750ff02583558c"
+        },
+        "pyproject.toml": {
+          "url": "https://raw.githubusercontent.com/yellowbean/AbsBox/1a08f8a220bf68f53677271dc2d961c53916d2e8/pyproject.toml",
+          "sha256": "da21f5c6e84e3fe93381bcadb61d8c3831df00ba7d047a0ba883898797a0ad13"
+        },
+        "absbox/examples/baseCase.py": {
+          "url": "https://raw.githubusercontent.com/yellowbean/AbsBox/1a08f8a220bf68f53677271dc2d961c53916d2e8/absbox/examples/baseCase.py",
+          "sha256": "1eba317b6620e0a4467c890d6dce250c4b64c63e965b133ca67662aa228e7b29"
+        },
+        "absbox/client.py": {
+          "url": "https://raw.githubusercontent.com/yellowbean/AbsBox/1a08f8a220bf68f53677271dc2d961c53916d2e8/absbox/client.py",
+          "sha256": "8b3485753e255736fae9e0d959037c5b867f72b3de4bbb95b20a39b0a95fcfcc"
+        },
+        "absbox/local/generic.py": {
+          "url": "https://raw.githubusercontent.com/yellowbean/AbsBox/1a08f8a220bf68f53677271dc2d961c53916d2e8/absbox/local/generic.py",
+          "sha256": "16aebae99710c70fb53d4ea5fc68969a00b1c1fe4cf240677ba46b85803d2430"
+        },
+        "docs/source/analytics.rst": {
+          "url": "https://raw.githubusercontent.com/yellowbean/AbsBox/1a08f8a220bf68f53677271dc2d961c53916d2e8/docs/source/analytics.rst",
+          "sha256": "7d58cf78a9c37e01b31034a0768e399d480e2319981bd6928960d3802b799e4c"
+        }
+      },
+      "errors": {
+        "setup.py": "HTTP Error 404: Not Found"
+      },
+      "license": "Apache-2.0"
+    },
+    "lightgbm_parameters": {
+      "url": "https://lightgbm.readthedocs.io/en/stable/Parameters.html",
+      "sha256": "595b919bed07bef745a8983a4208116906ad60b5de557373be709158007d2f94"
+    },
+    "sklearn_calibration": {
+      "url": "https://scikit-learn.org/stable/modules/calibration.html",
+      "sha256": "00860ac6c19e425758b76adf27721d343ad3d5cbc72f865da7a9fe1aa32b9864"
+    },
+    "absbox_installation": {
+      "url": "https://absbox-doc.readthedocs.io/en/latest/installation.html",
+      "sha256": "323889c4a77ebe810710b82926e43af7e6a8272b50dc0c3f119c39a5044503cf"
+    },
+    "rtdl_num_embeddings": {
+      "repository": "https://github.com/yandex-research/rtdl-num-embeddings",
+      "commit": "a8fc25025c83f2321c63ff127a3bcef83bb1bfb5",
+      "license": "Apache-2.0 (package/LICENSE)",
+      "files": {
+        "package/LICENSE": {
+          "url": "https://raw.githubusercontent.com/yandex-research/rtdl-num-embeddings/a8fc25025c83f2321c63ff127a3bcef83bb1bfb5/package/LICENSE",
+          "sha256": "35381b68041ebc3408e1b76ab24ce5eed1f7ea93afd62d109ffdabf1b0daa324"
+        },
+        "package/rtdl_num_embeddings.py": {
+          "url": "https://raw.githubusercontent.com/yandex-research/rtdl-num-embeddings/a8fc25025c83f2321c63ff127a3bcef83bb1bfb5/package/rtdl_num_embeddings.py",
+          "sha256": "48dfc019d447e0cd225deb8b8145b3efa8b42cde9aa314772d6e234753e1cee1"
+        }
+      }
+    },
+    "hastructure": {
+      "repository": "https://github.com/yellowbean/Hastructure",
+      "commit": "f3183728d40dfe49560f098bf0acff505939e656",
+      "license": "BSD-style custom text; SPDX NOASSERTION",
+      "files": {
+        "LICENSE": {
+          "url": "https://raw.githubusercontent.com/yellowbean/Hastructure/f3183728d40dfe49560f098bf0acff505939e656/LICENSE",
+          "sha256": "13a370f144386e8b95f27853ae4fc74df71bd9adfe755d228fd77ff6617beb45"
+        }
+      },
+      "image": "yellowbean/hastructure@sha256:aae12df53bb54f281dc93359297d617dd78c203ccd36c1f2c90e33b47f25438c"
+    }
+  },
+  "data_download_command": "tabred download homecredit-default --output-path data --max-workers 1",
+  "data": {
+    "dataset": "homecredit-default",
+    "origin_competition": "home-credit-credit-risk-model-stability (2024)",
+    "kaggle_dataset": "irubachev/tabred",
+    "archive_file": "preprocessed/homecredit-default.tabred",
+    "expected_archive_sha256": "fdcdcfe9b67e9ac8fae0291ee0aa8b492e41c123f99c9d3cecae2b78602c7f30",
+    "license": "Home Credit competition rules; not covered by repository Apache-2.0",
+    "raw_data_publication": false,
+    "artifact_generation_lineage": "not independently verified; documented inherited limitations conservatively retained"
+  },
+  "installed_versions": {
+    "torch": "2.5.1+cu121",
+    "tabm": "0.0.3",
+    "rtdl-num-embeddings": "0.0.12",
+    "tabred": "0.1.2",
+    "lightgbm": "4.6.0",
+    "scikit-learn": "1.5.1",
+    "absbox": "0.52.8",
+    "psutil": "7.0.0",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "pytest": "9.0.0"
+  },
+  "installed_implementation_matches_pinned_source": {
+    "tabm": true,
+    "rtdl_num_embeddings": true
+  }
+}

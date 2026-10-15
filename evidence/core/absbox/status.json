@@ -1,0 +1,18 @@
+{
+  "status": "EXTENSION_COMPLETE",
+  "actual_engine_run": true,
+  "mock": false,
+  "client_version": "0.52.8",
+  "engine_version": {
+    "_version": "0.52.8"
+  },
+  "response_hashes": {
+    "ZeroPressure_response.json": "d4fb8d0f0bccafd76cac526bffd410c985500a481a0e9d984037b83428cc2cf3",
+    "Base_response.json": "1325688a37910ae49cb16d5464b2da6d84b1a24925ddfbfbb37bb0f0e2fd798e",
+    "Adverse_response.json": "f0cfd966e7c644a60cfac404f85fac9ade499d6b656d0636916256a2d6ff5b01",
+    "Severe_response.json": "3b49bba85ae141244f8d4ca400a8b1b70284f0179296e5dc0cb415ba85f0473c"
+  },
+  "reconciliation_passed": true,
+  "utc": "2026-10-14T15:23:01.399709+00:00",
+  "scope": "Independent synthetic waterfall mechanics; not Home Credit annual CDR, CLO valuation or investment backtest"
+}

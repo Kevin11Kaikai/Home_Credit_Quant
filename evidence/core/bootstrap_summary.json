@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE",
+  "direction": "TabM minus LightGBM",
+  "replicates": 200,
+  "block_weeks": 2,
+  "scope": "Fixed fitted models; short-range temporal sampling uncertainty. Missing customer IDs and longer-range dependence remain limitations.",
+  "intervals": {
+    "raw": {
+      "auc_diff": {
+        "valid_replicates": 200,
+        "lower": -0.002760997002425569,
+        "upper": 0.004918286374175028
+      },
+      "log_loss_diff": {
+        "valid_replicates": 200,
+        "lower": -0.0001738580094502385,
+        "upper": 0.0011579776505946599
+      }
+    },
+    "calibrated": {
+      "auc_diff": {
+        "valid_replicates": 200,
+        "lower": -0.002760997002425569,
+        "upper": 0.004918286374175028
+      },
+      "log_loss_diff": {
+        "valid_replicates": 200,
+        "lower": -0.0017858621872210742,
+        "upper": -0.0007175011842917626
+      }
+    }
+  }
+}

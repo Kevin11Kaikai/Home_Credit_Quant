@@ -1,0 +1,210 @@
+{
+  "protocol_id": "homecredit_temporal_v1",
+  "run_id": "homecredit_temporal_v1_20261014",
+  "data_dir": "data/homecredit-default",
+  "output_dir": "runs",
+  "download": true,
+  "cpu_threads": 4,
+  "seed_search": 42,
+  "replication_seeds": [
+    0,
+    1
+  ],
+  "features": {
+    "missing_indicators": false,
+    "numeric_impute": "train_median",
+    "numeric_scale": "train_standard",
+    "delete_train_constant": true,
+    "unknown_category": 0,
+    "missing_category": 1
+  },
+  "selection": {
+    "primary": "B_roc_auc_max",
+    "ties": [
+      "B_log_loss_min",
+      "config_id"
+    ]
+  },
+  "lightgbm": {
+    "total_seconds": 7200,
+    "fit_seconds": 1200,
+    "max_rounds": 5000,
+    "patience": 100,
+    "common": {
+      "objective": "binary",
+      "learning_rate": 0.05,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "verbosity": -1,
+      "deterministic": true,
+      "force_col_wise": true
+    },
+    "candidates": [
+      {
+        "id": "L1",
+        "num_leaves": 31,
+        "min_data_in_leaf": 100,
+        "lambda_l2": 1
+      },
+      {
+        "id": "L2",
+        "num_leaves": 63,
+        "min_data_in_leaf": 100,
+        "lambda_l2": 1
+      },
+      {
+        "id": "L3",
+        "num_leaves": 31,
+        "min_data_in_leaf": 300,
+        "lambda_l2": 5
+      }
+    ]
+  },
+  "tabm": {
+    "total_seconds": 14400,
+    "fit_seconds": 2700,
+    "max_epochs": 100,
+    "patience": 10,
+    "batch_size": 256,
+    "effective_batch_size": 256,
+    "k": 32,
+    "n_blocks": 3,
+    "d_block": 256,
+    "n_bins": 32,
+    "d_embedding": 16,
+    "weight_decay": 0.0003,
+    "gradient_clip": 1.0,
+    "compile": false,
+    "mixed_precision": false,
+    "candidates": [
+      {
+        "id": "T1",
+        "learning_rate": 0.002,
+        "dropout": 0.1
+      },
+      {
+        "id": "T2",
+        "learning_rate": 0.001,
+        "dropout": 0.1
+      },
+      {
+        "id": "T3",
+        "learning_rate": 0.001,
+        "dropout": 0.2
+      }
+    ]
+  },
+  "calibration": {
+    "clip": 1e-07,
+    "theta_bounds": [
+      -5.0,
+      5.0
+    ],
+    "intercept_bounds": [
+      -20.0,
+      20.0
+    ],
+    "maxiter": 1000,
+    "rare_class_warning": 30
+  },
+  "evaluation": {
+    "reliability_bins": 10,
+    "reliability_source": "C_prediction_quantiles",
+    "small_week_n": 100,
+    "bootstrap_replicates": 200,
+    "bootstrap_block_weeks": 2,
+    "bootstrap_min_weeks": 8,
+    "bootstrap_seed": 20261014,
+    "metrics": [
+      "roc_auc",
+      "average_precision",
+      "log_loss",
+      "brier",
+      "mean_probability",
+      "observed_event_rate",
+      "probability_bias"
+    ],
+    "figures": [
+      "probability_scores",
+      "reliability",
+      "weekly_performance",
+      "retention_risk",
+      "stress_loss"
+    ]
+  },
+  "portfolio": {
+    "q": [
+      0.5,
+      0.7,
+      0.9,
+      1.0
+    ],
+    "main_q": 0.7,
+    "ead": 1.0,
+    "tie_break": "stable_row_id",
+    "random_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019
+    ],
+    "scenarios": {
+      "Base": {
+        "odds_multiplier": 1.0,
+        "lgd": 0.4
+      },
+      "Adverse": {
+        "odds_multiplier": 1.5,
+        "lgd": 0.6
+      },
+      "Severe": {
+        "odds_multiplier": 2.0,
+        "lgd": 0.8
+      }
+    }
+  },
+  "absbox": {
+    "enabled": true,
+    "synthetic_only": true,
+    "allow_remote": false,
+    "engine_url": "http://127.0.0.1:8081",
+    "time_limit_seconds": 1800,
+    "scenarios": {
+      "Base": {
+        "annual_cdr": 0.02,
+        "annual_cpr": 0.05,
+        "recovery": 0.6,
+        "recovery_lag_months": 3
+      },
+      "Adverse": {
+        "annual_cdr": 0.05,
+        "annual_cpr": 0.1,
+        "recovery": 0.4,
+        "recovery_lag_months": 6
+      },
+      "Severe": {
+        "annual_cdr": 0.1,
+        "annual_cpr": 0.15,
+        "recovery": 0.2,
+        "recovery_lag_months": 9
+      }
+    }
+  }
+}

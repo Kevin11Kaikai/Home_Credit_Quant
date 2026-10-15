@@ -1,0 +1,40 @@
+{
+  "status": "CASH_RECONCILIATION_PASS_WITH_DISCLOSED_LOSS_DECOMPOSITION_RESIDUAL",
+  "method": "Decimal arithmetic over saved real engine CSVs; response hashes verified; no new engine execution",
+  "equity_cash_note": "B interest_paid in tranche_summary.csv is the engine interest field including PayIntResidual/equity residual distributions and released overcollateralization; not pure contractual interest.",
+  "scenarios": {
+    "ZeroPressure": {
+      "pool_cash": "2357.13",
+      "bond_cash": "2357.13",
+      "cash_residual": "0.00",
+      "principal_plus_prepayment_plus_default": "2200.00",
+      "reported_default_minus_recovery_minus_loss": "0",
+      "loss_decomposition_explanation": "Small residual retained from real engine. Possible precision effect is UNVERIFIED; no silent correction."
+    },
+    "Base": {
+      "pool_cash": "2335.22",
+      "bond_cash": "2335.22",
+      "cash_residual": "0.00",
+      "principal_plus_prepayment_plus_default": "2200.00",
+      "reported_default_minus_recovery_minus_loss": "0.15",
+      "loss_decomposition_explanation": "Small residual retained from real engine. Possible precision effect is UNVERIFIED; no silent correction."
+    },
+    "Adverse": {
+      "pool_cash": "2287.64",
+      "bond_cash": "2287.64",
+      "cash_residual": "0.00",
+      "principal_plus_prepayment_plus_default": "2200.00",
+      "reported_default_minus_recovery_minus_loss": "0.15",
+      "loss_decomposition_explanation": "Small residual retained from real engine. Possible precision effect is UNVERIFIED; no silent correction."
+    },
+    "Severe": {
+      "pool_cash": "2190.95",
+      "bond_cash": "2190.95",
+      "cash_residual": "0.00",
+      "principal_plus_prepayment_plus_default": "2200.00",
+      "reported_default_minus_recovery_minus_loss": "0.12",
+      "loss_decomposition_explanation": "Small residual retained from real engine. Possible precision effect is UNVERIFIED; no silent correction."
+    }
+  },
+  "independent_review": "Separate read-only agent independently recomputed CSV/raw-response correspondence and Decimal cash/principal identities; passed, with the same residual disclosure."
+}

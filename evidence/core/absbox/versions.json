@@ -1,0 +1,7 @@
+{
+  "client": "0.52.8",
+  "engine": {
+    "_version": "0.52.8"
+  },
+  "image": "yellowbean/hastructure@sha256:aae12df53bb54f281dc93359297d617dd78c203ccd36c1f2c90e33b47f25438c"
+}

@@ -1,0 +1,11 @@
+{
+  "torch": "2.5.1+cu121",
+  "numpy": "1.26.4",
+  "pandas": "2.2.2",
+  "lightgbm": "4.6.0",
+  "catboost": "1.2.8",
+  "masamlp": "0.3.0",
+  "catstat": "0.4.0",
+  "lightautoml": "0.3.8",
+  "category-encoders": "2.6.3"
+}

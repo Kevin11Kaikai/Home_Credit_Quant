@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-15T14:21:05.820749+00:00",
+  "scope": "Publication copy, synthetic contracts, aggregate identity and paused state; no fresh experiment or independent empirical replication",
+  "tests": [
+    {
+      "suite": "core tests",
+      "environment": "existing isolated core .venv",
+      "passed": 22,
+      "skipped": 1,
+      "reason": "Real-engine integration requires a locally executed run; historical actual responses retained separately"
+    },
+    {
+      "suite": "feature construction",
+      "environment": "existing .venv_fe",
+      "passed": 9,
+      "skipped": 0
+    },
+    {
+      "suite": "feature training contracts",
+      "environment": "existing core .venv",
+      "passed": 4,
+      "skipped": 0
+    },
+    {
+      "suite": "full-recipe transfer contracts",
+      "environment": "existing .venv_full",
+      "passed": 10,
+      "skipped": 0
+    }
+  ],
+  "total_passed": 45,
+  "total_skipped": 1,
+  "initial_invocation_errors": "Missing parent of nested pytest basetemp caused setup errors; created parent and reran affected suites. One follow-up command used the wrong venv location; corrected to the existing experiment venv. No scientific code changed.",
+  "original_exported_files_rehashed": 288,
+  "byte_identical_exports": 235,
+  "numeric_evidence_identity": {
+    "json_files": 161,
+    "csv_files": 42,
+    "changed_values": 0
+  },
+  "public_scan": {
+    "candidate_files": 303,
+    "utf8_files_checked": 290,
+    "json_files_parsed": 164,
+    "csv_schemas_checked": 42,
+    "prohibited_file_hits": 0,
+    "secret_pattern_hits": 0,
+    "raw_row_csv_header_hits": 0
+  },
+  "primary_navigation_links_checked": 51,
+  "commands_checked": [
+    "python -m credit_mvp --help",
+    "python scripts/prepare_reproduction.py --run-id publication_command_check_20261015 --output configs/reproduction_publication_check.yaml",
+    "python scripts/restore_upstream.py --champion --excel --cache-root <existing-authorized-project>"
+  ],
+  "source_restoration": "Existing authorized cache; recorded notebook and official ExcelFormer source/helper SHA256 values matched. Remote historical version retrieval was not tested.",
+  "original_pause": {
+    "status": "PAUSED_BY_USER",
+    "snapshot_files_rehashed": 5,
+    "owned_process_identities_absent": 5,
+    "budget_active": null,
+    "s6e7_members": 0,
+    "automatic_resume_allowed": false
+  },
+  "fresh_environment_install_tested": false,
+  "new_formal_training": false,
+  "new_D_evaluation": false,
+  "new_AbsBox_engine_run": false
+}

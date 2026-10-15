@@ -1,0 +1,16 @@
+{
+  "B": {
+    "roc_auc": 0.8205000694298926,
+    "average_precision": 0.20849359011813506,
+    "log_loss": 0.15039358733357927,
+    "brier": 0.03845899651858423,
+    "mean_probability": 0.03903588250423302,
+    "observed_event_rate": 0.04416691299635432,
+    "n": 40596
+  },
+  "files": {
+    "p_B.npy": "4800550919479827412888a1aad93471e2fc0b0bff7b9e9df89c6cb0115415c5",
+    "preprocessor.joblib": "d04ba7c3dd23fa24dd2ddf29e8dff30a8476214853a129960cd3ef6838d90cc3"
+  },
+  "status": "COMPLETE"
+}

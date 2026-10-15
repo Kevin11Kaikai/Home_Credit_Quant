@@ -1,0 +1,27 @@
+{
+  "family": "TabM",
+  "seed": 42,
+  "config": {
+    "id": "T2",
+    "learning_rate": 0.001,
+    "dropout": 0.1
+  },
+  "B": {
+    "roc_auc": 0.8485470797841814,
+    "log_loss": 0.1430044094203202
+  },
+  "status": "EARLY_STOPPED",
+  "eligible": true,
+  "converged": true,
+  "seconds": 373.969000000041,
+  "best_epoch": 5,
+  "epochs_completed": 16,
+  "checkpoint": "${SOURCE_WORKSPACE}\\experiments\\champion_features_20261014\\fits\\champion_lgb\\TabM\\best.pt",
+  "checkpoint_sha256": "cb1603a1c25fe4c8ef580077a7b229e3097c6a1cb8921fe9878eab80eb4710a8",
+  "physical_batch": 256,
+  "effective_batch": 256,
+  "resumed": false,
+  "peak_rss_bytes": 2550312960,
+  "gpu_peak_bytes": 1868859904,
+  "device": "cuda"
+}

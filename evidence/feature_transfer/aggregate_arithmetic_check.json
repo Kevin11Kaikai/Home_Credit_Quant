@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-14T20:07:44.761540+00:00",
+  "checks": [
+    {
+      "variant": "lgb",
+      "cases": 20,
+      "arithmetic_comparisons": 140,
+      "max_abs_error": 2.2737367544323206e-13
+    },
+    {
+      "variant": "cat",
+      "cases": 20,
+      "arithmetic_comparisons": 80,
+      "max_abs_error": 2.2737367544323206e-13
+    }
+  ],
+  "source_sha256": "50ff790d9daec8dc48b94c18af361de3b3298bbb354b36dbfea33e04af367531",
+  "targets_loaded": false,
+  "scope": "One real tax table, 20 cases, separate NumPy calculation; not an independent reviewer or exhaustive validation"
+}

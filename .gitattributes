@@ -1,0 +1,2 @@
+# Preserve release-checksum byte identity across Windows and Unix clones.
+* -text

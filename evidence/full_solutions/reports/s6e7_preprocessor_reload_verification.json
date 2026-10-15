@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "fold": 0,
+  "scope": "Actual complete prepared outer fold; persisted TE + numeric scaler/category mapping on 7 feature-only B rows, and all tensor bounds.",
+  "labels_read": false,
+  "exact_numeric_replay": true,
+  "exact_categorical_replay": true,
+  "checks": {
+    "train": {
+      "numeric_shape": [
+        229410,
+        1262
+      ],
+      "categorical_shape": [
+        229410,
+        102
+      ],
+      "finite": true,
+      "categorical_bounds_valid": true
+    },
+    "valid": {
+      "numeric_shape": [
+        38235,
+        1262
+      ],
+      "categorical_shape": [
+        38235,
+        102
+      ],
+      "finite": true,
+      "categorical_bounds_valid": true
+    },
+    "B": {
+      "numeric_shape": [
+        40596,
+        1262
+      ],
+      "categorical_shape": [
+        40596,
+        102
+      ],
+      "finite": true,
+      "categorical_bounds_valid": true
+    }
+  },
+  "source_receipt_sha256": "f9f92566981c37411f50626683ba1d7af9f0821261b17f9f2a83ecc19539a747",
+  "verified_utc": "2026-10-14T22:04:17.610867+00:00"
+}

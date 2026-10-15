@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-14T17:44:12.868128+00:00",
+  "status": "COMPOSED_FROM_FROZEN_CACHE",
+  "formal_test_receipt_sha256": "0016156e3aa4f7ee94c426b45ddf00ae8a89269236392f9ef1672c61adaf0283",
+  "script_sha256": "fe457dacb65b3b21ef1607486b3ede7f09f810dcbb4d6aa141153dff808189b7",
+  "new_inference": false,
+  "new_model_selection": false,
+  "report_words": 1487,
+  "files": {
+    "PORTFOLIO_REPORT_FINAL.md": "8b4246170d93a853060f73814fa99327dcb83e8d74eb0e0e2ddece8647dac129",
+    "SUMMARY_FINAL_ZH.md": "197e4be88f0b017beb67e3ce2e4cbaf1223e54e45e41547ca9876c1e41d99f7e",
+    "RESUME_BULLETS_FINAL.md": "64beceec90a2f6190e79e4c6be9bd59e0b2a809b8e258f19215f29a2bf27d200"
+  }
+}

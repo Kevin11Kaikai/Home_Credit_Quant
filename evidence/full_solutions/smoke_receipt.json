@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "kind": "dense",
+      "full_width_inputs": 1128,
+      "batch": 256,
+      "samples_per_second": 74761.988277689,
+      "peak_reserved_gib": 0.064453125,
+      "amp_max_probability_difference": 0.00046175718307495117,
+      "only_A_rows": true,
+      "status": "PASS"
+    },
+    {
+      "kind": "excel",
+      "full_width_inputs": 982,
+      "batch": 32,
+      "samples_per_second": 1266.509146820085,
+      "peak_reserved_gib": 0.62109375,
+      "amp_max_probability_difference": 0.0008646547794342041,
+      "only_A_rows": true,
+      "status": "PASS"
+    },
+    {
+      "kind": "s6e7",
+      "full_width_inputs": 1364,
+      "batch": 128,
+      "samples_per_second": 1788.671283631488,
+      "peak_reserved_gib": 1.77734375,
+      "amp_max_probability_difference": 0.0009186863899230957,
+      "only_A_rows": true,
+      "status": "PASS"
+    }
+  ],
+  "training_indices_sha256": "9a96db500ee28196de75445c8864e8a28fa0addc103d3da8e8371e26076298cc",
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "finished_utc": "2026-10-14T21:36:05.633761+00:00"
+}

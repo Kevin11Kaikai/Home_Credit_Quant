@@ -1,0 +1,50 @@
+{
+  "status": "COMPLETE",
+  "kind": "cat",
+  "fold": 3,
+  "config": {
+    "iterations": 2000,
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 3,
+    "loss_function": "Logloss",
+    "eval_metric": "AUC",
+    "random_seed": 42,
+    "thread_count": 4,
+    "task_type": "GPU",
+    "devices": "0",
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "seconds": 184.46706479997374,
+  "iterations": 1856,
+  "metrics": {
+    "roc_auc": 0.8488635248177655,
+    "average_precision": 0.16814487486679403,
+    "log_loss": 0.11097959847350272,
+    "brier": 0.02749111554519157,
+    "mean_probability": 0.02975037682817923,
+    "observed_event_rate": 0.03075323428845654,
+    "n": 50011
+  },
+  "B": {
+    "roc_auc": 0.8406151691142147,
+    "average_precision": 0.23452678772035312,
+    "log_loss": 0.14520361942287932,
+    "brier": 0.03776135528104328,
+    "mean_probability": 0.03647943058848811,
+    "observed_event_rate": 0.04416691299635432,
+    "n": 40596
+  },
+  "selected_checkpoint": "model.cbm",
+  "files": {
+    "model.cbm": "3d52d1b9392542e23343c02f426a7d790275681d58693434aae30e7f2574a730",
+    "preprocessor.joblib": "9dce65b423d18b71861ab7fedcf5ed03f4a6d9c4b833f05c2e15571d932e4709",
+    "p_valid.npy": "912ed95867a399f0d2b1f5a59953f78806e14f1a1fabfa3ab44e0d69d290d3a2",
+    "p_B.npy": "5c4acaf3b60619677932631ed701155dc9a477f2998dce57f776c73a89c2c77c"
+  },
+  "n_train": 217634,
+  "n_valid": 50011,
+  "n_B": 40596,
+  "finished_utc": "2026-10-14T21:53:02.184713+00:00"
+}

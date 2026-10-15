@@ -1,0 +1,20 @@
+{
+  "status": "THREE_FAMILY_RECONSTRUCTION_COMPLETE",
+  "exact_champion_status": "BLOCKED_DEPENDENCY",
+  "weights": {
+    "lgb": 0.4,
+    "dense": 0.24,
+    "cat": 0.36
+  },
+  "scope": "FULL THREE-FAMILY RECONSTRUCTION ONLY. The author's fitted models, final feature masks and training hyperparameters are unavailable. Five folds, hyperparameters, one-hot DenseLight preprocessing and observed weeks are declared reconstruction choices. Not an exact competition reproduction.",
+  "files": {
+    "cat_B.npy": "826556b232fbde7d6af81be3fb51cb47bfef246be06c08631337b6b2c62da3ac",
+    "dense_B.npy": "e99b178667b261c84013a3602f1c09f682c4054d17a81a30b9c13623ff8632e9",
+    "ensemble_A_oof.npy": "e42819531d8a081db6e831a8760985b198d2f57445ed3effbbc29c510cff898d",
+    "ensemble_B.npy": "d04781dfd9c930013093380009fb82a66c86649a2f9a24efa301a982f3a1b836",
+    "lgb_B.npy": "54b11d70f4b60824007d6482b3eead51f752e86147e5911978d60020834a02af",
+    "metrics.csv": "f07c37ab8a2fffec3c511673315772509e3b4e799b7afa4e52b8221167966e67",
+    "score_hack_B.npy": "00bb3d340983b74a99b7e1ee46965b059092f476cb3ed4197e99558d3bc25f4e"
+  },
+  "finished_utc": "2026-10-14T22:03:27.355452+00:00"
+}

@@ -1,0 +1,296 @@
+{
+  "created_utc": "2026-10-14T20:06:20.272252+00:00",
+  "status": "FROZEN_POSTHOC_AB_DEVELOPMENT_ONLY",
+  "seed": 42,
+  "authorization": "2026-10-14 user requested reproduction of Kaggle champion feature extraction and transfer to current neural model; separate follow-up, original evidence/budget unchanged",
+  "receiver": "Official TabM; recommended default after optional clarification. No additional Transformer architecture assumed.",
+  "variants": [
+    "tabred_missing",
+    "champion_lgb",
+    "champion_cat"
+  ],
+  "order": [
+    "tabred_missing/LightGBM",
+    "tabred_missing/TabM",
+    "champion_lgb/LightGBM",
+    "champion_lgb/TabM",
+    "champion_cat/LightGBM",
+    "champion_cat/TabM"
+  ],
+  "new_fits_per_family": 3,
+  "hyperparameter_search": false,
+  "additional_seeds": false,
+  "models": {
+    "LightGBM": {
+      "id": "L3",
+      "num_leaves": 31,
+      "min_data_in_leaf": 300,
+      "lambda_l2": 5
+    },
+    "TabM": {
+      "id": "T2",
+      "learning_rate": 0.001,
+      "dropout": 0.1
+    }
+  },
+  "model_configuration": {
+    "protocol_id": "homecredit_temporal_v1",
+    "run_id": "homecredit_temporal_v1_20261014",
+    "data_dir": "data/homecredit-default",
+    "output_dir": "runs",
+    "download": true,
+    "cpu_threads": 4,
+    "seed_search": 42,
+    "replication_seeds": [
+      0,
+      1
+    ],
+    "features": {
+      "missing_indicators": false,
+      "numeric_impute": "train_median",
+      "numeric_scale": "train_standard",
+      "delete_train_constant": true,
+      "unknown_category": 0,
+      "missing_category": 1
+    },
+    "selection": {
+      "primary": "B_roc_auc_max",
+      "ties": [
+        "B_log_loss_min",
+        "config_id"
+      ]
+    },
+    "lightgbm": {
+      "total_seconds": 7200,
+      "fit_seconds": 1200,
+      "max_rounds": 5000,
+      "patience": 100,
+      "common": {
+        "objective": "binary",
+        "learning_rate": 0.05,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8,
+        "bagging_freq": 1,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      },
+      "candidates": [
+        {
+          "id": "L1",
+          "num_leaves": 31,
+          "min_data_in_leaf": 100,
+          "lambda_l2": 1
+        },
+        {
+          "id": "L2",
+          "num_leaves": 63,
+          "min_data_in_leaf": 100,
+          "lambda_l2": 1
+        },
+        {
+          "id": "L3",
+          "num_leaves": 31,
+          "min_data_in_leaf": 300,
+          "lambda_l2": 5
+        }
+      ]
+    },
+    "tabm": {
+      "total_seconds": 14400,
+      "fit_seconds": 2700,
+      "max_epochs": 100,
+      "patience": 10,
+      "batch_size": 256,
+      "effective_batch_size": 256,
+      "k": 32,
+      "n_blocks": 3,
+      "d_block": 256,
+      "n_bins": 32,
+      "d_embedding": 16,
+      "weight_decay": 0.0003,
+      "gradient_clip": 1.0,
+      "compile": false,
+      "mixed_precision": false,
+      "candidates": [
+        {
+          "id": "T1",
+          "learning_rate": 0.002,
+          "dropout": 0.1
+        },
+        {
+          "id": "T2",
+          "learning_rate": 0.001,
+          "dropout": 0.1
+        },
+        {
+          "id": "T3",
+          "learning_rate": 0.001,
+          "dropout": 0.2
+        }
+      ]
+    },
+    "calibration": {
+      "clip": 1e-07,
+      "theta_bounds": [
+        -5.0,
+        5.0
+      ],
+      "intercept_bounds": [
+        -20.0,
+        20.0
+      ],
+      "maxiter": 1000,
+      "rare_class_warning": 30
+    },
+    "evaluation": {
+      "reliability_bins": 10,
+      "reliability_source": "C_prediction_quantiles",
+      "small_week_n": 100,
+      "bootstrap_replicates": 200,
+      "bootstrap_block_weeks": 2,
+      "bootstrap_min_weeks": 8,
+      "bootstrap_seed": 20261014,
+      "metrics": [
+        "roc_auc",
+        "average_precision",
+        "log_loss",
+        "brier",
+        "mean_probability",
+        "observed_event_rate",
+        "probability_bias"
+      ],
+      "figures": [
+        "probability_scores",
+        "reliability",
+        "weekly_performance",
+        "retention_risk",
+        "stress_loss"
+      ]
+    },
+    "portfolio": {
+      "q": [
+        0.5,
+        0.7,
+        0.9,
+        1.0
+      ],
+      "main_q": 0.7,
+      "ead": 1.0,
+      "tie_break": "stable_row_id",
+      "random_seeds": [
+        1000,
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009,
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015,
+        1016,
+        1017,
+        1018,
+        1019
+      ],
+      "scenarios": {
+        "Base": {
+          "odds_multiplier": 1.0,
+          "lgd": 0.4
+        },
+        "Adverse": {
+          "odds_multiplier": 1.5,
+          "lgd": 0.6
+        },
+        "Severe": {
+          "odds_multiplier": 2.0,
+          "lgd": 0.8
+        }
+      }
+    },
+    "absbox": {
+      "enabled": true,
+      "synthetic_only": true,
+      "allow_remote": false,
+      "engine_url": "http://127.0.0.1:8081",
+      "time_limit_seconds": 1800,
+      "scenarios": {
+        "Base": {
+          "annual_cdr": 0.02,
+          "annual_cpr": 0.05,
+          "recovery": 0.6,
+          "recovery_lag_months": 3
+        },
+        "Adverse": {
+          "annual_cdr": 0.05,
+          "annual_cpr": 0.1,
+          "recovery": 0.4,
+          "recovery_lag_months": 6
+        },
+        "Severe": {
+          "annual_cdr": 0.1,
+          "annual_cpr": 0.15,
+          "recovery": 0.2,
+          "recovery_lag_months": 9
+        }
+      }
+    }
+  },
+  "selection": "Existing model configurations fixed; checkpoints selected by B AUC as original protocol; report every feature variant, no winner-only reporting",
+  "metrics": [
+    "roc_auc",
+    "average_precision",
+    "log_loss",
+    "brier",
+    "mean_probability",
+    "observed_event_rate"
+  ],
+  "evaluation": "B development metrics, already reused for selection; C/D never loaded; no new independent-test claim",
+  "effects": [
+    "missing vs original: explicit missingness",
+    "champion vs missing: entire representation package, including aggregates/schema/encoding, not one-column causal effect"
+  ],
+  "limits": {
+    "LightGBM_total_seconds": 1800,
+    "TabM_total_seconds": 5400,
+    "LightGBM_fit_seconds": 1200,
+    "TabM_fit_seconds": 2700,
+    "wall_seconds": 7200,
+    "cpu_threads": 4
+  },
+  "code": {
+    "common.py": "f435d0a1f64c02b45d3db1381f2174f52d539c8e04e4751713f0c4cc81c2d02d",
+    "features.py": "314cf5d4d0d14cb665ac73ebd0ec9cd31388f28798c13d9f9418bdf7524bb2d7",
+    "training.py": "f5d37c11feca4e1a99fea6520cf13526dcfdd630e482dbfaaa00861eea195e78"
+  },
+  "data_and_provenance_hashes": {
+    "derived\\mapping_AB.parquet": "c153d9f4e882ca05071ea9a68cd73bdeb15f38953dbd54eed247b513cfef78a1",
+    "derived\\y_A.npy": "d59663a37dbf5f2cb6f032af9e79673abdafc2d020de997f383ded91ed7b0ba9",
+    "derived\\y_B.npy": "91d6650fc6553f3bbdf819134da3b27737339ab4b7fc1ce4b47550882b6c2455",
+    "SOURCE_MANIFEST.json": "ea875d72cb0198254d858b2217e9f88877e23ba7f5dce12fc1c658adcd64b3df",
+    "download_receipt.json": "6a4c54d69767e565a97c77b8363e8a5c77118ce2ac0e8b3135de641ac3f0b9f0",
+    "feature_extraction_receipt.json": "226f32bae8ecfbe3aab2cd07f0355d04044f66776672f57e7f23c1daca59fa91"
+  },
+  "input_state_hashes": {
+    "tabred_missing": "2a4aa546b2f5cdffe071489099c8d369a88fd02b65e73d13ab3d9b70d9d4f9da",
+    "champion_lgb": "1b09a62dcd768dcbfcc10eb8d8ed9cb409fa62484007f07ac36a898fa88c4d08",
+    "champion_cat": "b87e505d1961b3b9a955b6e6aea907119c8561ff2a407aad57850323543e0325"
+  },
+  "original_protected_hashes": {
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\FROZEN_MANIFEST.json": "81c6ce0b0e32e5b5726e4a2b30498bc97acac77c393b4ce19608f48341a2fa7a",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\PROTOCOL_LOCK.json": "a59dab15aa23fe32de975ad68e6eb0c80fad52e7efabf9e6a4f8d6d9fe86db2e",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\TEST_EVALUATION.json": "0016156e3aa4f7ee94c426b45ddf00ae8a89269236392f9ef1672c61adaf0283",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\predictions_D.parquet": "7fd2b85c55b8f88db21f40a60cd20d55216d38a40687adb8ce89644825e1f54f",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\metrics.csv": "068d80409577f0be8de0cc488eb8eeeea37ae197c4459ef1b8ab480a1c89682b",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\budget.json": "396ccd9eafcd8b1323ca94018027e1ba5d5607e087b6c03968e9bafb79357542",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\events.jsonl": "52c70bff5c94e7e7fd84d23c8edad3e66955b4984b31844076caa9cfe6318db0"
+  },
+  "data_mapping_sha256": "c153d9f4e882ca05071ea9a68cd73bdeb15f38953dbd54eed247b513cfef78a1"
+}

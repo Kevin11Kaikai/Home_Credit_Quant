@@ -1,0 +1,26 @@
+{
+  "variant": "champion_cat",
+  "family": "TabM",
+  "seed": 42,
+  "status": "EARLY_STOPPED",
+  "metrics": {
+    "roc_auc": 0.8486317021819383,
+    "average_precision": 0.2330222168768716,
+    "log_loss": 0.14351683112514171,
+    "brier": 0.037720213023940616,
+    "mean_probability": 0.036330727656695073,
+    "observed_event_rate": 0.04416691299635432,
+    "n": 40596
+  },
+  "prediction_sha256": "350e10849c25950f04e2b316934eee2c060608691b6eb182ebe7c1a53233ff65",
+  "checkpoint_sha256": "657dfe2c1afdc481681bf770c11892ce42c50c76ee6a55ad6eee76172b2802fd",
+  "new_training_seconds": 388.0779999999795,
+  "numeric_inputs": 1064,
+  "categorical_inputs": 102,
+  "peak_rss_bytes": 2651115520,
+  "gpu_peak_bytes": 1934956544,
+  "completed_epochs": 16,
+  "best_epoch": 5,
+  "best_iteration": null,
+  "checkpoint_selected_on_B": true
+}

@@ -1,0 +1,2 @@
+- Compared LightGBM and official TabM on a TabReD-derived Home Credit temporal benchmark with 381,664 records and 3 fixed seeds; achieved seed-42 holdout ROC-AUCs of 0.8622 and 0.8636, with isolated probability calibration and explicit preprocessing limitations.
+- Implemented auditable equal-exposure loan-pool event-loss proxies and three fixed stress scenarios; validated a separate synthetic senior/junior waterfall using a local AbsBox engine, preserving cashflows, artifact hashes and reconciliation evidence.

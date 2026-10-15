@@ -1,0 +1,33 @@
+{
+  "retrieved_utc": "2026-10-14T19:48:14.251855+00:00",
+  "kernels": [
+    {
+      "author": "yuuniekiri",
+      "kernel": "yuuniekiri/fork-of-home-credit-risk-lightgbm",
+      "kernel_id": 53337166,
+      "version": 16,
+      "url": "https://www.kaggle.com/code/yuuniekiri/fork-of-home-credit-risk-lightgbm",
+      "file": "upstream\\lgb\\fork-of-home-credit-risk-lightgbm.py",
+      "sha256": "b88bdd538ed83f24dc5ec0e183b19662925d4c5abf2df172874e2399c8e8fb20",
+      "upstream_docker_image": "gcr.io/kaggle-images/python@sha256:fd7fc0a352fc3bf80e4dd2232feb5fafe4183c2b46fb22f1ecb54c934b293875",
+      "license": "Not returned by official kernel API; retain locally with attribution, no redistribution assumed",
+      "usage": "Audited feature classes/functions only; no top-level inference, weights or submission"
+    },
+    {
+      "author": "yuuniekiri",
+      "kernel": "yuuniekiri/fork-of-home-credit-catboost-inference",
+      "kernel_id": 56277134,
+      "version": 12,
+      "url": "https://www.kaggle.com/code/yuuniekiri/fork-of-home-credit-catboost-inference",
+      "file": "upstream\\cat\\fork-of-home-credit-catboost-inference.py",
+      "sha256": "28e1902c10df5f2bb3550beafe44d6bc42d7cb2ddd0f443babd314a1f683d214",
+      "upstream_docker_image": "gcr.io/kaggle-private-byod/python@sha256:54edb36433adec1db1cadce7bc9d87bf55b6b0cd1c15244a1a75e5e1d282db6c",
+      "license": "Not returned by official kernel API; retain locally with attribution, no redistribution assumed",
+      "usage": "Audited feature classes/functions only; no top-level inference, weights or submission"
+    }
+  ],
+  "data_source": "https://www.kaggle.com/competitions/home-credit-credit-risk-model-stability/data",
+  "access": "User accepted competition terms and authorized OAuth in this conversation; no new terms accepted",
+  "restriction": "Competition data and row-level derivatives stay local; no upload or submission",
+  "initial_network_failure": "WinError 10013 in sandbox; official read/download escalation subsequently approved"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "GENERATED_FROM_CACHED_B_RESULTS",
+  "utc": "2026-10-14T20:31:53.085266+00:00",
+  "input_hashes": {
+    "PROTOCOL_LOCK.json": "1b2b0dbfc3c7bd6883a746330125bc090b50ea75ebca3940e54540a196c75965",
+    "development_metrics_B.csv": "89ce6328dd416ae3b7fc15e1bd273e8d14848b174f7e94fdc196db0a97eae4f8",
+    "budget.json": "1983c5cbe517b6df7b3edd1a3bb334faa09334006bd93f2f417d4d8e4b23a3f8",
+    "acceptance.json": "03b5bbe9193e81fe1e1a681c901997900985fcd8c191df26a4763056d6b9ad14"
+  },
+  "report_sha256": "8e9a1386648e38a85c29eb1d48af55b684b27c8e60612f137ffc27eff9093423",
+  "new_training_seconds": 1383.061999999918,
+  "wall_since_source_pin_seconds": 2618.832409,
+  "original_artifacts_unchanged": true
+}

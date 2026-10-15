@@ -1,0 +1,52 @@
+{
+  "status": "COMPLETE",
+  "kind": "lgb",
+  "fold": 4,
+  "config": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "min_data_in_leaf": 100,
+    "lambda_l2": 1,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "num_threads": 4,
+    "seed": 42,
+    "verbosity": -1,
+    "metric": "auc",
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "seconds": 28.35391449998133,
+  "iterations": 338,
+  "metrics": {
+    "roc_auc": 0.8355512375115479,
+    "average_precision": 0.1354606214548507,
+    "log_loss": 0.10551657945681561,
+    "brier": 0.025525261606755396,
+    "mean_probability": 0.028326487265733093,
+    "observed_event_rate": 0.02788686497326203,
+    "n": 47872
+  },
+  "B": {
+    "roc_auc": 0.8424240833604856,
+    "average_precision": 0.22992163777071273,
+    "log_loss": 0.145277485824845,
+    "brier": 0.03781193689376921,
+    "mean_probability": 0.03547017103579769,
+    "observed_event_rate": 0.04416691299635432,
+    "n": 40596
+  },
+  "selected_checkpoint": "model.txt",
+  "files": {
+    "model.txt": "c1e7495bcdadba0f787db64b8b1ed361f8b5d7d8e458785ad64e026325222192",
+    "preprocessor.joblib": "decfdd3c45ad0c61e41160674b3aa92e90a235e61dbb1329b9ff292c19a600cb",
+    "p_valid.npy": "e9cc626169229ac159284bcdfafca1d37bab2ffd8e23ebda6ff97a2da0d884ac",
+    "p_B.npy": "f16070efbdf6c5b140b1cc279208724e0e38591d7f9661ad245df8b9232596ee"
+  },
+  "n_train": 219773,
+  "n_valid": 47872,
+  "n_B": 40596,
+  "finished_utc": "2026-10-14T21:41:13.153539+00:00"
+}

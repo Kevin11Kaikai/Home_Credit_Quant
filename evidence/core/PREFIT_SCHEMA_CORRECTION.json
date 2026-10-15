@@ -1,0 +1,6 @@
+{
+  "utc": "2026-10-14T17:06:28.123413+00:00",
+  "reason": "Actual official info.json uses nested task.type and omits name; parser now accepts that documented actual structure with directory identity. No protocol, features or sample changes.",
+  "formal_training_started": false,
+  "D_labels_accessed": false
+}

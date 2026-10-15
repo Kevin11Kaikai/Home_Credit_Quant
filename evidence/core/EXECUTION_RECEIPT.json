@@ -1,0 +1,76 @@
+{
+  "started_utc_approx": "2026-10-14T15:00:21+00:00",
+  "finished_utc": "2026-10-14T17:47:31.494957+00:00",
+  "elapsed_wall_seconds_including_interruptions": 10030.494957,
+  "formal_credit_fit_seconds": 1799.545788526535,
+  "training_budget_by_family_including_smoke": {
+    "LightGBM": 143.87847256660461,
+    "TabM": 1666.3553159597795
+  },
+  "synthetic_smoke_seconds": 10.875,
+  "real_test_labels_accessed": true,
+  "commands": [
+    {
+      "command": "kaggle auth login",
+      "actual_status": "AUTHENTICATED",
+      "evidence": "logs/auth_login_status.json"
+    },
+    {
+      "command": "tabred download homecredit-default --output-path data --max-workers 1",
+      "actual_status": "AUDITED",
+      "exit_code": 0,
+      "evidence": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\download_status.json"
+    },
+    {
+      "command": "python -m credit_mvp smoke --config configs/mvp.yaml",
+      "actual_status": "PASS",
+      "evidence": "runs/engineering_smoke_v1/smoke.json",
+      "scope": "SYNTHETIC_ENGINEERING_ONLY_REAL_DATA_UNAVAILABLE"
+    },
+    {
+      "command": "python -m credit_mvp run --config configs/mvp.yaml",
+      "actual_status": "CORE_COMPLETE",
+      "evidence": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\acceptance.json"
+    },
+    {
+      "command": "python -m credit_mvp absbox --run-dir runs/homecredit_temporal_v1_20261014",
+      "actual_status": "EXTENSION_COMPLETE",
+      "actual_engine_run": true,
+      "evidence": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\absbox\\status.json"
+    },
+    {
+      "command": "python -m credit_mvp report --run-dir runs/homecredit_temporal_v1_20261014",
+      "actual_status": "COMPLETE_FROM_CACHE",
+      "evidence": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\reports\\PORTFOLIO_REPORT.md"
+    },
+    {
+      "command": "python -m pytest -q",
+      "actual_status": "PASS",
+      "exit_code": 0,
+      "evidence": "logs/pytest.xml"
+    }
+  ],
+  "code": {
+    "src/credit_mvp/__init__.py": "c2c7227df67514ab5c6ffb914bac17ea658d18d586599d57d827bb4aa822fd2d",
+    "src/credit_mvp/__main__.py": "ba032e77423bcccdc014b850cb838d601ea43a80b8183cbf6d9e874e9fb54d43",
+    "src/credit_mvp/absbox_demo.py": "116692a91018ff95c88794e44ee7202f12b1e76523afbae7e7c12f0644f9b48c",
+    "src/credit_mvp/calibration.py": "916b5a28cd28454f9663d1f4359926cab9e1239d1cc142b47f0812fbbe63e90d",
+    "src/credit_mvp/common.py": "0bdc15808999babc55d485dd2eefa3de5aa3311701d19920ac65c4d41faa3e36",
+    "src/credit_mvp/data.py": "49e517c16bd1b1595a71db71a70a1b846de9e1df4f5d9c259ccbf4f6efce9aa7",
+    "src/credit_mvp/evaluation.py": "95a89e256ed19a06c5d9d35e6d99babce6692097a36c71b6bc3bffef45fda8c3",
+    "src/credit_mvp/models.py": "65af538f288814ccbadc9e9512cdf39b6f8542fe167b6846bc79fa9ecb60cae5",
+    "src/credit_mvp/pipeline.py": "3f43ead7aed6d28ba2b066a26bb4e38aa38e4088a8e557e4ae07b2c373c05080",
+    "src/credit_mvp/portfolio.py": "aca86f1ed993d84a6693e47e53bf1bc4c8553af4133b3fc993837b1744f93a34",
+    "src/credit_mvp/reporting.py": "c6f04c59cf2c2690d935e36d2a5d7cafe2ececc2dc2c751339faddb0dd246b1b",
+    "pyproject.toml": "5bb1b379c27345c4d0e70bbb9f3d0a16ba33f8636ec0535df9d6fe560a81ffc7",
+    "SOURCE_MANIFEST.json": "c82efe0d620e744f3125be55c9273d26eef11491c545668765a760edbcaa56c3",
+    "requirements.lock": "f3d9fa64eec93cf15a0cd6edb9fffe79dc6beab476832f86c25fa91f78edc5ff"
+  },
+  "limitations": [
+    "Synthetic smoke is software evidence, not an empirical credit-model result.",
+    "Elapsed wall time includes interruptions and authentication wait; training budget is recorded separately."
+  ],
+  "arithmetic_audit": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\arithmetic_audit.json",
+  "cache_replay_receipt": "${SOURCE_WORKSPACE}\\logs\\cache_replay_receipt.json",
+  "core_pipeline_seconds": 1877.7029999999795
+}

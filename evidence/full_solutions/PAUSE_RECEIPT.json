@@ -1,0 +1,92 @@
+{
+  "status": "PAUSED_BY_USER",
+  "finished_utc": "2026-10-14T22:24:32.386092+00:00",
+  "training_stopped": true,
+  "automatic_reporting_stopped": true,
+  "s6e7_completed_members": 0,
+  "resume_point": {
+    "epoch": 4,
+    "offset": 147456,
+    "completed_epochs": 3,
+    "best_epoch": 3,
+    "optimizer_and_rng_saved": true,
+    "checkpoint_sha256": "042595dd12123184db32454a12df256a3b566a9f4f93f4c1098dfeb914a37211"
+  },
+  "preserved_snapshot": "${SOURCE_WORKSPACE}\\experiments\\full_solutions_20261014\\pauses\\2026-10-14T222327.827696_0000",
+  "snapshot_hashes": {
+    "last.pt": "042595dd12123184db32454a12df256a3b566a9f4f93f4c1098dfeb914a37211",
+    "best.pt": "8f556cd44c9307cd4d771f05f93393bb64784c23295505192f4b679acc2ebb04",
+    "best_valid.npy": "a5dd739fdc45601a90092ba03fd827ea1978ef8d3b9bf8b2c52326991670c404",
+    "history.csv": "1c6107e12a95c6f96c3bb9fc5b0e5b6ff4b53154c4650c7a60adbd60276beeb7",
+    "progress.json": "5c2012d5177152026978467cd2e99db50f9e544efb8c8f78c01c5af1c7c8d8f9"
+  },
+  "stopped_processes": [
+    {
+      "pid": 81000,
+      "created": 1792015308.6906888,
+      "cmd": [
+        "\\??\\C:\\Windows\\system32\\conhost.exe",
+        "0x4"
+      ]
+    },
+    {
+      "pid": 82552,
+      "created": 1792015308.7177005,
+      "cmd": [
+        "${USER_HOME}\\AppData\\Local\\anaconda3\\python.exe",
+        "-u",
+        "monitor.py",
+        "--pid",
+        "1144"
+      ]
+    },
+    {
+      "pid": 32848,
+      "created": 1792015308.6725068,
+      "cmd": [
+        "${SOURCE_WORKSPACE}\\experiments\\full_solutions_20261014\\.venv_full\\Scripts\\python.exe",
+        "-u",
+        "monitor.py",
+        "--pid",
+        "1144"
+      ]
+    },
+    {
+      "pid": 1144,
+      "created": 1792015282.2171795,
+      "cmd": [
+        "${USER_HOME}\\AppData\\Local\\anaconda3\\python.exe",
+        "-u",
+        "campaign.py",
+        "run",
+        "--family",
+        "all"
+      ]
+    },
+    {
+      "pid": 38076,
+      "created": 1792015282.2011247,
+      "cmd": [
+        "${SOURCE_WORKSPACE}\\experiments\\full_solutions_20261014\\.venv_full\\Scripts\\python.exe",
+        "-u",
+        "campaign.py",
+        "run",
+        "--family",
+        "all"
+      ]
+    }
+  ],
+  "budget_after_pause": {
+    "used": {
+      "lgb": 149.95753288269043,
+      "cat": 869.9551527500153,
+      "dense": 147.83326745033264,
+      "excel": 1380.864628791809
+    },
+    "active": null
+  },
+  "final_budget_charge_seconds": 55.9214882850647,
+  "original_artifacts_preserved": true,
+  "uncommitted_work": "Only work after the last atomic checkpoint may require replay if explicitly resumed.",
+  "automatic_resume_allowed": false
+}

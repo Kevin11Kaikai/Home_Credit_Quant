@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-14T20:31:28.014155+00:00",
+  "metric_rows_checked": {
+    "original/LightGBM": {
+      "n": 40596,
+      "status": "MATCH_CACHED_ARITHMETIC"
+    },
+    "original/TabM": {
+      "n": 40596,
+      "status": "MATCH_CACHED_ARITHMETIC"
+    },
+    "champion_cat/LightGBM": {
+      "n": 40596,
+      "status": "MATCH_CACHED_ARITHMETIC"
+    },
+    "champion_cat/TabM": {
+      "n": 40596,
+      "status": "MATCH_CACHED_ARITHMETIC"
+    },
+    "champion_lgb/LightGBM": {
+      "n": 40596,
+      "status": "MATCH_CACHED_ARITHMETIC"
+    },
+    "champion_lgb/TabM": {
+      "n": 40596,
+      "status": "MATCH_CACHED_ARITHMETIC"
+    },
+    "tabred_missing/LightGBM": {
+      "n": 40596,
+      "status": "MATCH_CACHED_ARITHMETIC"
+    },
+    "tabred_missing/TabM": {
+      "n": 40596,
+      "status": "MATCH_CACHED_ARITHMETIC"
+    }
+  },
+  "cached_run_exit_code": 0,
+  "no_new_fits_on_cached_run": true,
+  "budget_unchanged": true,
+  "original_artifacts_unchanged": true,
+  "probability_files_finite_and_in_range": true,
+  "metric_tolerance": 1e-12,
+  "independent_reviewer": false,
+  "no_C_D_labels_loaded": true,
+  "preflight_sha256": "52df81a412a269bc5a28c4b931b627e558c50483fbcdd84e83b896f86a36b085",
+  "aggregate_check_sha256": "2aba13bf3b21a107ddb033963defec50cd71a2b0f92bc4a68240f7063ebf8c40",
+  "verified_files": {
+    "baseline_replay\\LightGBM.npy": "0693e494418ed4830178926ca0ae168552232ed3646b9f095765028092bb812f",
+    "baseline_replay\\TabM.npy": "c72cda142671bccae1402850585f61fa47128529463dd15d518b8c260339942f",
+    "fits\\champion_cat\\LightGBM\\result.json": "ffe1d5c996c5cf9fb473a6e06d0169075b3188ca59ddd1499603ecc745f47cca",
+    "fits\\champion_cat\\LightGBM\\evaluation.json": "de09231e4ce6d343d79d5a3fa4ddd6db58ad8de8b463bf91360f64f161d346e1",
+    "fits\\champion_cat\\LightGBM\\predictions_B.npy": "c79fb83ccbeae4d9237214d7d572dff2988535a6c23665b1d343e1952fe0dea4",
+    "fits\\champion_cat\\TabM\\result.json": "76edadf0e41c66a2cb5adabc6fad7123dbd439e750c93354c5bbcb7122f440a9",
+    "fits\\champion_cat\\TabM\\evaluation.json": "57389455696bb7e9f241138890c2fd90305c2fae221a43a0969ced6601d9c0a2",
+    "fits\\champion_cat\\TabM\\predictions_B.npy": "350e10849c25950f04e2b316934eee2c060608691b6eb182ebe7c1a53233ff65",
+    "fits\\champion_lgb\\LightGBM\\result.json": "d35f89e340b6f4d1b61a83c5b9b07367be228878e433c9f78442f021ad1c1019",
+    "fits\\champion_lgb\\LightGBM\\evaluation.json": "6d4b72d6cb6c1d3e3d94fd9492d5f8bcfb65c53b69f0492f91cbd1eb71b2539b",
+    "fits\\champion_lgb\\LightGBM\\predictions_B.npy": "65a547eb053d772b784d62b23baa8161de0f3d1396ca95748cac5c24d7e2a437",
+    "fits\\champion_lgb\\TabM\\result.json": "3558a8dee578c2378819e24a2b51a7eb265c9208c1e3be95c57887eff6b99243",
+    "fits\\champion_lgb\\TabM\\evaluation.json": "94908bc9f3479e7e156e783046f3805a0ff51d8e5a925e6aa8cdece57aec5035",
+    "fits\\champion_lgb\\TabM\\predictions_B.npy": "92c6f58bb06f22633ef4997526d83e85bb7551e3cfe563f9c5e6d1af85e58ac4",
+    "fits\\tabred_missing\\LightGBM\\result.json": "be2de0cc0ac08921f4664a509d3c010b4b8117bdc07a5a6f284c81ddd09ac053",
+    "fits\\tabred_missing\\LightGBM\\evaluation.json": "8f6c431a93357de4404d75e9215d8c148d6af4df772c746996c090c0517fe1f8",
+    "fits\\tabred_missing\\LightGBM\\predictions_B.npy": "eeb4f0aecdee9a32fedf125867d59ea4ee0e8373f61e594d29bf47119220e80d",
+    "fits\\tabred_missing\\TabM\\result.json": "4ce09d9503348fc96b896cd0ca04ec917e62ebc61458b4a924c7d87363ac47e2",
+    "fits\\tabred_missing\\TabM\\evaluation.json": "c2a43d51cbaa1b48ace3f5a9e1afb151ea04b8086dd3bfbc6ad0e175dc3e559b",
+    "fits\\tabred_missing\\TabM\\predictions_B.npy": "ae89e5b53060b107a15177014f23f3f9f26a76f0035e679863e3226d8b817764"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-14T17:39:18.454287+00:00",
+  "scalar_comparisons": 1112,
+  "max_absolute_error": 9.094947017729282e-13,
+  "scope": "Cached predictions and published arithmetic, no new inference or formal test record.",
+  "independence": "Separate arithmetic path by the same agent; not independent external validation.",
+  "script_sha256": "55fe059f8ba36143f8de74591571d4b0e22e80c8f1afe1a38902a44c03ad333c",
+  "formal_evaluation_sha256": "0016156e3aa4f7ee94c426b45ddf00ae8a89269236392f9ef1672c61adaf0283",
+  "predictions_sha256": "7fd2b85c55b8f88db21f40a60cd20d55216d38a40687adb8ce89644825e1f54f"
+}

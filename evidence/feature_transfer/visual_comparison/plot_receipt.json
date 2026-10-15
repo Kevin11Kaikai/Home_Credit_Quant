@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "generated_utc": "2026-10-14T21:04:49.635613+00:00",
+  "source_hashes": {
+    "development_metrics_B.csv": "89ce6328dd416ae3b7fc15e1bd273e8d14848b174f7e94fdc196db0a97eae4f8",
+    "acceptance.json": "03b5bbe9193e81fe1e1a681c901997900985fcd8c191df26a4763056d6b9ad14",
+    "verification.json": "e7e0fa27235948136c8b08d3566a9758447f63a96cbb265f2f0af591d44e1ecb",
+    "PROTOCOL_LOCK.json": "1b2b0dbfc3c7bd6883a746330125bc090b50ea75ebca3940e54540a196c75965"
+  },
+  "source_rows": 8,
+  "seed": 42,
+  "evaluation_split": "B development",
+  "n": 40596,
+  "metric_rounding": 6,
+  "full_champion_model_reproduced": false,
+  "new_training": false,
+  "new_predictions": false,
+  "labels_loaded": false,
+  "original_artifacts_unchanged": true,
+  "code_sha256": "ef86992f892c0ec02b318685ddede11ac1eee96ba951b3382e9612cd98a18935",
+  "files": {
+    "changes_vs_original.pdf": "37d3505232dfc4df695a08393487ed06d0e0692213f5b498ea8b53ef0f19a5d3",
+    "changes_vs_original.png": "7d80f71258302d3be6ee2bf5a9a21d69b4657831af66d2caad44d739a66a3826",
+    "changes_vs_original.svg": "af9e88b7ede28d487acd9161992f612ce3ae2e4bc436096d9d78fdbad895f926",
+    "four_metric_comparison.pdf": "596fca618522a3012dc71b1359c34f9678b01b5ff3ea5ac621bd5d018de72376",
+    "four_metric_comparison.png": "bc556bd6400c8ff6bf37ccb2cf9ce998b9174565450a68f8b19144b416088308",
+    "four_metric_comparison.svg": "5be59a80eb1ffd160700a851d0b42f1c39ae04ff8f7faa693fb97ba4ce444dce",
+    "plotted_differences.csv": "b062447ea2e864c60f16aae1e7c884ca8ce44b063c256333ee6ea931663f7cf3"
+  }
+}

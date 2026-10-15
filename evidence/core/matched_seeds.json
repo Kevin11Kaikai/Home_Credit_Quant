@@ -1,0 +1,9 @@
+{
+  "seeds": [
+    0,
+    1,
+    42
+  ],
+  "n": 3,
+  "interpretation": "seed variability, not data-sampling uncertainty; no seed ensembling or selection"
+}

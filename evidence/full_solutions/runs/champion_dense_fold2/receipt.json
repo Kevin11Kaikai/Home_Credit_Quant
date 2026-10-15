@@ -1,0 +1,58 @@
+{
+  "status": "COMPLETE",
+  "kind": "dense",
+  "config": {
+    "epochs": 50,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "batch": 1024,
+    "microbatch": 1024,
+    "inference_batch": 1024,
+    "patience": 8,
+    "min_epochs": 10,
+    "monitor": "roc_auc",
+    "seed": 42,
+    "max_seconds": 2700
+  },
+  "meta": {
+    "n_num": 1411,
+    "preprocessor_sha256": "d422923a9e530315fe7c435e2f0d3a7e46b2a7f526e84aaa5b9aed3dec378b64"
+  },
+  "selected_checkpoint": "best.pt",
+  "completed_epochs": 12,
+  "stop_reason": "EARLY_STOPPING",
+  "selected_epoch": 4,
+  "metrics": {
+    "roc_auc": 0.8205447919406678,
+    "average_precision": 0.1356603431508,
+    "log_loss": 0.11626090074634281,
+    "brier": 0.028154604530708758,
+    "mean_probability": 0.029565924795227516,
+    "observed_event_rate": 0.030708484216125535,
+    "n": 48879
+  },
+  "seconds": 13.755272300215438,
+  "peak_reserved_gib": 1.27734375,
+  "checkpoint_reload_max_abs_error": 0.0,
+  "checkpoint_reload_scope": "Whole validation, identical batch layout, unchanged tolerance",
+  "files": {
+    "best.pt": "e7ddbedc2700e0e2a5cea4714c858be16fca12b9038a7348da889c0cd21c8f72",
+    "last.pt": "752928fb95d06552330690d890086ff8c1ea5f6b3181dedaf4cb46f86f7bb9b9",
+    "p_valid.npy": "484814977ad27b3909f410f010226c0dd5fd0c9304210b1af06c14fd7395605d",
+    "history.csv": "802dbeee978b4b718509902df8ae69ae89191f860d01c7ff339322f5140b026f"
+  },
+  "code": {
+    "common.py": "a1ae06872b72d8d893a01f8d7be495834c4ccbae0f61a6914ea65fcdcf45cb5d",
+    "data.py": "983ff0259a417c48f8b0aeb965770b1f85884804e5ea9d11c9e1e4b1705971cf",
+    "models.py": "ac7af0a8ad02e9c97316e6a41f92aa8f08828368e08db33428542c5657118256",
+    "campaign.py": "4df239ed686c745d3207eeb9ac0937d5aaf3b870a2a5330aebf4b18959bf19e3"
+  },
+  "training_code": {
+    "common.py": "a1ae06872b72d8d893a01f8d7be495834c4ccbae0f61a6914ea65fcdcf45cb5d",
+    "data.py": "983ff0259a417c48f8b0aeb965770b1f85884804e5ea9d11c9e1e4b1705971cf",
+    "models.py": "ac7af0a8ad02e9c97316e6a41f92aa8f08828368e08db33428542c5657118256",
+    "campaign.py": "4df239ed686c745d3207eeb9ac0937d5aaf3b870a2a5330aebf4b18959bf19e3"
+  },
+  "finalized_without_additional_fit": false,
+  "finished_utc": "2026-10-14T22:02:25.252228+00:00"
+}

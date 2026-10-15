@@ -1,0 +1,49 @@
+{
+  "started_utc": "2026-10-14T20:06:20.397680+00:00",
+  "LightGBM": 170.17299999971874,
+  "TabM": 1268.3750000002328,
+  "trials": {
+    "tabred_missing/LightGBM": {
+      "status": "FINISHED",
+      "started_utc": "2026-10-14T20:06:24.660209+00:00",
+      "allocated_seconds": 1200,
+      "exit_code": 0,
+      "worker_seconds": 66.85999999986961
+    },
+    "tabred_missing/TabM": {
+      "status": "FINISHED",
+      "started_utc": "2026-10-14T20:07:31.528752+00:00",
+      "allocated_seconds": 2700,
+      "exit_code": 0,
+      "worker_seconds": 482.844000000041
+    },
+    "champion_lgb/LightGBM": {
+      "status": "FINISHED",
+      "started_utc": "2026-10-14T20:15:34.377597+00:00",
+      "allocated_seconds": 1200,
+      "exit_code": 0,
+      "worker_seconds": 50.96900000004098
+    },
+    "champion_lgb/TabM": {
+      "status": "FINISHED",
+      "started_utc": "2026-10-14T20:16:25.354668+00:00",
+      "allocated_seconds": 2700,
+      "exit_code": 0,
+      "worker_seconds": 385.60900000017136
+    },
+    "champion_cat/LightGBM": {
+      "status": "FINISHED",
+      "started_utc": "2026-10-14T20:22:50.960237+00:00",
+      "allocated_seconds": 1200,
+      "exit_code": 0,
+      "worker_seconds": 52.34399999980815
+    },
+    "champion_cat/TabM": {
+      "status": "FINISHED",
+      "started_utc": "2026-10-14T20:23:43.299145+00:00",
+      "allocated_seconds": 2700,
+      "exit_code": 0,
+      "worker_seconds": 399.9220000000205
+    }
+  }
+}

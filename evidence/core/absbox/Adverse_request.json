@@ -1,0 +1,290 @@
+{
+  "tag": "SingleRunReq",
+  "contents": [
+    [],
+    {
+      "tag": "MDeal",
+      "contents": {
+        "dates": {
+          "tag": "GenericDates",
+          "contents": {
+            "CutoffDate": {
+              "tag": "SingletonDate",
+              "contents": "2021-03-01"
+            },
+            "ClosingDate": {
+              "tag": "SingletonDate",
+              "contents": "2021-04-01"
+            },
+            "FirstPayDate": {
+              "tag": "SingletonDate",
+              "contents": "2021-06-20"
+            },
+            "FirstCollectDate": {
+              "tag": "SingletonDate",
+              "contents": "2021-04-01"
+            },
+            "StatedMaturityDate": {
+              "tag": "SingletonDate",
+              "contents": "2030-01-01"
+            },
+            "DistributionDates": {
+              "tag": "DayOfMonth",
+              "contents": 20
+            },
+            "CollectionDates": {
+              "tag": "MonthFirst"
+            }
+          }
+        },
+        "name": "TEST01",
+        "status": {
+          "tag": "PreClosing",
+          "contents": {
+            "tag": "Amortizing"
+          }
+        },
+        "pool": {
+          "tag": "MultiPool",
+          "contents": {
+            "PoolConsol": {
+              "assets": [
+                {
+                  "tag": "Mortgage",
+                  "contents": [
+                    {
+                      "originBalance": 2200,
+                      "originRate": {
+                        "tag": "Fix",
+                        "contents": [
+                          "DC_ACT_365F",
+                          0.045
+                        ]
+                      },
+                      "originTerm": 20,
+                      "period": "Monthly",
+                      "startDate": "2021-02-01",
+                      "prinType": {
+                        "tag": "Level"
+                      },
+                      "prepaymentPenalty": null,
+                      "obligor": null,
+                      "tag": "MortgageOriginalInfo"
+                    },
+                    2200,
+                    0.08,
+                    20,
+                    null,
+                    {
+                      "tag": "Current"
+                    }
+                  ]
+                }
+              ],
+              "asOfDate": "2021-03-01",
+              "issuanceStat": {},
+              "futureCf": null,
+              "futureScheduleCf": null,
+              "extendPeriods": {
+                "tag": "MonthEnd"
+              }
+            }
+          }
+        },
+        "bonds": {
+          "A1": {
+            "bndName": "A1",
+            "bndBalance": 1000,
+            "bndRate": 0.07,
+            "bndOriginInfo": {
+              "originBalance": 1000,
+              "originDate": "2020-01-03",
+              "originRate": 0.07,
+              "maturityDate": null
+            },
+            "bndInterestInfo": {
+              "tag": "Fix",
+              "contents": [
+                0.08,
+                "DC_ACT_365F"
+              ]
+            },
+            "bndType": {
+              "tag": "Sequential"
+            },
+            "bndDuePrin": 0,
+            "bndDueInt": 0,
+            "bndDueIntOverInt": 0,
+            "bndDueIntDate": null,
+            "bndStepUp": null,
+            "bndLastIntPayDate": null,
+            "bndStmt": null,
+            "tag": "Bond"
+          },
+          "B": {
+            "bndName": "B",
+            "bndBalance": 1000,
+            "bndRate": 0.0,
+            "bndOriginInfo": {
+              "originBalance": 1000,
+              "originDate": "2020-01-03",
+              "originRate": 0.07,
+              "maturityDate": null
+            },
+            "bndInterestInfo": {
+              "tag": "Fix",
+              "contents": [
+                0.0,
+                "DC_ACT_365F"
+              ]
+            },
+            "bndType": {
+              "tag": "Equity"
+            },
+            "bndDuePrin": 0,
+            "bndDueInt": 0,
+            "bndDueIntOverInt": 0,
+            "bndDueIntDate": null,
+            "bndStepUp": null,
+            "bndLastIntPayDate": null,
+            "bndStmt": null,
+            "tag": "Bond"
+          }
+        },
+        "waterfall": {
+          "DistributionDay Amortizing": [
+            {
+              "tag": "AccrueAndPayInt",
+              "contents": [
+                null,
+                "acc01",
+                [
+                  "A1"
+                ],
+                null
+              ]
+            },
+            {
+              "tag": "PayPrin",
+              "contents": [
+                null,
+                "acc01",
+                [
+                  "A1"
+                ],
+                null
+              ]
+            },
+            {
+              "tag": "PayPrin",
+              "contents": [
+                null,
+                "acc01",
+                [
+                  "B"
+                ],
+                null
+              ]
+            },
+            {
+              "tag": "PayIntResidual",
+              "contents": [
+                null,
+                "acc01",
+                "B"
+              ]
+            }
+          ]
+        },
+        "fees": {},
+        "accounts": {
+          "acc01": {
+            "accBalance": 0,
+            "accName": "acc01",
+            "accType": null,
+            "accInterest": null,
+            "accStmt": null
+          }
+        },
+        "collects": [
+          {
+            "tag": "Collect",
+            "contents": [
+              null,
+              "CollectedInterest",
+              "acc01"
+            ]
+          },
+          {
+            "tag": "Collect",
+            "contents": [
+              null,
+              "CollectedPrincipal",
+              "acc01"
+            ]
+          },
+          {
+            "tag": "Collect",
+            "contents": [
+              null,
+              "CollectedPrepayment",
+              "acc01"
+            ]
+          },
+          {
+            "tag": "Collect",
+            "contents": [
+              null,
+              "CollectedRecoveries",
+              "acc01"
+            ]
+          }
+        ],
+        "rateSwap": null,
+        "rateCap": null,
+        "currencySwap": null,
+        "custom": null,
+        "triggers": null,
+        "liqProvider": null,
+        "ledgers": null,
+        "stats": [
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    },
+    {
+      "tag": "PoolLevel",
+      "contents": [
+        {
+          "tag": "MortgageAssump",
+          "contents": [
+            {
+              "tag": "DefaultCDR",
+              "contents": 0.05
+            },
+            {
+              "tag": "PrepaymentCPR",
+              "contents": 0.1
+            },
+            {
+              "tag": "Recovery",
+              "contents": [
+                0.4,
+                6
+              ]
+            },
+            null
+          ]
+        },
+        [],
+        {
+          "tag": "DummyDefaultAssump"
+        }
+      ]
+    },
+    {}
+  ]
+}

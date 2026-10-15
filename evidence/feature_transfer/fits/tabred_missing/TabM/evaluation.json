@@ -1,0 +1,26 @@
+{
+  "variant": "tabred_missing",
+  "family": "TabM",
+  "seed": 42,
+  "status": "EARLY_STOPPED",
+  "metrics": {
+    "roc_auc": 0.847880219356778,
+    "average_precision": 0.2398771602571816,
+    "log_loss": 0.14331862901308912,
+    "brier": 0.03761114722492262,
+    "mean_probability": 0.03687573147436133,
+    "observed_event_rate": 0.04416691299635432,
+    "n": 40596
+  },
+  "prediction_sha256": "ae89e5b53060b107a15177014f23f3f9f26a76f0035e679863e3226d8b817764",
+  "checkpoint_sha256": "e449e806780e9d56a3a4a8710c8278c1e9af62e28156d3521864f3598188e719",
+  "new_training_seconds": 470.0629999998491,
+  "numeric_inputs": 1131,
+  "categorical_inputs": 82,
+  "peak_rss_bytes": 2685353984,
+  "gpu_peak_bytes": 2006362112,
+  "completed_epochs": 19,
+  "best_epoch": 8,
+  "best_iteration": null,
+  "checkpoint_selected_on_B": true
+}

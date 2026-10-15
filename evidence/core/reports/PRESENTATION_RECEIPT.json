@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-14T17:41:25.333177+00:00",
+  "status": "PRESENTATION_ONLY",
+  "version": 1,
+  "reason": "Original overlaid plot obscured low probabilities and overlapped count labels; original preserved.",
+  "change": "Separate panels, shared axes covering all points, and count tables; same bin boundaries and numerical values.",
+  "affected_empirical_results": [],
+  "new_test_evaluation": false,
+  "source_sha256": "b988cd51faf7629a139e10765aea93af69e0868853a7883281d49112e147b938",
+  "script_sha256": "3c33933f1c62b5813b36a4d404c44654c7727c4305ff3f8c86718f1e1cecee74",
+  "output": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\figures\\reliability_panels.png",
+  "output_sha256": "1e3a25d6b35b2389cfd8a3b9165776bb1eb718c441b042b99ecd7940b53ea7e1"
+}

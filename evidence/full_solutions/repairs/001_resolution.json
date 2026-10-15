@@ -1,0 +1,13 @@
+{
+  "status": "RESOLVED_NO_REFIT",
+  "checks": {
+    "best.pt": true,
+    "last.pt": true,
+    "p_valid.npy": true,
+    "history.csv": true
+  },
+  "completed_epochs": 13,
+  "selected_epoch": 5,
+  "replay_error": 0.0,
+  "resolved_utc": "2026-10-14T22:02:07.613692+00:00"
+}

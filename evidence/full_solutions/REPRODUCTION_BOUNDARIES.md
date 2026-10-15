@@ -1,0 +1,19 @@
+# What the requested complete solutions mean in this run
+
+This record describes source fidelity, not a performance claim. Actual completion is recorded in `acceptance.json`, and a recipe that is still training is not a completed reproduction.
+
+| Source | Preserved components | Necessary adaptations / unavailable components | Valid name for this result |
+|---|---|---|---|
+| Home Credit 2024 first place | Public feature expressions; LightGBM, DenseLight and CatBoost families; published 0.40 / 0.24 / 0.36 blend; earlier-week minus-0.03 score heuristic | Original fitted artifacts, exact final 644/661 masks and full training configuration are unavailable. Five grouped A folds and the documented hyperparameters / DenseLight preprocessing are reconstruction choices. The official DenseLight Input page shows a private dataset. | Three-family champion reconstruction; **not exact champion reproduction** |
+| Requested Fraud_Detection_Tabular_Transformer repository | Primary ExcelFormer core; train-only quantile/MI preprocessing; five chronological categorical TE blocks; MI-weighted feature-mix BCE; initial training and continuation; AP checkpoint selection | Fraud identity/card/address features do not have verified equivalents in this data. Existing credit aggregates replace them. No fraud rows, weights, performance numbers or distillation arm are transferred. Microbatching and a tested SDPA implementation make full-width training feasible. | Full primary ExcelFormer recipe transferred to Home Credit; **not a rerun of IEEE-CIS results** |
+| S6E7 fourth-place solution | Seven folds, four members per fold, 16 fixed epochs, FT-Transformer, PLR-lite, exact-value TE with internal cross-fitting, equal averaging; source prior-correction grid retained separately | The source has three classes and 13 raw fields. Home Credit has two classes and 682 fields: binary TE/BCE replaces multiclass TE/softmax. Effective batch 4096 uses accumulation. Fold members are serialized on one GPU. Prior correction is classification-only and cannot replace event probabilities. | Complete 28-member S6E7 recipe transfer **only after all 28 members finish**; not reproduction of the source private balanced accuracy |
+
+The original MVP and the earlier feature experiment are protected by hashes. New runs use their A/B mapping, with A containing 267,645 applications and B containing 40,596. B is already reused development data. ExcelFormer uses B to select its checkpoint by AP; the earlier baseline used AUC. S6E7 selects no epoch on B. This is a comparison of entire recipes with unequal compute and selection rules, not an isolated architecture experiment or a new independent test.
+
+Original C/D artifacts are checked by hashes for preservation; new training and reporting do not load their labels or predictions. No new calibration or final-test result is claimed. Existing target-horizon, customer-identity and inherited preprocessing limitations continue to apply.
+
+The mid-run checkpoint replay repair is recorded under `repairs/`. Revision 2 compares the entire validation prediction with the same batch layout to avoid BF16 batch-shape differences. The affected DenseLight checkpoint, predictions and training history retained their original hashes, and no extra training epoch was run. The full recipe's other settings were not changed in response to scores.
+
+`environment_snapshot.json` captures all visible package versions and their locations, Python, CUDA and GPU information without recording environment variables or credentials. `.venv_full` contains local dependency overrides and reuses pre-existing system packages read-only; no system package was upgraded. `requirements.lock.json` is the smaller protocol package list, not a fully self-contained wheel bundle.
+
+All results stay local. There is no Kaggle submission, repository publication, or claim that accepting competition terms grants access to another author's private model files.

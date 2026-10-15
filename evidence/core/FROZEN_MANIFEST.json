@@ -1,0 +1,139 @@
+{
+  "files": {
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\bins.joblib": "2a4f04bf007295c2f2971284a4138a56e71eb1e8f42c75bec7b8ad3f1a8214fd",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\calibration\\Constant.json": "b6f482c477d3729dac1da572a9ae3a1d751b13648ef4d83ae3c93cd78eb3043e",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\calibration\\LightGBM_seed0.json": "31e2ebc5515737e99cee96890d0b864afb10371ad8804c526eb51d9ac2f48f0e",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\calibration\\LightGBM_seed0_raw.npy": "782701ee17093ed7e0a9500ca2752c12d0175d94eab42e9fd6868181c79c06d5",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\calibration\\LightGBM_seed1.json": "3845dcf47814ec6f2ee42a6409fdb1d3830bf6127829b41d4b60a43b1e4c173f",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\calibration\\LightGBM_seed1_raw.npy": "e5c6624442e3c99d7fc8148de33e51a31d68df1df8275176c10047e0dee9a6f6",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\calibration\\LightGBM_seed42.json": "850f1939750ae474fcc2465930803b310d8ae8144c775470d92b89645ca1aedc",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\calibration\\LightGBM_seed42_raw.npy": "c204d51d481aebf4e4c66569c6ed8ef02ef528a4257a272f6292357ea917f108",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\calibration\\TabM_seed0.json": "8568d9b783621bbdf1057084e8fdd4dde01a70bae52a18dc301b52eb674a9842",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\calibration\\TabM_seed0_raw.npy": "07cb88f23cf267ae08064184c911219cf623e4cffd895122cae35339044f3cda",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\calibration\\TabM_seed1.json": "5c20ecbe6d137a340b5dcdb5395b4087db251a16447d137dd12b608f3f9db2cd",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\calibration\\TabM_seed1_raw.npy": "f8c4dc0fac80a61fd4ee8c18876b0475aa49db04fe9f85e0a8184b28dc02c93f",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\calibration\\TabM_seed42.json": "6067daa3495a162cac1bf2c96a381403531d8a38c8e5cbc6c010150f6b4eb40a",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\calibration\\TabM_seed42_raw.npy": "48bd365833c3ba08dda6ba34947ee0f081c4d2132303bd4fafbf38aa079730d7",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\config.json": "211aaf82dd866d65ce3c5939d00468dc368f571da078862df26813e59e5ef1a1",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\constant.json": "52632ac802453f0be3ea4c92376c645573b7083430375e7f716e12fa5f04702f",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\data_audit.json": "5deab7500ef6f08f26f774719a1bfee6e99f57acb4f33582115b1dacac94e3f6",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\feature_manifest.json": "ec068f8536b0d1c6afdfe6d786af419f05e2d8cf3d813099df058da17633c50b",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\LightGBM_L3_seed0\\model.txt": "22908def08ca47d25b724eb0ebba2023c11183ef57fd253e6f9af80702efe781",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\LightGBM_L3_seed1\\model.txt": "568c150ad6024d2c2eac4111cd6782ca7f58d41b63bfe2f37c0307e012522f66",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\LightGBM_L3_seed42\\model.txt": "f6ce8bd32435b72502fcf3b7f6d1dc7465670beb74fefa425b050f166836ebfe",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\TabM_T2_seed0\\best.pt": "2fadc83c56b3b3ee7593ac006993c882d24bf917cb97d6baab7dadb2a6beae61",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\TabM_T2_seed1\\best.pt": "09c9433bc612f8a208bb3e4d537bab6704f2fc9031acf81c63b0208a70991755",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\TabM_T2_seed42\\best.pt": "4f51286f5a1a91de3698b34273cda7d5c22c9ae9f849e11fa7ac10562aa40e18",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\preprocessor.joblib": "193e9d827042590c762ab4523b8f29ff99de2d58a23789703f8239df97f00e70",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\PROTOCOL_LOCK.json": "a59dab15aa23fe32de975ad68e6eb0c80fad52e7efabf9e6a4f8d6d9fe86db2e",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\selected_models.json": "7fe3a2509f38039009e0c1e6ed2502f157b97c3c930e9ad2cbcec240d811703a",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\split_manifest.json": "4e982aac9f9f612016fe199b73454538f127673a520c1bb9118e7429d89fa2d3",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\splits\\A.npy": "70cf7e66dcfff5022918b034313d8dc26a76d81f12256cca7c8d5fb64b0f3705",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\splits\\B.npy": "d7506ddbc244fc9fa4ae75a5cefffbf71e84c3b93feb8392e249413de8ba4b62",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\splits\\C.npy": "cc0334a68b42d776ba7c6c6173294a321865767d91fda8a4eadefc288b66218b",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\splits\\D.npy": "90d8290b81937bc519cb0108da5b183deadbee7eaff31ae4a06f498d627c4ff5"
+  },
+  "metadata": {
+    "protocol_id": "homecredit_temporal_v1",
+    "evaluation": {
+      "reliability_bins": 10,
+      "reliability_source": "C_prediction_quantiles",
+      "small_week_n": 100,
+      "bootstrap_replicates": 200,
+      "bootstrap_block_weeks": 2,
+      "bootstrap_min_weeks": 8,
+      "bootstrap_seed": 20261014,
+      "metrics": [
+        "roc_auc",
+        "average_precision",
+        "log_loss",
+        "brier",
+        "mean_probability",
+        "observed_event_rate",
+        "probability_bias"
+      ],
+      "figures": [
+        "probability_scores",
+        "reliability",
+        "weekly_performance",
+        "retention_risk",
+        "stress_loss"
+      ]
+    },
+    "portfolio": {
+      "q": [
+        0.5,
+        0.7,
+        0.9,
+        1.0
+      ],
+      "main_q": 0.7,
+      "ead": 1.0,
+      "tie_break": "stable_row_id",
+      "random_seeds": [
+        1000,
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009,
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015,
+        1016,
+        1017,
+        1018,
+        1019
+      ],
+      "scenarios": {
+        "Base": {
+          "odds_multiplier": 1.0,
+          "lgd": 0.4
+        },
+        "Adverse": {
+          "odds_multiplier": 1.5,
+          "lgd": 0.6
+        },
+        "Severe": {
+          "odds_multiplier": 2.0,
+          "lgd": 0.8
+        }
+      }
+    },
+    "data_files": {
+      "${SOURCE_WORKSPACE}\\data\\homecredit-default\\info.json": "05ace67f61774060bc1d250011fcdf0cde5aca9850c7698b7e186d066dcb447d",
+      "${SOURCE_WORKSPACE}\\data\\homecredit-default\\x_num.npy": "83c5fa334b8eaa4950cc8efbda23e0b02653f226d0e11890c90f436b4aa45ff9",
+      "${SOURCE_WORKSPACE}\\data\\homecredit-default\\x_cat.npy": "3b969d8eaae7d10b81d945c0590ce054739871b1b0b617b5a00cec778db9c173",
+      "${SOURCE_WORKSPACE}\\data\\homecredit-default\\x_bin.npy": "5782f72c1edaa6aef7b14110181fc4377dfb57d74e0d7716ca502ca4c233f96a",
+      "${SOURCE_WORKSPACE}\\data\\homecredit-default\\x_meta.npy": "8b35258e6d1f813ead1a9e6a02990cfffb1ba17d78ea57b7c14a08b3686b2ab6",
+      "${SOURCE_WORKSPACE}\\data\\homecredit-default\\y.npy": "6ced49bd38c6da107d998fbf9ce90eb0e96cc466b23cd2d804a4a1655e8af763",
+      "${SOURCE_WORKSPACE}\\data\\homecredit-default\\splits\\default\\train.npy": "433fa95a8517818a0d9d5fc3c53ed3294e65fc90a4099fd99110d6271fc6007b",
+      "${SOURCE_WORKSPACE}\\data\\homecredit-default\\splits\\default\\val.npy": "200081e147816e67087dce3b10aeffa76526b75deb3df5219b00c84f6709f2d4",
+      "${SOURCE_WORKSPACE}\\data\\homecredit-default\\splits\\default\\test.npy": "0729a974fe149c59fa9bcd34eea1abed20c3b6e9841eb7da35f406f8ad1f326d"
+    },
+    "D_status": "UNSEEN_BEFORE_THIS_FREEZE"
+  },
+  "code": {
+    "src/credit_mvp/__init__.py": "c2c7227df67514ab5c6ffb914bac17ea658d18d586599d57d827bb4aa822fd2d",
+    "src/credit_mvp/__main__.py": "ba032e77423bcccdc014b850cb838d601ea43a80b8183cbf6d9e874e9fb54d43",
+    "src/credit_mvp/absbox_demo.py": "116692a91018ff95c88794e44ee7202f12b1e76523afbae7e7c12f0644f9b48c",
+    "src/credit_mvp/calibration.py": "916b5a28cd28454f9663d1f4359926cab9e1239d1cc142b47f0812fbbe63e90d",
+    "src/credit_mvp/common.py": "0bdc15808999babc55d485dd2eefa3de5aa3311701d19920ac65c4d41faa3e36",
+    "src/credit_mvp/data.py": "49e517c16bd1b1595a71db71a70a1b846de9e1df4f5d9c259ccbf4f6efce9aa7",
+    "src/credit_mvp/evaluation.py": "95a89e256ed19a06c5d9d35e6d99babce6692097a36c71b6bc3bffef45fda8c3",
+    "src/credit_mvp/models.py": "65af538f288814ccbadc9e9512cdf39b6f8542fe167b6846bc79fa9ecb60cae5",
+    "src/credit_mvp/pipeline.py": "3f43ead7aed6d28ba2b066a26bb4e38aa38e4088a8e557e4ae07b2c373c05080",
+    "src/credit_mvp/portfolio.py": "aca86f1ed993d84a6693e47e53bf1bc4c8553af4133b3fc993837b1744f93a34",
+    "src/credit_mvp/reporting.py": "c6f04c59cf2c2690d935e36d2a5d7cafe2ececc2dc2c751339faddb0dd246b1b",
+    "pyproject.toml": "5bb1b379c27345c4d0e70bbb9f3d0a16ba33f8636ec0535df9d6fe560a81ffc7",
+    "SOURCE_MANIFEST.json": "c82efe0d620e744f3125be55c9273d26eef11491c545668765a760edbcaa56c3",
+    "requirements.lock": "f3d9fa64eec93cf15a0cd6edb9fffe79dc6beab476832f86c25fa91f78edc5ff"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE",
+  "manifest_sha256": "81c6ce0b0e32e5b5726e4a2b30498bc97acac77c393b4ce19608f48341a2fa7a",
+  "utc": "2026-10-14T17:38:41.006854+00:00",
+  "official_test_evaluation_records": 1,
+  "outputs": {
+    "predictions_D.parquet": "7fd2b85c55b8f88db21f40a60cd20d55216d38a40687adb8ce89644825e1f54f",
+    "bootstrap_replicates.csv": "1c9852c270bc774bae58ad3c5f2b27855fc6254c868d9a4374db3e92fbbb1879",
+    "matched_seed_summary.csv": "af9901ea8b4628218e0ba9333de54ed0a614e1648789c3805baf287af7812192",
+    "metrics.csv": "068d80409577f0be8de0cc488eb8eeeea37ae197c4459ef1b8ab480a1c89682b",
+    "portfolio_metrics.csv": "5fef0dcddc7323f0e1f45adf3f1e9735f65df3247f47621d1b7ee36abeea9c7b",
+    "random_control_summary.csv": "d71ae16cf5cf30bd60a4f66b6ca47397b4dcc35eeeffcc4237a7dd48a2670ca7",
+    "reliability_bins.csv": "b988cd51faf7629a139e10765aea93af69e0868853a7883281d49112e147b938",
+    "selection_rounding.csv": "5935c6312f6c4b80747009d9e6bc089cc6bd1e8248c8c56272acc0cbaac5780e",
+    "stress_scenarios.csv": "e065c75a6089e9798a255b4b4f9126ead57161915b543ffcf69fc7b20f820dca",
+    "weekly_metrics.csv": "a915f58a6a4f722fb1608724a2440a00cde0677383754ef7941113e4743c8bbc",
+    "calibration_numerics.json": "4f8b7bf273ac31f1565e900f8896789341bd82e3d70d1201457cff6ae8e956ff",
+    "matched_seeds.json": "66169e76a0ed289a7b38f09c9333193e64e2d4663fe07e16afc9725146e03cf0",
+    "bootstrap_summary.json": "1d7539c3298b4cce2606de6522a6aa426d4434a23813fc6cc55faa58cdbff562"
+  }
+}

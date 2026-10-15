@@ -1,0 +1,48 @@
+{
+  "family": "LightGBM",
+  "seed": 0,
+  "config": {
+    "id": "L3",
+    "num_leaves": 31,
+    "min_data_in_leaf": 300,
+    "lambda_l2": 5
+  },
+  "B": {
+    "roc_auc": 0.8446265941655979,
+    "log_loss": 0.14505780286557882
+  },
+  "status": "EARLY_STOPPED",
+  "eligible": true,
+  "converged": true,
+  "seconds": 33.0,
+  "best_iteration": 440,
+  "iterations_completed": 540,
+  "checkpoint": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\LightGBM_L3_seed0\\model.txt",
+  "checkpoint_sha256": "22908def08ca47d25b724eb0ebba2023c11183ef57fd253e6f9af80702efe781",
+  "peak_rss_bytes": 4356820992,
+  "gpu_peak_bytes": 0,
+  "params": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "verbosity": -1,
+    "deterministic": true,
+    "force_col_wise": true,
+    "num_leaves": 31,
+    "min_data_in_leaf": 300,
+    "lambda_l2": 5,
+    "seed": 0,
+    "bagging_seed": 0,
+    "feature_fraction_seed": 0,
+    "data_random_seed": 0,
+    "num_threads": 4,
+    "metric": [
+      "auc",
+      "binary_logloss"
+    ]
+  },
+  "optimizer": "LightGBM native gradient boosting; optimizer checkpoint not applicable",
+  "cumulative_trial_seconds": 33.06163501739502
+}

@@ -1,0 +1,26 @@
+{
+  "variant": "tabred_missing",
+  "family": "LightGBM",
+  "seed": 42,
+  "status": "EARLY_STOPPED",
+  "metrics": {
+    "roc_auc": 0.8441479224522215,
+    "average_precision": 0.2384548038430609,
+    "log_loss": 0.14514803961593192,
+    "brier": 0.03770813368355871,
+    "mean_probability": 0.03363269294458673,
+    "observed_event_rate": 0.04416691299635432,
+    "n": 40596
+  },
+  "prediction_sha256": "eeb4f0aecdee9a32fedf125867d59ea4ee0e8373f61e594d29bf47119220e80d",
+  "checkpoint_sha256": "d0b222e531e4defd22c54cc4507a81d39a9f63d5d5c273cdd0eefacd82d08999",
+  "new_training_seconds": 60.42100000008941,
+  "numeric_inputs": 1131,
+  "categorical_inputs": 82,
+  "peak_rss_bytes": 4163878912,
+  "gpu_peak_bytes": 0,
+  "completed_epochs": null,
+  "best_epoch": null,
+  "best_iteration": 549,
+  "checkpoint_selected_on_B": true
+}

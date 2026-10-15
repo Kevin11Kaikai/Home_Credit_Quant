@@ -1,0 +1,50 @@
+{
+  "LightGBM_seed42": {
+    "clipped_input_count": 0,
+    "saturated_output_count": 0,
+    "unique_raw": 56000,
+    "unique_calibrated": 56000,
+    "nondecreasing": true,
+    "selection_rule": "raw probability then stable row_id, reused exactly for raw/calibrated"
+  },
+  "LightGBM_seed0": {
+    "clipped_input_count": 0,
+    "saturated_output_count": 0,
+    "unique_raw": 56001,
+    "unique_calibrated": 56001,
+    "nondecreasing": true,
+    "selection_rule": "raw probability then stable row_id, reused exactly for raw/calibrated"
+  },
+  "LightGBM_seed1": {
+    "clipped_input_count": 0,
+    "saturated_output_count": 0,
+    "unique_raw": 56000,
+    "unique_calibrated": 56000,
+    "nondecreasing": true,
+    "selection_rule": "raw probability then stable row_id, reused exactly for raw/calibrated"
+  },
+  "TabM_seed42": {
+    "clipped_input_count": 4,
+    "saturated_output_count": 0,
+    "unique_raw": 55979,
+    "unique_calibrated": 55976,
+    "nondecreasing": true,
+    "selection_rule": "raw probability then stable row_id, reused exactly for raw/calibrated"
+  },
+  "TabM_seed0": {
+    "clipped_input_count": 4,
+    "saturated_output_count": 0,
+    "unique_raw": 55984,
+    "unique_calibrated": 55981,
+    "nondecreasing": true,
+    "selection_rule": "raw probability then stable row_id, reused exactly for raw/calibrated"
+  },
+  "TabM_seed1": {
+    "clipped_input_count": 9,
+    "saturated_output_count": 0,
+    "unique_raw": 55981,
+    "unique_calibrated": 55973,
+    "nondecreasing": true,
+    "selection_rule": "raw probability then stable row_id, reused exactly for raw/calibrated"
+  }
+}

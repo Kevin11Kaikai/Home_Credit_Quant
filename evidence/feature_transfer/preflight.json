@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-14T20:06:08.986952+00:00",
+  "seconds": 8.703999999910593,
+  "original_protected_hashes": {
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\FROZEN_MANIFEST.json": "81c6ce0b0e32e5b5726e4a2b30498bc97acac77c393b4ce19608f48341a2fa7a",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\PROTOCOL_LOCK.json": "a59dab15aa23fe32de975ad68e6eb0c80fad52e7efabf9e6a4f8d6d9fe86db2e",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\TEST_EVALUATION.json": "0016156e3aa4f7ee94c426b45ddf00ae8a89269236392f9ef1672c61adaf0283",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\predictions_D.parquet": "7fd2b85c55b8f88db21f40a60cd20d55216d38a40687adb8ce89644825e1f54f",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\metrics.csv": "068d80409577f0be8de0cc488eb8eeeea37ae197c4459ef1b8ab480a1c89682b",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\budget.json": "396ccd9eafcd8b1323ca94018027e1ba5d5607e087b6c03968e9bafb79357542",
+    "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\events.jsonl": "52c70bff5c94e7e7fd84d23c8edad3e66955b4984b31844076caa9cfe6318db0"
+  },
+  "inputs": {
+    "tabred_missing": {
+      "numeric_including_indicators": 1131,
+      "missing_indicators": 536,
+      "categorical": 82,
+      "state_sha256": "2a4aa546b2f5cdffe071489099c8d369a88fd02b65e73d13ab3d9b70d9d4f9da"
+    },
+    "champion_lgb": {
+      "numeric_including_indicators": 1038,
+      "missing_indicators": 507,
+      "categorical": 74,
+      "state_sha256": "1b09a62dcd768dcbfcc10eb8d8ed9cb409fa62484007f07ac36a898fa88c4d08"
+    },
+    "champion_cat": {
+      "numeric_including_indicators": 1064,
+      "missing_indicators": 509,
+      "categorical": 102,
+      "state_sha256": "b87e505d1961b3b9a955b6e6aea907119c8561ff2a407aad57850323543e0325"
+    }
+  },
+  "tests": {
+    "test_features.py": {
+      "returncode": 0,
+      "output": ".........                                                                [100%]\n9 passed in 0.23s\n"
+    },
+    "test_training.py": {
+      "returncode": 0,
+      "output": "....                                                                     [100%]\n4 passed in 0.11s\n"
+    }
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER, 16376 MiB, 2054 MiB",
+    "RAM_total": 34055770112,
+    "RAM_available": 9401946112
+  },
+  "dates": {
+    "A": {
+      "n": 267645,
+      "min": "2019-01-01",
+      "max": "2019-12-31"
+    },
+    "B": {
+      "n": 40596,
+      "min": "2020-01-01",
+      "max": "2020-02-29"
+    }
+  },
+  "no_C_D_labels_loaded": true,
+  "independent_reviewer": false
+}

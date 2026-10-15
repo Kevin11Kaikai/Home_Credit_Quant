@@ -1,0 +1,28 @@
+{
+  "family": "TabM",
+  "seed": 42,
+  "config": {
+    "id": "T3",
+    "learning_rate": 0.001,
+    "dropout": 0.2
+  },
+  "B": {
+    "roc_auc": 0.8457671459818217,
+    "log_loss": 0.1433303594959617
+  },
+  "status": "EARLY_STOPPED",
+  "eligible": true,
+  "converged": true,
+  "seconds": 341.1099999998696,
+  "best_epoch": 9,
+  "epochs_completed": 20,
+  "checkpoint": "${SOURCE_WORKSPACE}\\runs\\homecredit_temporal_v1_20261014\\fits\\TabM_T3_seed42\\best.pt",
+  "checkpoint_sha256": "c7343d162d0701c67b1a216d10425faa858ae690adcccb156ad49b60c0e90543",
+  "physical_batch": 256,
+  "effective_batch": 256,
+  "resumed": false,
+  "peak_rss_bytes": 3233808384,
+  "gpu_peak_bytes": 1093088256,
+  "device": "cuda",
+  "cumulative_trial_seconds": 341.19919753074646
+}

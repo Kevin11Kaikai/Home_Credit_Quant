@@ -1,0 +1,9 @@
+scenario,tranche,principal_repaid,interest_paid,ending_balance,max_interest_due,ending_interest_due,wal_years_repaid_principal,wal_definition,source
+ZeroPressure,A1,1000.0000000000001,24.48,0.0,0.0,0.0,0.349904668035592,"time from closing weighted by actual principal repayments; conditional on repaid principal, not unpaid balance",REAL_ABSBOX_ENGINE_RESPONSE
+ZeroPressure,B,999.9999999999999,332.65,0.0,0.0,0.0,1.004949130732375,"time from closing weighted by actual principal repayments; conditional on repaid principal, not unpaid balance",REAL_ABSBOX_ENGINE_RESPONSE
+Base,A1,1000.0,23.34,0.0,0.0,0.0,0.33341785078713204,"time from closing weighted by actual principal repayments; conditional on repaid principal, not unpaid balance",REAL_ABSBOX_ENGINE_RESPONSE
+Base,B,1000.0,311.88,0.0,0.0,0.0,0.9782103490759754,"time from closing weighted by actual principal repayments; conditional on repaid principal, not unpaid balance",REAL_ABSBOX_ENGINE_RESPONSE
+Adverse,A1,1000.0,22.52,0.0,0.0,0.0,0.3219125804243669,"time from closing weighted by actual principal repayments; conditional on repaid principal, not unpaid balance",REAL_ABSBOX_ENGINE_RESPONSE
+Adverse,B,1000.0,265.11999999999995,0.0,0.0,0.0,0.9680660917180014,"time from closing weighted by actual principal repayments; conditional on repaid principal, not unpaid balance",REAL_ABSBOX_ENGINE_RESPONSE
+Severe,A1,1000.0,21.9,0.0,0.0,0.0,0.31287619438740594,"time from closing weighted by actual principal repayments; conditional on repaid principal, not unpaid balance",REAL_ABSBOX_ENGINE_RESPONSE
+Severe,B,1000.0,169.04999999999998,0.0,0.0,0.0,0.9807330047912388,"time from closing weighted by actual principal repayments; conditional on repaid principal, not unpaid balance",REAL_ABSBOX_ENGINE_RESPONSE

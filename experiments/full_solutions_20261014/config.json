@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "data_scope": "Original A/B only. B is already reused development data. No C/D loading or new final-test claim.",
+  "execution_order": ["champion_reconstruction", "fraud_excel_transfer", "s6e7_7x4_transfer"],
+  "champion": {
+    "folds": 5,
+    "splitter": "StratifiedGroupKFold(shuffle=True, random_state=42), groups=verified WEEK_NUM in A",
+    "weights": {"lgb": 0.40, "dense": 0.24, "cat": 0.36},
+    "score_postprocess": {"subtract": 0.03, "earlier_fraction_of_week_range": 0.5, "floor": 0},
+    "lightgbm": {"objective": "binary", "learning_rate": 0.05, "num_leaves": 31, "min_data_in_leaf": 100, "lambda_l2": 1, "feature_fraction": 0.8, "bagging_fraction": 0.8, "bagging_freq": 1, "num_threads": 4, "seed": 42, "verbosity": -1, "metric": "auc", "deterministic": true, "force_col_wise": true},
+    "lightgbm_rounds": 5000,
+    "early_stopping": 100,
+    "catboost": {"iterations": 2000, "depth": 6, "learning_rate": 0.05, "l2_leaf_reg": 3, "loss_function": "Logloss", "eval_metric": "AUC", "random_seed": 42, "thread_count": 4, "task_type": "GPU", "devices": "0", "verbose": false, "allow_writing_files": false},
+    "dense": {"epochs": 50, "lr": 0.001, "weight_decay": 0.00001, "batch": 1024, "microbatch": 1024, "inference_batch": 1024, "patience": 8, "min_epochs": 10, "monitor": "roc_auc", "seed": 42, "max_seconds": 2700},
+    "status_boundary": "FULL THREE-FAMILY RECONSTRUCTION ONLY. The author's fitted models, final feature masks and training hyperparameters are unavailable. Five folds, hyperparameters, one-hot DenseLight preprocessing and observed weeks are declared reconstruction choices. Not an exact competition reproduction."
+  },
+  "excel": {"epochs": 41, "lr": 0.0001, "weight_decay": 0.0, "batch": 256, "microbatch": 32, "inference_batch": 64, "patience": 8, "min_epochs": 25, "monitor": "average_precision", "grad_clip": 1.0, "seed": 42, "max_seconds": 28800, "initial_epochs": 16, "continuation_epochs": 25, "continuation_lr": 0.00003, "source_adaptation": "Published primary BCE feature-mix model; no distillation arm. Credit history aggregates replace unavailable fraud entity/identity inputs. Ordered target encoding, train-only MI, original core with numerically checked SDPA kernel. Reset optimizer at continuation as published."},
+  "s6e7": {"folds": 7, "member_seeds": [42,43,44,45], "epochs": 16, "lr": 0.001, "weight_decay": 0.00001, "batch": 4096, "microbatch": 128, "inference_batch": 128, "patience": null, "monitor": "roc_auc", "seed": 42, "max_seconds": 7200, "n_blocks": 2, "d_block": 128, "heads": 8, "num_embedding": "plr-lite", "n_frequencies": 24, "sigma": 0.1, "target_encoding": "catstat 0.4.0 exact-value, smooth=auto, numeric=direct, 5-fold internal crossfit, outer-train only", "source_adaptation": "Home Credit binary target: binary TE and single-logit BCE replace 3-class TE/softmax. Fold members loop separately for checkpoint recovery; probabilities averaged equally. Gradient accumulation retains batch 4096. Fixed 16 epochs, no early stopping or seed selection.", "beta_grid_classification_only": [0,0.5,0.75,1.0,1.15,1.3,1.5,1.75,2.0,2.5]},
+  "limits": {"wall_seconds": 129600, "lgb_seconds": 6600, "cat_seconds": 7200, "dense_seconds": 7200, "excel_seconds": 28800, "s6e7_seconds": 86400, "cpu_threads": 4},
+  "budget_scope": "New explicitly requested full-solutions campaign, bounded at 36 hours wall time. Earlier MVP and feature-transfer ledgers remain immutable. No additional TabM fits; new LightGBM allowance stays below the original remaining 2-hour total. Estimates are not success guarantees."
+}

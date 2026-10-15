@@ -1,0 +1,16 @@
+{
+  "status": "PAUSED_BY_USER",
+  "family": "excel",
+  "paused_utc": "2026-10-14T22:24:32.358832+00:00",
+  "automatic_resume_allowed": false,
+  "checkpoint": {
+    "epoch": 4,
+    "offset": 147456,
+    "completed_epochs": 3,
+    "best_epoch": 3,
+    "optimizer_and_rng_saved": true,
+    "checkpoint_sha256": "042595dd12123184db32454a12df256a3b566a9f4f93f4c1098dfeb914a37211"
+  },
+  "training_pid": 1144,
+  "process_alive": false
+}

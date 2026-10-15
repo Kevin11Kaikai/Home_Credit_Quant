@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-14T15:22:18.616631+00:00",
+  "python": "3.12.7",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "cpu_count": 20,
+  "ram_total_bytes": 34055770112,
+  "ram_available_bytes": 12188717056,
+  "disk_free_bytes": 586833756160,
+  "cuda_available": true,
+  "torch": "2.5.1+cu121",
+  "cuda_runtime": "12.1",
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "vram_bytes": 17170956288,
+  "tracking": "local JSON/CSV (no existing workspace MLflow configuration)"
+}

@@ -1,0 +1,19 @@
+{
+  "reason": "BF16 checkpoint replay compared different inference batch shapes; preserve fitted weights and validation checkpoint choice. Recompute whole validation with identical batch layout.",
+  "before_protocol_sha256": "aebdb690f07ad866d1253fffcb530c14390e78bdbca7833ebd3d952827fd8d2f",
+  "old_code": {
+    "common.py": "a1ae06872b72d8d893a01f8d7be495834c4ccbae0f61a6914ea65fcdcf45cb5d",
+    "data.py": "983ff0259a417c48f8b0aeb965770b1f85884804e5ea9d11c9e1e4b1705971cf",
+    "models.py": "8c7daaf3fb9ed6aaf86e2c614215706f941fecb812e57f22b2691c42e1692a22",
+    "campaign.py": "a0d7da0b5ea7133df6a2fe15ac6f10efde96b5b68e80da2aba2d7b3f80c77143"
+  },
+  "permitted_old_artifacts": {
+    "runs\\champion_dense_fold0\\best.pt": "b787415ef11772dad7b017cfd339a5653964455412dc3e1ec050b45f72cbaca8",
+    "runs\\champion_dense_fold0\\best_valid.npy": "50e7a19484b43017bf37105d9f6f59144963b9e607735c8b6c4dfd8ee54d3716",
+    "runs\\champion_dense_fold0\\history.csv": "8514f7819c76b3d0d73627457496bdfb0a3813baf901271cae8b8552a59e0a4e",
+    "runs\\champion_dense_fold0\\last.pt": "65ff7be4a874a09adecb2d84f51577b7258969acaf5b560427bea0356f3ba1d2",
+    "runs\\champion_dense_fold0\\preprocessor.joblib": "356d9d3ebdf141abce36554ef4fab2e496e3540f9834db161f6755993c18c963",
+    "runs\\champion_dense_fold0\\p_valid.npy": "50e7a19484b43017bf37105d9f6f59144963b9e607735c8b6c4dfd8ee54d3716"
+  },
+  "created_utc": "2026-10-14T21:59:11.446478+00:00"
+}

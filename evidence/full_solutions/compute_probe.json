@@ -1,0 +1,56 @@
+[
+  {
+    "model": "denselight",
+    "synthetic_only": true,
+    "microbatch": 256,
+    "numerical_inputs": 682,
+    "categorical_inputs": 0,
+    "samples_per_second": 89195.4994005631,
+    "seconds_per_epoch_267645": 3.0006558828495145,
+    "peak_reserved_gib": 0.06640625,
+    "steps_seconds": [
+      0.37103250017389655,
+      0.0033332998864352703,
+      0.0025951999705284834,
+      0.003109999932348728,
+      0.0026302000042051077
+    ],
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  },
+  {
+    "model": "excel",
+    "synthetic_only": true,
+    "microbatch": 8,
+    "numerical_inputs": 782,
+    "categorical_inputs": 0,
+    "samples_per_second": 271.9686958797913,
+    "seconds_per_epoch_267645": 984.1022296121081,
+    "peak_reserved_gib": 1.44921875,
+    "steps_seconds": [
+      0.2574831999372691,
+      0.029580699978396297,
+      0.02952550002373755,
+      0.02930480008944869,
+      0.02923360001295805
+    ],
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  },
+  {
+    "model": "s6e7",
+    "synthetic_only": true,
+    "microbatch": 16,
+    "numerical_inputs": 1262,
+    "categorical_inputs": 102,
+    "samples_per_second": 1305.7973327442253,
+    "seconds_per_epoch_267645": 204.96672285087698,
+    "peak_reserved_gib": 0.365234375,
+    "steps_seconds": [
+      0.10278269997797906,
+      0.012019200017675757,
+      0.011901099933311343,
+      0.01248689997009933,
+      0.01314319996163249
+    ],
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  }
+]

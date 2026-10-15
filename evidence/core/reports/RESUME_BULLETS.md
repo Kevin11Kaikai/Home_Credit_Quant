@@ -1,0 +1,2 @@
+- Compared LightGBM and official TabM on a frozen temporal credit-event benchmark (seed 42 test AUC: 0.8622 and 0.8636), with independent held-out calibration and equal-exposure loan-pool analysis.
+- Executed an official AbsBox synthetic senior/junior transaction through a local Hastructure engine under fixed stress scenarios, preserving requests, cashflows, and reconciliation evidence.
