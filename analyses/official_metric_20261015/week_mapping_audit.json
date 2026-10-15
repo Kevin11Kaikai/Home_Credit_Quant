@@ -1,0 +1,40 @@
+{
+  "B": {
+    "n": 40596,
+    "official_weeks": 9,
+    "first_week": 52,
+    "last_week": 60,
+    "start": "2020-01-01",
+    "end": "2020-02-29",
+    "exact_date_match": true,
+    "exact_label_match": true,
+    "unique_application_ids": true,
+    "customer_independence_verified": false,
+    "monday_groups_per_official_week_max": 2,
+    "official_groups_per_monday_max": 2,
+    "min_week_n": 3387,
+    "min_week_events": 145,
+    "contiguous_weeks": true,
+    "contains_partial_boundary_weeks": true,
+    "row_level_mapping_exported": false
+  },
+  "D": {
+    "n": 56001,
+    "official_weeks": 23,
+    "first_week": 69,
+    "last_week": 91,
+    "start": "2020-05-01",
+    "end": "2020-10-05",
+    "exact_date_match": true,
+    "exact_label_match": true,
+    "unique_application_ids": true,
+    "customer_independence_verified": false,
+    "monday_groups_per_official_week_max": 2,
+    "official_groups_per_monday_max": 2,
+    "min_week_n": 270,
+    "min_week_events": 6,
+    "contiguous_weeks": true,
+    "contains_partial_boundary_weeks": true,
+    "row_level_mapping_exported": false
+  }
+}

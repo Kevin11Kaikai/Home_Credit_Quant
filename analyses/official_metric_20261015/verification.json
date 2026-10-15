@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "existing_auc_ap_comparisons": 52,
+  "alternate_weekly_rank_auc_and_closed_form_ols": true,
+  "max_absolute_error": 4.773959005888173e-15,
+  "independent_external_audit": false,
+  "raw_calibrated": [
+    {
+      "model": "LightGBM",
+      "seed": 42,
+      "max_weekly_gini_difference": 0.0,
+      "calibrated_minus_raw_score": 0.0
+    },
+    {
+      "model": "LightGBM",
+      "seed": 0,
+      "max_weekly_gini_difference": 0.0,
+      "calibrated_minus_raw_score": 0.0
+    },
+    {
+      "model": "LightGBM",
+      "seed": 1,
+      "max_weekly_gini_difference": 0.0,
+      "calibrated_minus_raw_score": 0.0
+    },
+    {
+      "model": "TabM",
+      "seed": 42,
+      "max_weekly_gini_difference": 0.0,
+      "calibrated_minus_raw_score": 0.0
+    },
+    {
+      "model": "TabM",
+      "seed": 0,
+      "max_weekly_gini_difference": 0.0,
+      "calibrated_minus_raw_score": 0.0
+    },
+    {
+      "model": "TabM",
+      "seed": 1,
+      "max_weekly_gini_difference": 0.0,
+      "calibrated_minus_raw_score": 0.0
+    }
+  ],
+  "protected_files_unchanged": 83,
+  "original_test_records": 1,
+  "new_formal_test_record": false,
+  "new_inference": false,
+  "new_training": false,
+  "new_C_access": false,
+  "training_still_paused": true
+}

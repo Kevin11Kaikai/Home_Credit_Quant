@@ -15,3 +15,11 @@ Historical acquisition/README wording such as "nothing published", old authentic
 This publication audit checks copy identity, aggregate consistency, redactions, links, synthetic contracts, and prohibited-file/secret patterns. It is not independent external validation of the research, fresh inference, or a new holdout evaluation. Original model uncertainty and all negative results are retained.
 
 No blanket license is asserted over third-party code or competition data. Attribution and available license texts are preserved. Public availability of code does not grant permission to redistribute another author's private inputs or to reuse competition data outside its terms.
+
+## 2026-10-15 official-metric update
+
+The user separately requested publication of the completed official-formula progress. Sixteen explicitly selected files from `analyses/official_metric_20261015/` were copied byte-for-byte: own analysis/metric/test code, protocol, aggregate B/D and weekly tables, seed summaries, figure, mapping audit and receipts. Source-to-public hashes are appended to `PUBLIC_EXPORT_PROVENANCE.json`. Local attempt directories and reporting-repair backup copies were not exported; the final reporting-repair receipt records the reason and retained numeric identity.
+
+This is a retrospective analysis of existing predictions using the competition formula and original `WEEK_NUM`. The earlier A/B training experiments remain B-only; the added analysis uses existing D results without new training, inference, model selection or a new formal test record. It is not a hidden-test Kaggle result, an exact champion reproduction, or a preregistered primary endpoint. All matched seeds and completed B variants are retained.
+
+The historical `PUBLICATION_VALIDATION.json` describes the initial release. `PUBLICATION_UPDATE_VALIDATION_20261015.json` records this update's actual checks. `scripts/verify_public_release.py` now also recalculates the stability arithmetic from published weekly Gini aggregates. This verifies public arithmetic rather than the withheld row-level AUC. The paused campaign, original `evidence/` artifacts and scientific source code remain unchanged.

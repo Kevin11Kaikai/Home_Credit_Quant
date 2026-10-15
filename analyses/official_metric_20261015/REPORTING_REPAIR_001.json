@@ -1,0 +1,8 @@
+{
+  "reason": "Move figure legend away from a negative bar label; add interpretation of existing CSV values",
+  "scope": "Reporting only; no scoring, training, inference, input, protocol, or numerical CSV changes",
+  "old_analyze_sha256": "c635f2c23e1ea5f80fe7d71c4756ebd91e34715236f419f22a5a971c32e57791",
+  "new_analyze_sha256": "58d25d1cb95aa680a477874ae649560173a6d96f4fffba3400a7821244ed14e9",
+  "numeric_csvs_unchanged": true,
+  "previous_receipt_sha256": "250b7cd570fe7ed8d8380670127ed23e808ac31f0a5a0ffb866e276b8ffce5cf"
+}

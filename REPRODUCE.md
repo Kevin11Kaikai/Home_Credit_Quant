@@ -107,6 +107,34 @@ The champion command reproduces the documented **reconstruction**, not the inacc
 
 Exact recovery of the original paused ExcelFormer requires its local checkpoint, preprocessing, optimizer/RNG state and unchanged historical code. These are not distributed. It requires an explicit resume decision; elapsed budgets are not automatically reset. This public export cannot masquerade as that checkpoint recovery.
 
+## 7. Official-formula analysis
+
+`analyses/official_metric_20261015/` contains the completed **post-hoc** Gini stability analysis. The metric was added after the original results were known. All three fixed D seeds and all 13 completed B rows are included; no model was trained or reselected. The score is not a Kaggle submission or a leaderboard-rank estimate.
+
+The public package includes the own metric implementation, synthetic tests, aggregate results, original `WEEK_NUM` audit, figure, protocol and result receipt. It contains no row predictions, labels or mapping records. First verify the package using only Python's standard library:
+
+```powershell
+python scripts/verify_public_release.py --summary
+```
+
+This also recalculates the official formula from the published weekly Gini values and checks the seed summaries and raw/calibrated equality. This verifies aggregate arithmetic; it does not independently reproduce weekly AUC from unavailable individual records.
+
+With the pinned core environment, run the ten synthetic metric tests:
+
+```powershell
+& ./.venv/Scripts/python.exe -m pytest -q -o addopts= analyses/official_metric_20261015/test_metric.py
+```
+
+The archived `analyze.py` is the exact script used with the original authorized local workspace. Its `--project` option locates that workspace, but it still requires the historical cached row predictions, raw base table, metadata, split indices, original receipt paths and paused checkpoint. Those bytes are intentionally excluded from this repository. For an owner of the unchanged original workspace:
+
+```powershell
+& ./.venv/Scripts/python.exe analyses/official_metric_20261015/analyze.py --project '<original-authorized-workspace>'
+```
+
+With the existing result receipt, this checks hashes and exits `CACHE_ONLY`; it does not rescore or fit. The exact historical Windows receipts contain original path conventions, so this is not a portable fresh-run entry point. A public clone alone cannot execute this row-data check. Never remove receipts or relax hash checks to substitute a fresh run for the historical analysis. Use the aggregate verifier and synthetic tests for a data-free check.
+
+The original core report used calendar weeks starting on Monday. This additional analysis uses recovered official `WEEK_NUM` (D: 69–91, B: 52–60), retains partial boundary weeks, and documents their small-sample limitation. The original frozen outputs remain archival and unchanged.
+
 ## Evidence and scope
 
 Core D results and subsequent reused-B results are shown separately. Feature engineering and model selection on B are development evidence, not new independent validation. Unknown target horizon/maturity, inherited global unlabeled preprocessing, application rather than verified customer identity, normalized EAD=1 and assumed LGD remain limitations. See [DATA_CARD.md](DATA_CARD.md), [THIRD_PARTY.md](THIRD_PARTY.md), and [export boundaries](PUBLICATION_NOTES.md).

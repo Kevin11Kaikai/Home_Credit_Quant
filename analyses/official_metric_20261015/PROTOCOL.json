@@ -1,0 +1,35 @@
+{
+  "analysis_id": "official_metric_20261015",
+  "authorized_request": "Evaluate current performance using the official competition metric",
+  "scope": "Post-hoc descriptive rescoring of already cached predictions; not a new frozen test evaluation, model selection, inference, or Kaggle submission",
+  "metric": "Home Credit 2024 Gini stability",
+  "formula": "mean(2*weekly_ROC_AUC-1) + 88*min(0, slope) - 0.5*population_std(OLS_residuals)",
+  "weekly_groups": "Original raw train_base.parquet WEEK_NUM recovered with TabReD index_in_full; verify exact decision dates and labels",
+  "time_regressor": "Ascending observed week positions 0..W-1; assert weeks contiguous so this equals WEEK_NUM up to a constant",
+  "week_weighting": "Equal weight per official WEEK_NUM, irrespective of row count",
+  "residual_std_ddof": 0,
+  "single_class_policy": "Report undefined overall score and affected weeks; never delete a week or fill its AUC",
+  "partial_boundary_weeks": "Keep every existing B/D record, including partial first/last weeks",
+  "D": {
+    "models": ["Constant", "LightGBM", "TabM"],
+    "seeds": [42, 0, 1],
+    "variants": ["raw", "calibrated"],
+    "constant": "Existing seed-42 raw only",
+    "seed_summary": "All matched seeds; arithmetic mean and sample standard deviation, not sampling confidence intervals"
+  },
+  "B": {
+    "models": "All 13 completed cached rows from full_solutions_20261014/reports/comparison_B.csv",
+    "score_hack": "Existing cached heuristic only, explicitly labeled not PD; no new postprocessing or parameter search",
+    "incomplete_models": "ExcelFormer and S6E7 excluded because no completed fitted result; retained in limitations"
+  },
+  "checks": ["Input hashes match historical receipts", "Exact row/date/label mapping", "Existing aggregate metrics reproduced", "Per-week rank-U AUC and closed-form OLS recomputation", "Synthetic metric edge cases", "Protected artifacts and pause state unchanged"],
+  "no_fitting": true,
+  "no_prediction_generation": true,
+  "no_C_access": true,
+  "no_leaderboard_rank_claim": true,
+  "no_new_threshold_or_configuration_selection": true,
+  "official_metric_source": "https://www.kaggle.com/competitions/home-credit-credit-risk-model-stability/overview/tracks-and-awards",
+  "champion_context_source": "https://www.kaggle.com/c/home-credit-credit-risk-model-stability/discussion/508337",
+  "code_convention_reference": "https://note.erhoeht-x.jp/n/n6079318f58bc",
+  "comparison_limit": "Local B/D are subsets of public competition training data; same formula does not make them the hidden Kaggle leaderboard population"
+}

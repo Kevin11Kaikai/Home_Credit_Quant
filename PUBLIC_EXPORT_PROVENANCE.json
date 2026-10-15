@@ -2017,6 +2017,118 @@
       "source_sha256": "f3d69a427947353b0c168ff40dd11a1228c33619c7942ec26e285ee70b171a9e",
       "public_sha256": "f3d69a427947353b0c168ff40dd11a1228c33619c7942ec26e285ee70b171a9e",
       "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/analyze.py",
+      "public": "analyses/official_metric_20261015/analyze.py",
+      "source_sha256": "58d25d1cb95aa680a477874ae649560173a6d96f4fffba3400a7821244ed14e9",
+      "public_sha256": "58d25d1cb95aa680a477874ae649560173a6d96f4fffba3400a7821244ed14e9",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/metric.py",
+      "public": "analyses/official_metric_20261015/metric.py",
+      "source_sha256": "188f45fcf239ff7c9be954d545c323e914f68f45ac2bb64a044a257bfa6c3f14",
+      "public_sha256": "188f45fcf239ff7c9be954d545c323e914f68f45ac2bb64a044a257bfa6c3f14",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/test_metric.py",
+      "public": "analyses/official_metric_20261015/test_metric.py",
+      "source_sha256": "48a7373773429fe7d519840a53ef7d90730e304b47e80953aab88a9a2f2f15eb",
+      "public_sha256": "48a7373773429fe7d519840a53ef7d90730e304b47e80953aab88a9a2f2f15eb",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/PROTOCOL.json",
+      "public": "analyses/official_metric_20261015/PROTOCOL.json",
+      "source_sha256": "03c32cebc40b984c7498a846886808baae375fd1cae27e184c5dd693ac3e4e62",
+      "public_sha256": "03c32cebc40b984c7498a846886808baae375fd1cae27e184c5dd693ac3e4e62",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/REPORT_ZH.md",
+      "public": "analyses/official_metric_20261015/REPORT_ZH.md",
+      "source_sha256": "f11ca052e6da18f15bbf52bd504306a0cb6bb2729fea7a78958247d692149707",
+      "public_sha256": "f11ca052e6da18f15bbf52bd504306a0cb6bb2729fea7a78958247d692149707",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/REPORTING_REPAIR_001.json",
+      "public": "analyses/official_metric_20261015/REPORTING_REPAIR_001.json",
+      "source_sha256": "4b835393db6fb09b5cf0700a49874f234f1502602c47e13aac8ebc2aa83a46e7",
+      "public_sha256": "4b835393db6fb09b5cf0700a49874f234f1502602c47e13aac8ebc2aa83a46e7",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/RESULT_RECEIPT.json",
+      "public": "analyses/official_metric_20261015/RESULT_RECEIPT.json",
+      "source_sha256": "423aa739e347fbf3f24515453b7363dc97af50ecac28434a9a10bb5c14c2b024",
+      "public_sha256": "423aa739e347fbf3f24515453b7363dc97af50ecac28434a9a10bb5c14c2b024",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/official_metric_B.csv",
+      "public": "analyses/official_metric_20261015/official_metric_B.csv",
+      "source_sha256": "4f952dc52c9adba059c52056d9f52d11e373828b4cb17b00b2d67c5e85eb010f",
+      "public_sha256": "4f952dc52c9adba059c52056d9f52d11e373828b4cb17b00b2d67c5e85eb010f",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/official_metric_D.csv",
+      "public": "analyses/official_metric_20261015/official_metric_D.csv",
+      "source_sha256": "4dfa43fdacf6241c24b0360f75ccca7fccfb9512e18cea86d44a3bf367e52207",
+      "public_sha256": "4dfa43fdacf6241c24b0360f75ccca7fccfb9512e18cea86d44a3bf367e52207",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/official_metric_D.png",
+      "public": "analyses/official_metric_20261015/official_metric_D.png",
+      "source_sha256": "f620fa19b1a854bc5c41f952fa20b776afbe539e6bc84d293538fd310d291b72",
+      "public_sha256": "f620fa19b1a854bc5c41f952fa20b776afbe539e6bc84d293538fd310d291b72",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/official_metric_D.svg",
+      "public": "analyses/official_metric_20261015/official_metric_D.svg",
+      "source_sha256": "76c4dbce94395fd397073b40ec6bb0f347374cc8d989a1101e480a90eeed69d6",
+      "public_sha256": "76c4dbce94395fd397073b40ec6bb0f347374cc8d989a1101e480a90eeed69d6",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/official_weeks_B.csv",
+      "public": "analyses/official_metric_20261015/official_weeks_B.csv",
+      "source_sha256": "0dc75457bf1eb5e74c1221d8460911c2b00df52337c59f0cd1200035495b6552",
+      "public_sha256": "0dc75457bf1eb5e74c1221d8460911c2b00df52337c59f0cd1200035495b6552",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/official_weeks_D.csv",
+      "public": "analyses/official_metric_20261015/official_weeks_D.csv",
+      "source_sha256": "67653c7fb9a48b85cec45de5f21c0e2a4f07d5f2a86fd837a4d7997c1f36571f",
+      "public_sha256": "67653c7fb9a48b85cec45de5f21c0e2a4f07d5f2a86fd837a4d7997c1f36571f",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/seed_summary_D.csv",
+      "public": "analyses/official_metric_20261015/seed_summary_D.csv",
+      "source_sha256": "d3b7c1d785ce53c20914f79a5d6f76f67186699d6e9060a5c49c310d14b65ef2",
+      "public_sha256": "d3b7c1d785ce53c20914f79a5d6f76f67186699d6e9060a5c49c310d14b65ef2",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/verification.json",
+      "public": "analyses/official_metric_20261015/verification.json",
+      "source_sha256": "e53cce686b8677f7eac9c85cf4779fce9369bf7fd5056650491ddc25a525fa1c",
+      "public_sha256": "e53cce686b8677f7eac9c85cf4779fce9369bf7fd5056650491ddc25a525fa1c",
+      "byte_identical": true
+    },
+    {
+      "source": "analyses/official_metric_20261015/week_mapping_audit.json",
+      "public": "analyses/official_metric_20261015/week_mapping_audit.json",
+      "source_sha256": "e6dbb591b2ecdcb29a42c8a9cf7433ded38e5cab3703a5761611fc61031365ac",
+      "public_sha256": "e6dbb591b2ecdcb29a42c8a9cf7433ded38e5cab3703a5761611fc61031365ac",
+      "byte_identical": true
     }
   ],
   "transformations": [
@@ -2025,5 +2137,16 @@
     "Environment receipt projected to versions; credentials, raw rows, predictions and checkpoints excluded."
   ],
   "frozen_evidence_is_archival": true,
-  "training_executed_for_publication": false
+  "training_executed_for_publication": false,
+  "updates": [
+    {
+      "date": "2026-10-15",
+      "scope": "Post-hoc official Gini stability analysis, own implementation and aggregate evidence only",
+      "source_directory": "analyses/official_metric_20261015",
+      "files_added": 16,
+      "byte_identical": true,
+      "new_training": false,
+      "row_outputs_distributed": false
+    }
+  ]
 }

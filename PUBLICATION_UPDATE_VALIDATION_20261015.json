@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-15T15:09:45.905802+00:00",
+  "scope": "Publication of completed post-hoc official-formula analysis; public copy and arithmetic checks, not fresh inference or independent empirical replication",
+  "audit_invocation_note": "The sandbox subprocess initially rejected repository ownership; rerun with safe.directory scoped to this exact user-requested repository for the command only. No global Git configuration changed.",
+  "new_analysis_files": 16,
+  "all_new_analysis_files_byte_identical": true,
+  "source_result_receipt_sha256": "423aa739e347fbf3f24515453b7363dc97af50ecac28434a9a10bb5c14c2b024",
+  "source_public_provenance_entries_rehashed": 304,
+  "original_public_evidence_and_scientific_code_unchanged": true,
+  "tests": {
+    "suite": "Published official metric synthetic edge cases",
+    "passed": 10,
+    "skipped": 0,
+    "reported_test_seconds": 1.12,
+    "output_sha256": "2c8ab2001cee7164f935665d7ca970445e07a4b2c7544f21dcae7d625e4fd66c"
+  },
+  "public_aggregate_formula_rows_recomputed": 26,
+  "row_level_metrics_recomputed_for_publication": false,
+  "published_metric_code_sha256": "188f45fcf239ff7c9be954d545c323e914f68f45ac2bb64a044a257bfa6c3f14",
+  "published_metric_tests_sha256": "48a7373773429fe7d519840a53ef7d90730e304b47e80953aab88a9a2f2f15eb",
+  "public_verifier_sha256": "83948ee67133235c5225733733723dd795b7272439d07587bd1a31c5e1dc3a57",
+  "public_scan": {
+    "candidate_files_before_this_receipt": 321,
+    "text_files_checked": 307,
+    "json_files_parsed": 171,
+    "csv_schemas_checked": 47,
+    "prohibited_file_hits": 0,
+    "secret_pattern_hits": 0,
+    "row_output_header_hits": 0
+  },
+  "navigation_links_checked": 60,
+  "original_analysis_cache_check": "CACHE_ONLY: completed official-formula analysis verified.",
+  "training_state": "PAUSED_BY_USER",
+  "budget_active": null,
+  "new_training": false,
+  "new_inference": false,
+  "new_formal_test_record": false,
+  "automatic_resume_allowed": false,
+  "kaggle_submission": false,
+  "raw_data_distributed": false,
+  "row_predictions_distributed": false
+}

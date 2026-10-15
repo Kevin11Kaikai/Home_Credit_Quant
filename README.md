@@ -13,6 +13,7 @@ An independent public-data credit-risk research project using Home Credit 2024 /
 | Matched champion-feature transfer | **MATCHED_TRANSFER_COMPLETE**: six new seed-42 fits plus two existing-checkpoint B replays |
 | Champion three-family reconstruction | **COMPLETE: 15 fits** (5 LightGBM, 5 DenseLight, 5 CatBoost) and fixed blending |
 | Exact original champion | **BLOCKED_DEPENDENCY**: private fitted artifacts, exact final masks and training configuration unavailable |
+| Official Gini stability analysis | **COMPLETE_POSTHOC_OFFICIAL_FORMULA**: cached D predictions for all three seeds and all 13 completed B rows; original `WEEK_NUM` verified |
 | Fraud recipe / ExcelFormer transfer | **PAUSED_INCOMPLETE**: 3 completed epochs; fourth-epoch recovery position preserved locally |
 | S6E7 FT-Transformer transfer | **NOT STARTED**: 0/28 trained members; code, source audit, synthetic tests and first-fold preprocessing exist locally |
 
@@ -53,9 +54,34 @@ With EAD=1 and illustrative LGD, the pool module estimates **credit-event loss p
 
 The [AbsBox evidence](evidence/core/absbox/status.json) contains actual localhost engine 0.52.8 responses, synthetic requests, pool/bond cashflows, [reconciliation](evidence/core/absbox/reconciliation.json), [additional residual audit](evidence/core/absbox/additional_reconciliation.json), and [tranche summaries](evidence/core/absbox/tranche_summary.csv). No Home Credit rows or event probabilities were sent to the engine. This demonstrates cashflow mechanics, not CLO valuation or an investment backtest.
 
-## Follow-up results: reused development B only
+## Official competition formula: post-hoc analysis
 
-Subsequent work reused A/B and never reopened C/D for new evaluation. These scores must not be mixed with the D table above. Feature transfer used the same fixed selected model settings and seed 42. The complete three-family **reconstruction** achieved B ROC-AUC **0.848150**, AP **0.245916**, and log loss **0.143744**. Its published earlier-week score heuristic worsened B AUC to 0.814947 and is retained as a negative result, not a calibrated PD.
+The 2026-10-15 analysis applies Home Credit 2024's **Gini stability** formula to existing predictions: mean weekly Gini + 88 × min(0, weekly trend slope) − 0.5 × population standard deviation of the trend residuals. Weekly Gini is 2 × ROC-AUC − 1, and weeks receive equal weight. [Official evaluation](https://www.kaggle.com/competitions/home-credit-credit-risk-model-stability/overview/tracks-and-awards).
+
+The original `WEEK_NUM` was recovered and checked against cached dates and labels. It differs from the Monday-based calendar grouping in the original core report. Local D contains 56,001 applications in 23 official weeks (69–91); no week was dropped.
+
+| Fixed seed | LightGBM | TabM |
+| --- | ---: | ---: |
+| 42 | 0.668858 | **0.692867** |
+| 0 | **0.682922** | 0.662322 |
+| 1 | **0.675957** | 0.642580 |
+| Mean ± sample SD, all three seeds | **0.675912 ± 0.007032** | 0.665923 ± 0.025336 |
+
+Raw and calibrated results are identical, as expected from ranking-preserving calibration. TabM's seed-42 advantage mainly comes from its smaller downward-trend penalty; LightGBM has the higher mean and lower between-seed variation across all three fixed seeds. Seed SD is not a sampling confidence interval, and no statistical superiority is claimed for this added metric.
+
+On reused development B (nine official weeks), original TabM scores 0.683865, champion-LGB-feature TabM 0.689479, and the three-family reconstruction blend 0.686447. All 13 completed B rows, including negative results, are retained. These comparisons did not trigger model or seed reselection.
+
+**These are local scores, not Kaggle leaderboard results.** B/D come from the public training population processed through TabReD, rather than the competition's hidden test set. The formula was added after inspecting the original results and was not the preregistered primary metric. The original frozen evaluation, inherited preprocessing limitations, and paused training state remain intact.
+
+![Official-week Gini and local stability scores](analyses/official_metric_20261015/official_metric_D.png)
+
+- [Detailed Chinese report](analyses/official_metric_20261015/REPORT_ZH.md), [all D scores](analyses/official_metric_20261015/official_metric_D.csv), [all B scores](analyses/official_metric_20261015/official_metric_B.csv), [seed summary](analyses/official_metric_20261015/seed_summary_D.csv)
+- [Weekly D aggregates](analyses/official_metric_20261015/official_weeks_D.csv), [week-mapping audit](analyses/official_metric_20261015/week_mapping_audit.json), [protocol](analyses/official_metric_20261015/PROTOCOL.json), [calculation verification](analyses/official_metric_20261015/verification.json)
+- [Implementation and tests](analyses/official_metric_20261015/metric.py), [reproduction guide](REPRODUCE.md#7-official-formula-analysis), [publication-update validation](PUBLICATION_UPDATE_VALIDATION_20261015.json)
+
+## Follow-up training results: reused development B only
+
+Follow-up training and recipe development used A/B only; the separate official-formula analysis above later rescored existing D predictions without fitting or reselection. These B scores must not be mixed with the D table above. Feature transfer used the same fixed selected model settings and seed 42. The complete three-family **reconstruction** achieved B ROC-AUC **0.848150**, AP **0.245916**, and log loss **0.143744**. Its published earlier-week score heuristic worsened B AUC to 0.814947 and is retained as a negative result, not a calibrated PD.
 
 ![Completed B recipe comparison](evidence/full_solutions/reports/comparison_B.png)
 
@@ -72,7 +98,7 @@ The requested fraud repository's primary recipe is ExcelFormer with ordered targ
 python scripts/verify_public_release.py --summary
 ```
 
-This checks public bytes and aggregate consistency without data or a GPU. [REPRODUCE.md](REPRODUCE.md) separately explains pinned environments, authorized Kaggle acquisition, synthetic tests, fresh core runs, optional local AbsBox, optional source restoration, and the paused follow-up. Model checkpoints and row outputs are withheld; this export is not a bitwise checkpoint replay package. Publication verification is recorded in [PUBLICATION_VALIDATION.json](PUBLICATION_VALIDATION.json).
+This checks public bytes and aggregate consistency without data or a GPU, including recalculating the stability formula from the published weekly Gini aggregates. It cannot verify individual predictions or weekly AUC from withheld records. [REPRODUCE.md](REPRODUCE.md) separately explains pinned environments, authorized Kaggle acquisition, synthetic tests, fresh core runs, optional local AbsBox, optional source restoration, and the paused follow-up. Model checkpoints and row outputs are withheld; this export is not a bitwise checkpoint replay package. The initial publication verification is recorded in [PUBLICATION_VALIDATION.json](PUBLICATION_VALIDATION.json), with this update recorded [separately](PUBLICATION_UPDATE_VALIDATION_20261015.json).
 
 The upstream preprocessing used global unlabeled feature statistics before splitting, including rare-category merging. Train-only processing here cannot undo that. Target horizon, maturity, customer-level independence and as-of feature availability remain unverified. The correct description is a **TabReD-derived temporal benchmark with inherited preprocessing limitations**; predictions are dataset event probabilities / PD proxies, not one-year PDs or tradeable backtest signals.
 
